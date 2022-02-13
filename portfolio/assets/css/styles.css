@@ -388,6 +388,8 @@ img {
   border-radius: .5rem;
   border: 1.5px solid var(--second-color);
   outline: none;
+  text-align: left; 
+  vertical-align: middle;
   margin-bottom: var(--mb-4);
 }
 
