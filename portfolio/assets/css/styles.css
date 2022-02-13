@@ -308,6 +308,7 @@ img {
 .skills__names {
   display: flex;
   align-items: center;
+  height: 30px;
 }
 
 .skills__bar {
@@ -344,6 +345,12 @@ img {
   }
 .skills__Redux{
   width: 10%;
+}
+.skills__Mysql{
+  width: 50%;
+}
+.skills__Oracle{
+  width: 50%;
 }
 .skills__Empty{
   width: 100%;
@@ -478,8 +485,8 @@ img {
     margin: 0;
   }
   .section {
-    padding-top: 10em;
-    padding-bottom: 25rem;
+    padding-top: 11em;
+    padding-bottom: 10rem;
   }
   .section-title {
     margin-bottom: var(--mb-6);
