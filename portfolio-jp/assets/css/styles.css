@@ -549,3 +549,7 @@ img {
     width: 450px;
   }
 }
+input::placeholder {
+  color: black;
+  font-weight: bold;
+}
