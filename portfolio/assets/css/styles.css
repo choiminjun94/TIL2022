@@ -14,6 +14,7 @@
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
   /*===== Margenes =====*/
@@ -80,9 +81,26 @@ img {
   margin-bottom: var(--mb-4);
   text-align: center;
 }
+.section-titles {
+  position: relative;
+  font-size: var(--h3-font-size);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
 
 .section-title::after {
   position: absolute;
+  content: '';
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+.section-titles::after {
   content: '';
   width: 64px;
   height: 0.18rem;
