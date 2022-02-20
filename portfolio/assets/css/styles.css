@@ -81,9 +81,27 @@ img {
   margin-bottom: var(--mb-4);
   text-align: center;
 }
+.sections-title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: white;
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+
 .section-titles {
   position: relative;
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
+  color: black;
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+.sections-titles {
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: black;
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -100,21 +118,46 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
-.section-titles::after {
+.sections-title::after {
+  position: absolute;
   content: '';
   width: 64px;
   height: 0.18rem;
   left: 0;
   right: 0;
   margin: auto;
-  top: 2rem;
-  background-color: var(--first-color);
+  top: 3rem;
+  background-color: white;
+}
+.section-titles::after {
+  position: absolute;
+  content: '';
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 3rem;
+  background-color: black;
+}
+.sections-titles::after {
+  position: absolute;
+  content: '';
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 3rem;
+  background-color: black;
 }
 
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
+
+
 
 /*===== LAYOUT =====*/
 .bd-grid {
@@ -123,6 +166,7 @@ img {
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+  background-color: #fff;
 }
 
 .l-header {
@@ -290,6 +334,7 @@ img {
   width: 200px;
   border-radius: .5rem;
 }
+
 
 /* ===== SKILLS =====*/
 .skills__container {
@@ -517,7 +562,7 @@ img {
     margin: 0;
   }
   .section {
-    padding-top: 11em;
+    padding-top: 5m;
     padding-bottom: 10rem;
   }
   .section-title {
