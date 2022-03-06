@@ -47,7 +47,7 @@ Settings에 추가한 앱들 추가 하면 장고가 추가한거 인지<br/>
 1) 시작 하기 클릭 
 2) 스타터 템플릿 -> 부트스트랩 시작하기 위한 소스들을 모아 둔것
 ![img.png](img.png)
-3) 
+3) 스타터 탬플릿 추가 ( Main.html )
 ```html
 <!doctype html>
 <html lang="en">
@@ -77,8 +77,6 @@ Settings에 추가한 앱들 추가 하면 장고가 추가한거 인지<br/>
   </body>
 </html>
 ```
-
-4) 스타터 탬플릿 복사 main.html에 붙여 놓기 
 4)navbar 추가
 
 ```html
@@ -89,9 +87,38 @@ Settings에 추가한 앱들 추가 하면 장고가 추가한거 인지<br/>
 
 ```
 
+5) nav 수정(1) - 인스타 로고와 검색창만 남기기 
+```html
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img style="width: 100px"
+                src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png">
+        </a>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    </div>
+    </div>
+</nav>
+```
+![img_2.png](img_2.png)
 
+## 0307
+### 아이콘 추가
+1) URL 
+Google meterial icon 
+URL : https://material.io/design/iconography/system-icons.html#design-principles
+![img_3.png](img_3.png)
 
+2) ICON 찾기 
+URL : https://fonts.google.com/icons
 
-ㅁ
+3) Google Icon install 
+구글 아이콘을 사용하기 위해서는 HTML의 Header 부분에 하기의 코드를 추가 해야 한다.
 
+```html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
+```
+코드가 있는 사이트도 하기에 정리
+URL : https://developers.google.com/fonts/docs/material_icons
+![img_4.png](img_4.png)
