@@ -115,10 +115,55 @@ URL : https://fonts.google.com/icons
 구글 아이콘을 사용하기 위해서는 HTML의 Header 부분에 하기의 코드를 추가 해야 한다.
 
 ```html
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
 
 ```
-코드가 있는 사이트도 하기에 정리
+코드가 있는 사이트도 하기에 정리 (수정 필요) <br/>
+
 URL : https://developers.google.com/fonts/docs/material_icons
 ![img_4.png](img_4.png)
+
+아이콘 추가 결과
+![img_5.png](img_5.png)
+```html
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img style="width: 100px"
+                                               src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png">
+        </a>
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <span class="material-icons">home</span>
+        <span class="material-icons-outlined">send</span>
+        <span class="material-icons-outlined">add_box</span>
+        <span class="material-icons-outlined">explore</span>
+        <span class="material-icons-outlined">favorite_border</span>
+    </div>
+    </div>
+</nav>
+```
+검색창과 아이콘 location 수정 
+먼저 아이콘를 하나의 Div로 묶는 과정을 진행 하였다. 이렇게 하여 로고, 검색창, 로고로 헤더를 나누게 되었다. <br/>
+다음으로는 검색창의 width를 400px로 수정하여 사이즈를 수정 하였다. <br/>
+마지막으로 nav의 크기를 1000px으로 제한 및 justify-content: space-between로 맨 왼쪽은 [로고] 중앙에 [검색] 맨 오른쪽은 [아이콘]을 위치 시켯다.
+하기에 사진 및 코드를 입력 하겠다. 
+![img_6.png](img_6.png)
+```html
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid" style="justify-content: space-between; flex-wrap : nowrap; min-width: 1000px" >
+        <a class="navbar-brand" href="#"> <img style="width: 100px"
+                                               src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png">
+        </a>
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 400px;">
+
+        <div>
+            <span class="material-icons">home</span>
+            <span class="material-icons-outlined">send</span>
+            <span class="material-icons-outlined">add_box</span>
+            <span class="material-icons-outlined">explore</span>
+            <span class="material-icons-outlined">favorite_border</span>
+        </div>
+    </div>
+</nav>
+```
