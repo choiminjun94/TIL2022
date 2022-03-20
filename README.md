@@ -22,5 +22,8 @@
 ## Django-review
 > Django 인스타 복습용 레포지토리 입니다. 
 
+## fast_campus_frontend
+> 패캠 책 보면서 프론트앤드 첫 과정 복습
+
 
 
