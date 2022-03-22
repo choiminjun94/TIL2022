@@ -25,5 +25,8 @@
 ## fast_campus_frontend
 > 패캠 책 보면서 프론트앤드 첫 과정 복습
 
+## bootstrap-study
+> 부트스트랩 이용하여 기본적 웹사이트 틀 잡기 연습
+
 
 
