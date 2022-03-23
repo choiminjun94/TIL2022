@@ -1,6 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');/*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
   --font-semi: 600;
@@ -11,8 +10,8 @@
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
-  --body-font: 'Poppins', sans-serif;
-  --big-font-size: 2rem;
+  --body-font: 'Hi Melody', cursive;
+  --big-font-size: 5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
@@ -30,8 +29,8 @@
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
-    --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
+    --h2-font-size: 3rem;
+    --normal-font-size: 1.3rem;
     --smaller-font-size: .875rem;
   }
 }
