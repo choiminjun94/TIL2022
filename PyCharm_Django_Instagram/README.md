@@ -193,4 +193,62 @@ URL : https://developers.google.com/fonts/docs/material_icons
             </div>
 ```
 > 결과 
-> ![img_7.png](img_7.png)
+<br/>
+![img_7.png](img_7.png)
+
+### 이미지 추가 
+```html
+   <!-- width와 min-witdh를 사용하므로 사진이 이 이상 크지 못하게 지정 -->
+   <div style="margin-right: 300px; width: 500px;  min-width: 500px; height: 2000px">
+        <div style="border: solid 1px gray; background-color: white">
+            {# 이미지 동그랗게 #}
+            <div style="display: flex; flex-direction: row; align-items: center; margin: 0 20px">
+                <div class="box" >
+                    <img class="profile" src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMTdfMzkg/MDAxNDg3MzEyMTgxNDQz.aJoisDHrv1Hf-8CNjG08pXc4101oJ5QyXSrfs9BhFbMg.j3s70ybCD2siOuue7g0v2oUHEhMs3maIfw9Y9C7Wzhcg.JPEG.fly5885/10_%EA%B7%80%EC%97%BD%EA%B3%A0%EC%9B%83%EA%B8%B4%EA%B3%A0%EC%96%91%EC%9D%B4%EC%82%AC%EC%A7%84_%281%29.jpg?type=w800">
+                </div>
+                <div>Min's</div>
+            </div>
+            <div>
+                <!-- 이미지 사이즈를 100으로 지정 -->
+                <img style="width: 100%" src="https://youimg1.tripcdn.com/target/100t1f000001gqc0a08E9.jpg?proc=source%2Ftrip" alt="">
+            </div>
+        ...
+    </div>
+```
+![img_8.png](img_8.png)
+
+### 아이콘 추가와 CSS 정렬
+> margin 0 20px으로 입력시 좌우에만 20px를 준다는 것
+```html
+<div style="display: flex; justify-content: center; padding-top: 70px; background-color:#FAFAFA" >
+    <div style="margin-right: 300px; width: 500px;  min-width: 500px; height: 2000px">
+        <div style="border: solid 1px gray; background-color: white">
+            {# 이미지 동그랗게 #}
+            <div style="display: flex; flex-direction: row; align-items: center; margin: 0 20px">
+                <div class="box" >
+                    <img class="profile" src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMTdfMzkg/MDAxNDg3MzEyMTgxNDQz.aJoisDHrv1Hf-8CNjG08pXc4101oJ5QyXSrfs9BhFbMg.j3s70ybCD2siOuue7g0v2oUHEhMs3maIfw9Y9C7Wzhcg.JPEG.fly5885/10_%EA%B7%80%EC%97%BD%EA%B3%A0%EC%9B%83%EA%B8%B4%EA%B3%A0%EC%96%91%EC%9D%B4%EC%82%AC%EC%A7%84_%281%29.jpg?type=w800">
+                </div>
+                <div>Min's</div>
+            </div>
+            <div>
+                <img style="width: 100%" src="https://youimg1.tripcdn.com/target/100t1f000001gqc0a08E9.jpg?proc=source%2Ftrip" alt="">
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 0 20px">
+                <div>
+                    <span class="material-icons-outlined">favorite_border</span>
+                    <span class="material-icons-outlined">mode_comment</span>
+                    <span class="material-icons-outlined">send</span>
+                </div>
+                <div>
+                    <span class="material-icons-outlined">bookmark_border</span>
+                </div>
+            </div>
+            <div style="text-align: left; font-size: 13px; margin: 0 20px">냥냥이 외 <b>19명</b>이 좋아 합니다.</div>
+             <div style="text-align: left; font-size: 15px; margin: 0 20px"><b>Min's</b> 그리운 샷포르 다시 돌아가고 싶다..</div>
+            <div>댓글들</div>
+            <div>댓글 입력창</div>
+        </div>
+    </div>
+
+```
+![img_9.png](img_9.png)
