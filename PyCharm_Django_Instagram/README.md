@@ -252,3 +252,15 @@ URL : https://developers.google.com/fonts/docs/material_icons
 
 ```
 ![img_9.png](img_9.png)
+
+### 댓글 달기 
+```html
+     {#    댓글    #}
+            <div style="display:flex;flex-direction: row;align-items: center; border-top: solid 1px gray">
+                <input
+                    type="text" class="form-control" style="box-shadow: none; border: none; outline: none"
+                    placeholder="댓글달기...">
+            </div>
+```
+
+![img_10.png](img_10.png)
