@@ -264,3 +264,67 @@ URL : https://developers.google.com/fonts/docs/material_icons
 ```
 
 ![img_10.png](img_10.png)
+
+## 0325
+### 오른쪽 파트 작업 시작 
+오른쪽 부분의 작업을 시작 했으며 위쪽에서 profile 코드를 복사 붙여 놓기 이후 CSS를 수정 
+![img_11.png](img_11.png)
+```html
+    <div style="width:300px; height: 1000px;left: 61%; position: fixed">
+        <div>
+            <div style="display: flex; flex-direction: row; align-items: center; margin: 0 20px">
+                <div class="box" style="width: 70px; height: 70px">
+                    <img class="profile"
+                         src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMTdfMzkg/MDAxNDg3MzEyMTgxNDQz.aJoisDHrv1Hf-8CNjG08pXc4101oJ5QyXSrfs9BhFbMg.j3s70ybCD2siOuue7g0v2oUHEhMs3maIfw9Y9C7Wzhcg.JPEG.fly5885/10_%EA%B7%80%EC%97%BD%EA%B3%A0%EC%9B%83%EA%B8%B4%EA%B3%A0%EC%96%91%EC%9D%B4%EC%82%AC%EC%A7%84_%281%29.jpg?type=w800">
+                </div>
+                <div style="margin-left: 10px; text-align: left">
+                    <div style="font-weight: bold">
+                        Min's
+                    </div>
+                    <div style="color: gray">
+                        Choi.Minjun
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+```
+
+### 회원님을 위한 추천 추가 
+![img_12.png](img_12.png)
+```html
+        <div style=" display: flex; flex-direction: row; justify-content: space-between">
+            <div style="font-weight: bold; color: gray">
+                회원님을 위한 추천
+            </div>
+            <div>
+                <a href="#" style="font-weight: bold;color: black;text-decoration: none">
+                    모두 보기
+                </a>
+            </div>
+        </div>
+
+```
+### 추천인 추가 -여러개를 추가
+![img_13.png](img_13.png)
+```html
+           {#  추천인 추가 #}
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+            {#      첫번째 구룹      #}
+            <div style="display: flex; flex-direction: row; ">
+                <div class="box" style="width: 40px; height: 40px">
+                    <img class="profile"
+                         src="https://mblogthumb-phinf.pstatic.net/20150202_109/chaejhh_1422874976828t6qvY_JPEG/%3F%3F%3F%96A%3F%3F_snkg2638_edit.jpg?type=w2">
+                </div>
+                <div style="margin-left: 10px; text-align: left">
+                    <div style="font-weight: bold">hitosi</div>
+                    <div style="color: gray">나의 최고의 술친구</div>
+                </div>
+            </div>
+            {#    두번째 구룹    #}
+            <div><a href="#" style="font-weight: bold;text-decoration: none"> 팔로우</a></div>
+        </div>
+
+```
+#여기 까지는 더미 데이터 이다. 이후 부터 본격적인 작업에 들어 간다.
