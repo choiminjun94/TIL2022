@@ -167,3 +167,28 @@ URL : https://developers.google.com/fonts/docs/material_icons
     </div>
 </nav>
 ```
+## 0324
+### 이미지 동그랗게 만들기
+```
+ <style>
+        .box {
+            width: 70px;
+            height: 70px;
+            border-radius: 70%;
+            overflow: hidden;
+        }
+        .profile {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+</style>  
+```
+```html
+  {# 이미지 동그랗게 #}
+            <div>
+                <div class="box" >
+                    <img class="profile" src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMTdfMzkg/MDAxNDg3MzEyMTgxNDQz.aJoisDHrv1Hf-8CNjG08pXc4101oJ5QyXSrfs9BhFbMg.j3s70ybCD2siOuue7g0v2oUHEhMs3maIfw9Y9C7Wzhcg.JPEG.fly5885/10_%EA%B7%80%EC%97%BD%EA%B3%A0%EC%9B%83%EA%B8%B4%EA%B3%A0%EC%96%91%EC%9D%B4%EC%82%AC%EC%A7%84_%281%29.jpg?type=w800">
+                </div>
+            </div>
+```

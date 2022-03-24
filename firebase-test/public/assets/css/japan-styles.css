@@ -1,6 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Shippori+Mincho&display=swap');/*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
   --font-semi: 600;
@@ -11,7 +11,9 @@
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
-  --body-font: 'Poppins', sans-serif;
+  /* --body-font: Hi Melody, cursive, "Shippori Mincho", serif; */
+  --body-font: 'Hi Melody', cursive;
+  --body-font: 'Shippori Mincho', serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
