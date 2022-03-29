@@ -14,8 +14,3 @@ const loginButton = loginForm.querySelector("button");
 // const loginInput1 = loginForm.querySelector("#login-form input");
 // const loginButton2 = loginForm.querySelector("#login-form button");
 
-function onLoginBtnClick(){
-
-}
-
-loginButton.addEventListener("click", onLoginBtnClick)
