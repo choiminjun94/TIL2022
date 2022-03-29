@@ -141,6 +141,7 @@ function onLoginSubmit(evnet){
     
     evnet.preventDefault();
     console.log(loginInput.value);
+    console.log(event);
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
@@ -150,6 +151,9 @@ loginForm.addEventListener("submit", onLoginSubmit);
 ()안에 있는걸 argument라고 한다. 
 
 >preventDefault는 어떤 event의 기본행위든 발생 되지 않게 해준다.
+>콘솔 값을 캡쳐 하였다. 
+
+![image](https://user-images.githubusercontent.com/60457431/160620106-613aeefa-cacb-472d-b60e-ed7b07ab0156.png)
 
 
 
