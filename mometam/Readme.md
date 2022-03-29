@@ -23,7 +23,7 @@
 > 여기에는 input과 button을 id="login-form에 감싸 주었다. 
 
 ### <span style="color:pink">JS 전체 소스 </span>
-<br>
+
 ```
 const loginForm = document.getElementById("login-form");
 
