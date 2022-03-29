@@ -7,10 +7,21 @@
 const loginForm = document.getElementById("login-form");
 
 // input과 button을 끌어오기
-const loginInput = loginForm.querySelector("input");
+const loginInput = loginForm.querySelector("input"); 
 const loginButton = loginForm.querySelector("button");
 
 // 또다른 표현 
 // const loginInput1 = loginForm.querySelector("#login-form input");
 // const loginButton2 = loginForm.querySelector("#login-form button");
+
+// ()을 더하면 브라우저가 보자마자 자동으로 이 function을 실행 시킨다. .
+// ()안에 있는걸 argument라고 한다. 
+function onLoginSubmit(evnet){
+    // preventDefault는 어떤 event의 기본행위든 발생 되지 않게 해준다.
+    evnet.preventDefault();
+    console.log(loginInput.value);
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
+
 

@@ -1,5 +1,5 @@
 # 0326 JS Login
-### <span style="color:pink">HTML 전체 소스 </span>
+## <span style="color:pink">HTML 전체 소스 </span>
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@
 ```
 > 여기에는 input과 button을 id="login-form에 감싸 주었다. 
 
-### <span style="color:pink">JS 전체 소스 </span>
+## <span style="color:pink">JS 전체 소스 </span>
 
 ```
 const loginForm = document.getElementById("login-form");
@@ -65,7 +65,7 @@ const loginButton2 = loginForm.querySelector("#login-form button");
 
 ```
 
-### 버튼 클릭 JS 
+## 버튼 클릭 JS 
 > 버튼을 클릭 했을때 다른 기능을 추가하고 싶으면 JS에 입력하면 된다.<br> 
 예를들면 아무값이 없거나 길이를 초과 했을때이다. <br>
 그에 관련된 코드를 하기에 작성 하겠다. 
@@ -112,10 +112,44 @@ loginButton.addEventListener("click", onLoginBtnClick)
 </html>
 
 ```
-## 아까와 가장 큰 변경점은 form이 생긴 것이다. <br>
+### 아까와 가장 큰 변경점은 form이 생긴 것이다. <br>
 > input 값은 경우 form안에 넣어주어야 한다. 넣어주지 않아도 작동은 되지만 그렇지 않으면 input의 길이나 아무것도 넣지 않는 상황을 아까와 같이 전부 JS에 입력 해주어야 한다. <br>
 
 
+## submit Event
+```
+const loginForm = document.getElementById("login-form");
+
+// input과 button을 끌어오기
+const loginInput = loginForm.querySelector("input"); 
+const loginButton = loginForm.querySelector("button");
+
+function onLoginSubmit(){
+    const username = loginInput.value;
+    console.log(username);
+}
+
+loginForm.addEventListener("submit", onLoginSubmit); 
+```
+
+위와 같이 작업을 하면 Submit Event는 작업이 된것을 확인 가능 하다. 
+하지만 아직 못한게 있다면 새로고침 방지 이벤트 이다. 
+
+```
+
+function onLoginSubmit(evnet){
+    
+    evnet.preventDefault();
+    console.log(loginInput.value);
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
+
+```
+> function의 ()을 더하면 브라우저가 보자마자 자동으로 이 function을 실행 시킨다.<br>
+()안에 있는걸 argument라고 한다. 
+
+>preventDefault는 어떤 event의 기본행위든 발생 되지 않게 해준다.
 
 
 
