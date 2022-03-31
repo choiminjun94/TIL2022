@@ -33,8 +33,10 @@ function onLoginSubmit(evnet){
     // classList 찾아보기
     loginForm.classList.add(hidden_ClassName)
     console.log(uesrname);
-    // 이것만 사용하면 hidden class가 적용 되기에 화면상에 보이지 않는다.
-    greeting.innerText = "Hello " + uesrname;
+    // 이것만 사용하면 hidden class가 적용 되기에 화면상에 보이지 않는다. - Line37에 대한 설명
+    // greeting.innerText = "Hello " + uesrname;
+    // Line 37과 같은 표현식이다. ``를 백틱이라고 한다.
+    greeting.innerText = `안녕하세요 ${uesrname}`;
     greeting.classList.remove(hidden_ClassName)
 }
 
