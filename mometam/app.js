@@ -21,16 +21,21 @@ const link  = document.querySelector("a");
 // ()안에 있는걸 argument라고 한다. 
 function onLoginSubmit(evnet){
     // preventDefault는 어떤 event의 기본행위든 발생 되지 않게 해준다.
+    // 브라우저의 동작을 허용하지 않고 막아버린다.
     evnet.preventDefault();
     console.log(event);
     console.log(loginInput.value);
     
 }
 
-function handleLinkClick(){
-    alert("click");
+function handleLinkClick(event){
+    // preventDefault는 어떤 event의 기본행위든 발생 되지 않게 해준다.
+    // 브라우저의 동작을 허용하지 않고 막아버린다.
+    event.preventDefault();
+    console.log(event);
 }
 
+// preventDefault를 사용 시 addEventListener 안에 있는 함수는 직접 실행 하지 않는다.
 loginForm.addEventListener("submit", onLoginSubmit);
 link.addEventListener("click", handleLinkClick)
-
+ 

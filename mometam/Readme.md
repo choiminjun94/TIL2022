@@ -116,7 +116,7 @@ loginButton.addEventListener("click", onLoginBtnClick)
 > input 값은 경우 form안에 넣어주어야 한다. 넣어주지 않아도 작동은 되지만 그렇지 않으면 input의 길이나 아무것도 넣지 않는 상황을 아까와 같이 전부 JS에 입력 해주어야 한다. <br>
 
 
-## submit Event
+## submit Event (preventDefault)
 ```
 const loginForm = document.getElementById("login-form");
 
@@ -155,6 +155,20 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 ![image](https://user-images.githubusercontent.com/60457431/160620106-613aeefa-cacb-472d-b60e-ed7b07ab0156.png)
 
+### Click Event (preventDefault)
+```
+function handleLinkClick(event){
+  
+    event.preventDefault();
+    console.log(event);
+}
+
+link.addEventListener("click", handleLinkClick)
+```
+> 이전에 사용 한 preventDefault를 다시 사용하였다. <br> 
+이는 브라우저의 그 어떠한 동작도 막아 버린다.
+
+> 이렇게 하면 addEventListener 안에 있는 함수는 직접 실행 하지 않는다.
 
 
 
