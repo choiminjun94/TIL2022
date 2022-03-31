@@ -10,6 +10,9 @@ const loginForm = document.getElementById("login-form");
 const loginInput = loginForm.querySelector("input"); 
 const loginButton = loginForm.querySelector("button");
 
+const link  = document.querySelector("a");
+
+
 // 또다른 표현 
 // const loginInput1 = loginForm.querySelector("#login-form input");
 // const loginButton2 = loginForm.querySelector("#login-form button");
@@ -19,9 +22,15 @@ const loginButton = loginForm.querySelector("button");
 function onLoginSubmit(evnet){
     // preventDefault는 어떤 event의 기본행위든 발생 되지 않게 해준다.
     evnet.preventDefault();
+    console.log(event);
     console.log(loginInput.value);
+    
+}
+
+function handleLinkClick(){
+    alert("click");
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
-
+link.addEventListener("click", handleLinkClick)
 
