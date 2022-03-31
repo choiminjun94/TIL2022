@@ -170,6 +170,55 @@ link.addEventListener("click", handleLinkClick)
 
 > 이렇게 하면 addEventListener 안에 있는 함수는 직접 실행 하지 않는다.
 
+### 유저이름 가져오기
+
+> input에 값을 입력시 Input 창이 없어지게 해야 한다. <br>
+
+CSS 추가
+```
+.hidden{
+    /* 요소를 숨기게 된다. */
+    display: none;
+}
+
+```
+JS 추가
+```
+...
+// Hidden Css를 변수 처리
+const hidden_ClassName = "hidden"
+...
+// username에 loginInput.value값을 저장
+const uesrname = loginInput.value;
+
+// classList 찾아보기
+loginForm.classList.add(hidden_ClassName)
+console.log(uesrname);
+
+```
+
+> 입력한 유저 이름 화면에 띄우게 하기
+
+HTML 
+```
+<Body>
+    ...
+    <h1 id="greeting" class="hidden"></h1>
+    ...
+</Body>
+```
+
+JS 
+```
+...
+const greeting = document.querySelector("#greeting"); 
+...
+greeting.innerText = `안녕하세요 ${uesrname}`;
+greeting.classList.remove(hidden_ClassName)
+
+```
+
+
 
 
 
