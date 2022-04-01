@@ -5,6 +5,7 @@
   "dependencies": {
     "Microsoft.AspNet.SignalR.Client": "[2.4.3]",
     "UiPath.Excel.Activities": "[2.11.4]",
+    "UiPath.IntelligentOCR.Activities": "[5.0.2]",
     "UiPath.Mail.Activities": "[1.12.3]",
     "UiPath.Python.Activities": "[1.6.0]",
     "UiPath.System.Activities": "[21.10.4]",

@@ -216,6 +216,99 @@
         "C:\\Users\\1020a\\.nuget\\packages\\uipath.webapi.activities/1.9.2\\lib/net461/UiPath.Web.dll"
       ],
       "Path": "C:\\Users\\1020a\\.nuget\\packages\\uipath.webapi.activities\\1.9.2"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.IntelligentOCR.Activities",
+        "Version": "5.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\bitmiracle.docotic.pdf/7.5.11645\\lib/net46/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\bitmiracle.libtiff.net/2.4.649\\lib/net40/BitMiracle.LibTiff.NET.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\fsharp.core/4.7.1\\lib/net45/FSharp.Core.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\microsoft.xaml.behaviors.wpf/1.1.3\\lib/net45/Microsoft.Xaml.Behaviors.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\ntextcat/0.3.65\\lib/netstandard2.0/NTextCat.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\polly/7.1.0\\lib/netstandard2.0/Polly.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.buffers/4.5.1\\lib/net461/System.Buffers.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.collections.immutable/5.0.0\\lib/net461/System.Collections.Immutable.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.drawing.common/5.0.2\\lib/net461/System.Drawing.Common.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.drawing.primitives/4.3.0\\lib/net45/System.Drawing.Primitives.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.io.abstractions/3.0.10\\lib/net40/System.IO.Abstractions.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.io.compression/4.3.0\\runtimes/win/lib/net46/System.IO.Compression.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.memory/4.5.4\\lib/net461/System.Memory.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.net.http/4.3.4\\runtimes/win/lib/net46/System.Net.Http.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.numerics.vectors/4.5.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation/4.3.0\\runtimes/win/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.algorithms/4.3.0\\runtimes/win/lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.encoding/4.3.0\\runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.primitives/4.3.0\\lib/net46/System.Security.Cryptography.Primitives.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.x509certificates/4.3.0\\runtimes/win/lib/net461/System.Security.Cryptography.X509Certificates.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.threading.tasks.dataflow/5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\tinycsvparser/2.5.2\\lib/net45/TinyCsvParser.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/CefSharp.BrowserSubprocess.Core.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/CefSharp.Core.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/CefSharp.Core.Runtime.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/CefSharp.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/CefSharp.Wpf.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/chrome_elf.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/d3dcompiler_47.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/libcef.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/libEGL.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/libGLESv2.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/msvcp140.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/UiPath.CefSharpBundle.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/vcruntime140.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/swiftshader/libEGL.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle/1.6.0\\lib/net452/swiftshader/libGLESv2.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.documentprocessing.contracts/1.11.0\\lib/net461/UiPath.DocumentProcessing.Contracts.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/concrt140.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/cvextern.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/Emgu.CV.Bitmap.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/Emgu.CV.Platform.NetStandard.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/msvcp140.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/msvcp140_1.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/msvcp140_2.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/msvcp140_atomic_wait.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/msvcp140_codecvt_ids.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.DocumentUnderstanding.Contracts.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.DocumentUnderstanding.Digitizer.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.DocumentUnderstanding.Persistence.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.IntelligentOCR.Activities.Design.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.IntelligentOCR.Activities.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.IntelligentOCR.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.ClassificationStation.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.ClassificationStation.Host.Local.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.Data.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.Digitization.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.DocumentClassification.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.Host.Local.Infrastructure.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.ImageProcessing.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.Language.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.Localization.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.OCR.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.OutOfProcessUi.Common.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.PDF.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.PositionBasedExtraction.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.TableProcessing.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.TaxonomyManager.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.TaxonomyManager.Host.Local.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.Telemetry.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.Utils.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.ValidationStation.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.ValidationStation.Host.Local.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.ValidationStation.Integration.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.ValidationStation.ValueParsing.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/UiPath.SmartData.WPF.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities/5.0.2\\lib/net461/vcruntime140.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.ocr.contracts/2.9.1\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.telemetry.client/1.5.3\\lib/net461/TelemetryClient.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.wordstonumbers/1.0.0\\lib/netstandard2.0/Numsense.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2"
     }
   ],
   "Conflicts": [],
@@ -223,6 +316,16 @@
     "AvalonEdit": {
       "Id": "AvalonEdit",
       "Version": "6.0.1",
+      "Dependencies": []
+    },
+    "BitMiracle.Docotic.Pdf": {
+      "Id": "BitMiracle.Docotic.Pdf",
+      "Version": "7.5.11645",
+      "Dependencies": []
+    },
+    "BitMiracle.LibTiff.NET": {
+      "Id": "BitMiracle.LibTiff.NET",
+      "Version": "2.4.649",
       "Dependencies": []
     },
     "ClosedXML": {
@@ -252,6 +355,11 @@
     "DocumentFormat.OpenXml": {
       "Id": "DocumentFormat.OpenXml",
       "Version": "2.5.0",
+      "Dependencies": []
+    },
+    "FSharp.Core": {
+      "Id": "FSharp.Core",
+      "Version": "4.7.1",
       "Dependencies": []
     },
     "Google.Apis": {
@@ -744,6 +852,11 @@
         }
       ]
     },
+    "Microsoft.Xaml.Behaviors.Wpf": {
+      "Id": "Microsoft.Xaml.Behaviors.Wpf",
+      "Version": "1.1.3",
+      "Dependencies": []
+    },
     "MimeKit": {
       "Id": "MimeKit",
       "Version": "2.10.0",
@@ -886,6 +999,16 @@
         }
       ]
     },
+    "NTextCat": {
+      "Id": "NTextCat",
+      "Version": "0.3.65",
+      "Dependencies": []
+    },
+    "Polly": {
+      "Id": "Polly",
+      "Version": "7.1.0",
+      "Dependencies": []
+    },
     "Portable.BouncyCastle": {
       "Id": "Portable.BouncyCastle",
       "Version": "1.8.8",
@@ -926,9 +1049,24 @@
       "Version": "4.5.0",
       "Dependencies": []
     },
+    "System.Drawing.Common": {
+      "Id": "System.Drawing.Common",
+      "Version": "5.0.2",
+      "Dependencies": []
+    },
+    "System.Drawing.Primitives": {
+      "Id": "System.Drawing.Primitives",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
     "System.IO.Abstractions": {
       "Id": "System.IO.Abstractions",
       "Version": "3.0.10",
+      "Dependencies": []
+    },
+    "System.IO.Compression": {
+      "Id": "System.IO.Compression",
+      "Version": "4.3.0",
       "Dependencies": []
     },
     "System.IO.Pipelines": {
@@ -972,6 +1110,16 @@
         }
       ]
     },
+    "System.Net.Http": {
+      "Id": "System.Net.Http",
+      "Version": "4.3.4",
+      "Dependencies": [
+        {
+          "Item1": "System.Security.Cryptography.X509Certificates",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
     "System.Numerics.Vectors": {
       "Id": "System.Numerics.Vectors",
       "Version": "4.5.0",
@@ -987,6 +1135,11 @@
         }
       ]
     },
+    "System.Runtime": {
+      "Id": "System.Runtime",
+      "Version": "4.3.1",
+      "Dependencies": []
+    },
     "System.Runtime.Caching": {
       "Id": "System.Runtime.Caching",
       "Version": "5.0.0",
@@ -995,6 +1148,11 @@
     "System.Runtime.CompilerServices.Unsafe": {
       "Id": "System.Runtime.CompilerServices.Unsafe",
       "Version": "4.7.1",
+      "Dependencies": []
+    },
+    "System.Runtime.InteropServices.RuntimeInformation": {
+      "Id": "System.Runtime.InteropServices.RuntimeInformation",
+      "Version": "4.3.0",
       "Dependencies": []
     },
     "System.Runtime.WindowsRuntime": {
@@ -1009,6 +1167,40 @@
         {
           "Item1": "System.Runtime.WindowsRuntime",
           "Item2": "[4.6.0, )"
+        }
+      ]
+    },
+    "System.Security.Cryptography.Algorithms": {
+      "Id": "System.Security.Cryptography.Algorithms",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Security.Cryptography.Primitives",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Security.Cryptography.Encoding": {
+      "Id": "System.Security.Cryptography.Encoding",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Security.Cryptography.Primitives": {
+      "Id": "System.Security.Cryptography.Primitives",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Security.Cryptography.X509Certificates": {
+      "Id": "System.Security.Cryptography.X509Certificates",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Security.Cryptography.Algorithms",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Encoding",
+          "Item2": "[4.3.0, )"
         }
       ]
     },
@@ -1100,6 +1292,11 @@
       "Version": "4.5.0",
       "Dependencies": []
     },
+    "TinyCsvParser": {
+      "Id": "TinyCsvParser",
+      "Version": "2.5.2",
+      "Dependencies": []
+    },
     "UiPath": {
       "Id": "UiPath",
       "Version": "21.10.34.30369",
@@ -1114,6 +1311,11 @@
           "Item2": "[11.0.2, )"
         }
       ]
+    },
+    "UiPath.CefSharpBundle": {
+      "Id": "UiPath.CefSharpBundle",
+      "Version": "1.6.0",
+      "Dependencies": []
     },
     "UiPath.ConnectionClient": {
       "Id": "UiPath.ConnectionClient",
@@ -1134,6 +1336,16 @@
         {
           "Item1": "UiPath.Telemetry.Client",
           "Item2": "[1.5.3, )"
+        }
+      ]
+    },
+    "UiPath.DocumentProcessing.Contracts": {
+      "Id": "UiPath.DocumentProcessing.Contracts",
+      "Version": "1.11.0",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
         }
       ]
     },
@@ -1167,6 +1379,108 @@
       "Id": "UiPath.ImageProcessing",
       "Version": "21.10.2",
       "Dependencies": []
+    },
+    "UiPath.IntelligentOCR.Activities": {
+      "Id": "UiPath.IntelligentOCR.Activities",
+      "Version": "5.0.2",
+      "Dependencies": [
+        {
+          "Item1": "BitMiracle.Docotic.Pdf",
+          "Item2": "[7.5.11645, )"
+        },
+        {
+          "Item1": "BitMiracle.LibTiff.NET",
+          "Item2": "[2.4.649, )"
+        },
+        {
+          "Item1": "FSharp.Core",
+          "Item2": "[4.7.1, )"
+        },
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.7.0, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.21, )"
+        },
+        {
+          "Item1": "Microsoft.Xaml.Behaviors.Wpf",
+          "Item2": "[1.1.3, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "NTextCat",
+          "Item2": "[0.3.65, )"
+        },
+        {
+          "Item1": "Polly",
+          "Item2": "[7.1.0, )"
+        },
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.Drawing.Common",
+          "Item2": "[5.0.2, )"
+        },
+        {
+          "Item1": "System.Drawing.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.Abstractions",
+          "Item2": "[3.0.10, )"
+        },
+        {
+          "Item1": "System.IO.Compression",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.Http",
+          "Item2": "[4.3.4, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.1, )"
+        },
+        {
+          "Item1": "System.Runtime.InteropServices.RuntimeInformation",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "TinyCsvParser",
+          "Item2": "[2.5.2, )"
+        },
+        {
+          "Item1": "UiPath.CefSharpBundle",
+          "Item2": "[1.6.0, )"
+        },
+        {
+          "Item1": "UiPath.DocumentProcessing.Contracts",
+          "Item2": "[1.11.0, )"
+        },
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.9.1, )"
+        },
+        {
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[1.5.3, )"
+        },
+        {
+          "Item1": "UiPath.WordsToNumbers",
+          "Item2": "[1.0.0, )"
+        }
+      ]
     },
     "UiPath.Mail.Activities": {
       "Id": "UiPath.Mail.Activities",
@@ -1421,6 +1735,16 @@
           "Item2": "[106.6.10, )"
         }
       ]
+    },
+    "UiPath.WordsToNumbers": {
+      "Id": "UiPath.WordsToNumbers",
+      "Version": "1.0.0",
+      "Dependencies": [
+        {
+          "Item1": "FSharp.Core",
+          "Item2": "[4.7.1, )"
+        }
+      ]
     }
   },
   "AllPackages": [
@@ -1433,6 +1757,26 @@
         "C:\\Users\\1020a\\.nuget\\packages\\avalonedit\\6.0.1\\lib\\net45\\ICSharpCode.AvalonEdit.dll"
       ],
       "Path": "C:\\Users\\1020a\\.nuget\\packages\\avalonedit\\6.0.1"
+    },
+    {
+      "Package": {
+        "Id": "BitMiracle.Docotic.Pdf",
+        "Version": "7.5.11645"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\bitmiracle.docotic.pdf\\7.5.11645\\lib\\net46\\BitMiracle.Docotic.Pdf.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\bitmiracle.docotic.pdf\\7.5.11645"
+    },
+    {
+      "Package": {
+        "Id": "BitMiracle.LibTiff.NET",
+        "Version": "2.4.649"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\lib\\net40\\BitMiracle.LibTiff.NET.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649"
     },
     {
       "Package": {
@@ -1463,6 +1807,16 @@
         "C:\\Users\\1020a\\.nuget\\packages\\documentformat.openxml\\2.5.0\\lib\\DocumentFormat.OpenXml.dll"
       ],
       "Path": "C:\\Users\\1020a\\.nuget\\packages\\documentformat.openxml\\2.5.0"
+    },
+    {
+      "Package": {
+        "Id": "FSharp.Core",
+        "Version": "4.7.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\fsharp.core\\4.7.1\\lib\\net45\\FSharp.Core.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\fsharp.core\\4.7.1"
     },
     {
       "Package": {
@@ -1867,6 +2221,16 @@
     },
     {
       "Package": {
+        "Id": "Microsoft.Xaml.Behaviors.Wpf",
+        "Version": "1.1.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.3\\lib\\net45\\Microsoft.Xaml.Behaviors.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.3"
+    },
+    {
+      "Package": {
         "Id": "MimeKit",
         "Version": "2.10.0"
       },
@@ -1988,6 +2352,26 @@
     },
     {
       "Package": {
+        "Id": "NTextCat",
+        "Version": "0.3.65"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\ntextcat\\0.3.65\\lib\\netstandard2.0\\NTextCat.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\ntextcat\\0.3.65"
+    },
+    {
+      "Package": {
+        "Id": "Polly",
+        "Version": "7.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\polly\\7.1.0\\lib\\netstandard2.0\\Polly.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\polly\\7.1.0"
+    },
+    {
+      "Package": {
         "Id": "Portable.BouncyCastle",
         "Version": "1.8.8"
       },
@@ -2058,6 +2442,26 @@
     },
     {
       "Package": {
+        "Id": "System.Drawing.Common",
+        "Version": "5.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\system.drawing.common\\5.0.2\\lib\\net461\\System.Drawing.Common.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.drawing.common\\5.0.2"
+    },
+    {
+      "Package": {
+        "Id": "System.Drawing.Primitives",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\lib\\net45\\System.Drawing.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.drawing.primitives\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "System.IO.Abstractions",
         "Version": "3.0.10"
       },
@@ -2065,6 +2469,16 @@
         "C:\\Users\\1020a\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib\\net40\\System.IO.Abstractions.dll"
       ],
       "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.io.abstractions\\3.0.10"
+    },
+    {
+      "Package": {
+        "Id": "System.IO.Compression",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\system.io.compression\\4.3.0\\lib\\net46\\System.IO.Compression.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.io.compression\\4.3.0"
     },
     {
       "Package": {
@@ -2098,6 +2512,16 @@
     },
     {
       "Package": {
+        "Id": "System.Net.Http",
+        "Version": "4.3.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\system.net.http\\4.3.4\\lib\\net46\\System.Net.Http.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.net.http\\4.3.4"
+    },
+    {
+      "Package": {
         "Id": "System.Numerics.Vectors",
         "Version": "4.5.0"
       },
@@ -2115,6 +2539,16 @@
         "C:\\Users\\1020a\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\lib\\net461\\System.Reflection.Metadata.dll"
       ],
       "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.reflection.metadata\\5.0.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Runtime",
+        "Version": "4.3.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\system.runtime\\4.3.1\\lib\\net45\\_._"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.runtime\\4.3.1"
     },
     {
       "Package": {
@@ -2138,6 +2572,16 @@
     },
     {
       "Package": {
+        "Id": "System.Runtime.InteropServices.RuntimeInformation",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.3.0\\lib\\net45\\System.Runtime.InteropServices.RuntimeInformation.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "System.Runtime.WindowsRuntime",
         "Version": "4.6.0"
       },
@@ -2155,6 +2599,46 @@
         "C:\\Users\\1020a\\.nuget\\packages\\system.runtime.windowsruntime.ui.xaml\\4.6.0\\lib\\net45\\_._"
       ],
       "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.runtime.windowsruntime.ui.xaml\\4.6.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.Algorithms",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\lib\\net461\\System.Security.Cryptography.Algorithms.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.Encoding",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\lib\\net46\\System.Security.Cryptography.Encoding.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.Primitives",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\lib\\net46\\System.Security.Cryptography.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.X509Certificates",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\lib\\net461\\System.Security.Cryptography.X509Certificates.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0"
     },
     {
       "Package": {
@@ -2228,6 +2712,16 @@
     },
     {
       "Package": {
+        "Id": "TinyCsvParser",
+        "Version": "2.5.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\tinycsvparser\\2.5.2\\lib\\net45\\TinyCsvParser.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\tinycsvparser\\2.5.2"
+    },
+    {
+      "Package": {
         "Id": "UiPath",
         "Version": "21.10.34.30369"
       },
@@ -2248,6 +2742,19 @@
     },
     {
       "Package": {
+        "Id": "UiPath.CefSharpBundle",
+        "Version": "1.6.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle\\1.6.0\\lib\\net452\\CefSharp.Core.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle\\1.6.0\\lib\\net452\\CefSharp.Core.Runtime.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle\\1.6.0\\lib\\net452\\CefSharp.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle\\1.6.0\\lib\\net452\\CefSharp.Wpf.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\uipath.cefsharpbundle\\1.6.0"
+    },
+    {
+      "Package": {
         "Id": "UiPath.ConnectionClient",
         "Version": "1.0.0-20210921.1"
       },
@@ -2255,6 +2762,16 @@
         "C:\\Users\\1020a\\.nuget\\packages\\uipath.connectionclient\\1.0.0-20210921.1\\lib\\net461\\ConnectionClient.dll"
       ],
       "Path": "C:\\Users\\1020a\\.nuget\\packages\\uipath.connectionclient\\1.0.0-20210921.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.DocumentProcessing.Contracts",
+        "Version": "1.11.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.11.0\\lib\\net461\\UiPath.DocumentProcessing.Contracts.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.11.0"
     },
     {
       "Package": {
@@ -2281,6 +2798,56 @@
         "C:\\Users\\1020a\\.nuget\\packages\\uipath.imageprocessing\\21.10.2\\lib\\net461\\UiPath.ImageProcessingInterop.dll"
       ],
       "Path": "C:\\Users\\1020a\\.nuget\\packages\\uipath.imageprocessing\\21.10.2"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.IntelligentOCR.Activities",
+        "Version": "5.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\concrt140.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\cvextern.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\Emgu.CV.Bitmap.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\Emgu.CV.Platform.NetStandard.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\msvcp140.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\msvcp140_1.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\msvcp140_2.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\msvcp140_atomic_wait.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\msvcp140_codecvt_ids.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.DocumentUnderstanding.Contracts.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.DocumentUnderstanding.Digitizer.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.DocumentUnderstanding.Persistence.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.IntelligentOCR.Activities.Design.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.IntelligentOCR.Activities.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.IntelligentOCR.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.ClassificationStation.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.ClassificationStation.Host.Local.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.Data.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.Digitization.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.DocumentClassification.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.Host.Local.Infrastructure.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.ImageProcessing.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.Language.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.Localization.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.OCR.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.OutOfProcessUi.Common.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.OutOfProcessUi.Host.exe",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.PDF.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.PositionBasedExtraction.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.PositionBasedExtraction.TemplateManager.exe",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.TableProcessing.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.TaxonomyManager.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.TaxonomyManager.Host.Local.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.Telemetry.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.Utils.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.ValidationStation.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.ValidationStation.Host.Local.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.ValidationStation.Integration.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.ValidationStation.ValueParsing.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\UiPath.SmartData.WPF.dll",
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2\\lib\\net461\\vcruntime140.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\uipath.intelligentocr.activities\\5.0.2"
     },
     {
       "Package": {
@@ -2411,6 +2978,16 @@
         "C:\\Users\\1020a\\.nuget\\packages\\uipath.webapi.activities\\1.9.2\\lib\\net461\\UiPath.Web.dll"
       ],
       "Path": "C:\\Users\\1020a\\.nuget\\packages\\uipath.webapi.activities\\1.9.2"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.WordsToNumbers",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\1020a\\.nuget\\packages\\uipath.wordstonumbers\\1.0.0\\lib\\netstandard2.0\\Numsense.dll"
+      ],
+      "Path": "C:\\Users\\1020a\\.nuget\\packages\\uipath.wordstonumbers\\1.0.0"
     }
   ]
 }
