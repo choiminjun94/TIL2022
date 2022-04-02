@@ -27,11 +27,10 @@ function onLoginSubmit(evnet){
     evnet.preventDefault();
     // console.log(event);
     // console.log(loginInput.value);
-
+  // classList 찾아보기
+    loginForm.classList.add(hidden_ClassName)
     // username에 loginInput.value값을 저장
     const uesrname = loginInput.value;
-    // classList 찾아보기
-    loginForm.classList.add(hidden_ClassName)
     console.log(uesrname);
     // 이것만 사용하면 hidden class가 적용 되기에 화면상에 보이지 않는다. - Line37에 대한 설명
     // greeting.innerText = "Hello " + uesrname;
@@ -40,14 +39,9 @@ function onLoginSubmit(evnet){
     greeting.classList.remove(hidden_ClassName)
 }
 
-function handleLinkClick(event){
-    // preventDefault는 어떤 event의 기본행위든 발생 되지 않게 해준다.
-    // 브라우저의 동작을 허용하지 않고 막아버린다.
-    event.preventDefault();
-    console.log(event);
-}
 
 // preventDefault를 사용 시 addEventListener 안에 있는 함수는 직접 실행 하지 않는다.
 loginForm.addEventListener("submit", onLoginSubmit);
+
 // link.addEventListener("click", handleLinkClick)
 
