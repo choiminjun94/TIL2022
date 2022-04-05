@@ -220,12 +220,13 @@ greeting.classList.remove(hidden_ClassName)
 ![image](https://user-images.githubusercontent.com/60457431/161166931-513aa9ce-d043-4263-998f-c5ad6a730942.png)
 ![image](https://user-images.githubusercontent.com/60457431/161166947-2b37552f-9c6e-4f58-a4a3-9eac03007fb2.png)
 
+### 유저 이름 저장하기 
 
+> setItem을 사용시 local storage에 정보를 저장 할 수 있다.
 
-
-
-
-
-
+#### JS 코드
+```    
+localStorage.setItem("username", uesrname);
+```
 
 
