@@ -228,5 +228,6 @@ greeting.classList.remove(hidden_ClassName)
 ```    
 localStorage.setItem("username", uesrname);
 ```
+![image](https://user-images.githubusercontent.com/60457431/161863528-8a839546-460e-4ce3-8c94-02eb55f083e9.png)
 
 
