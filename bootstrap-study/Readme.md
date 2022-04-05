@@ -1,4 +1,4 @@
-## bootstrap 사이트
+## bootstrap 사이트 사용방법
 
 ### Bootstrap 적용
 > URL : https://getbootstrap.kr/

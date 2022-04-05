@@ -1,4 +1,4 @@
-# TIL2022
+# TIL2022 - 목록
 
 
 ## 01) portfolio 

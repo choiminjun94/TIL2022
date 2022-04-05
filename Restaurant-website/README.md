@@ -1,4 +1,6 @@
-# Responsive Ecommerce Website
+# 레스토랑 홈페이지 - 퍼블릿 연습
+
+### Responsive Ecommerce Website
 ## [Watch it on youtube](https://youtu.be/74UVy9gomVs)
 ### Responsive Ecommerce Website
 Beautiful responsive ecommerce website, it has multiple sections such as a home, featured products, new arrivals, and much more. Fully responsive and mobile first.
