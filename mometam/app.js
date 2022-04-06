@@ -17,7 +17,9 @@ const loginButton = document.querySelector("#login-form button");
 const greeting = document.querySelector("#greeting"); 
 
 // Hidden Css를 변수 처리
-const hidden_ClassName = "hidden"
+const hidden_ClassName = "hidden";
+// 변수 고정 
+const USERNAME_KEY = "username";
 
 // ()을 더하면 브라우저가 보자마자 자동으로 이 function을 실행 시킨다, ()안에 있는걸 argument라고 한다. 
 
@@ -38,10 +40,8 @@ function onLoginSubmit(evnet){
     // greeting.innerText = "Hello " + uesrname;
     
     // setItem을 사용시 local storage에 정보를 저장 할 수 있다.
-    localStorage.setItem("username", uesrname);
-    // Line 37과 같은 표현식이다. ``를 백틱이라고 한다.
-    greeting.innerText = `안녕하세요 ${uesrname}`;
-    greeting.classList.remove(hidden_ClassName)
+    localStorage.setItem(USERNAME_KEY, uesrname);
+    paintGreetings(username);
 }
 
 function handleLinkClick(event){
@@ -51,7 +51,23 @@ function handleLinkClick(event){
     console.log(event);
 }
 
-// preventDefault를 사용 시 addEventListener 안에 있는 함수는 직접 실행 하지 않는다.
-loginForm.addEventListener("submit", onLoginSubmit);
+function paintGreetings(username){
+    greeting.innerText = `Hello ${savedUesrname}`
+    greeting.classList.remove(hidden_ClassName)
+}
+
 // link.addEventListener("click", handleLinkClick)
 
+// local storeage에 유저정보 유무 확인
+// 아무값도 없을 시 null을 뱉어낸다.
+const savedUesrname = localStorage.getItem(USERNAME_KEY);
+console.log(savedUesrname);
+
+if(savedUesrname  === null){
+    // savedUesrname이 null이면 form의 hidden class을 삭제
+    loginForm.classList.remove(hidden_ClassName)
+    // preventDefault를 사용 시 addEventListener 안에 있는 함수는 직접 실행 하지 않는다. 
+    loginForm.addEventListener("submit", onLoginSubmit);
+} else{
+    paintGreetings(savedUesrname);
+}

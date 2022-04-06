@@ -232,4 +232,49 @@ localStorage.setItem("username", uesrname);
 ```
 ![image](https://user-images.githubusercontent.com/60457431/161863528-8a839546-460e-4ce3-8c94-02eb55f083e9.png)
 
+### 유저 이름 가져오기 
 
+> 먼저 HTML FORM을 수정 해야한다. 수정은 하기와 같이 진행 하였다.
+#### HTML 코드
+```
+<form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="what is your name">
+        <button>Login</button>
+</form>
+```
+>이전과 달라진건 class='hidden'을 추가 한것이다. <br>
+이는 처음부터 form의 값을 안보이게 하는것이다. <br>
+이렇게 한건 이후 JS소스에 설명 추가 하겠다. 
+
+변수 값 username이 계속 나와서 잘못 하면 오타가 날수 있기에 변수를 고정 할것이다. 
+> const USERNAME_KEY = "username";
+
+> 앞에서 HTML form을 초기부터 hidden을 한 이유는 값을 입력 받고 새로 고침을 해야 확인 하는 문제가 있었기 떄문이다. <br>
+이를 해결 하기 위해 userName이 아무것도 없을 시를 확인 해보니 "null" 값이 나왔다.<br>
+이제 이를 가지고 하기 코드를 작성 하였다. 
+
+```
+function paintGreetings(username){
+    greeting.innerText = `Hello ${savedUesrname}`
+    greeting.classList.remove(hidden_ClassName)
+}
+
+// link.addEventListener("click", handleLinkClick)
+
+// local storeage에 유저정보 유무 확인
+// 아무값도 없을 시 null을 뱉어낸다.
+const savedUesrname = localStorage.getItem(USERNAME_KEY);
+console.log(savedUesrname);
+
+if(savedUesrname  === null){
+    // savedUesrname이 null이면 form의 hidden class을 삭제
+    loginForm.classList.remove(hidden_ClassName)
+    // preventDefault를 사용 시 addEventListener 안에 있는 함수는 직접 실행 하지 않는다. 
+    loginForm.addEventListener("submit", onLoginSubmit);
+} else{
+    paintGreetings(savedUesrname);
+}
+
+```
+> else를 보면 paintGreetings이란 것이 나오게 되었다. <br>
+이는 윗부분에서 이름을 입력시 출력한것이 여러곳에서 반복적으로 나와서 funcation을 추가 한것이다. 
