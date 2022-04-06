@@ -245,7 +245,8 @@ localStorage.setItem("username", uesrname);
 
 
 >이전과 달라진건 class='hidden'을 추가 한것이다. <br>
-이는 처음부터 form의 값을 안보이게 하는것이다. <br>
+이는 처음부터 form의 값을 안보이게 하는것이다.
+
 ![image](https://user-images.githubusercontent.com/60457431/162089874-63854bef-0f79-4d6e-b068-b81658e96ae2.png)
 
 이렇게 한건 이후 JS소스에 설명 추가 하겠다. 
@@ -254,7 +255,8 @@ localStorage.setItem("username", uesrname);
 > const USERNAME_KEY = "username";
 
 > 앞에서 HTML form을 초기부터 hidden을 한 이유는 값을 입력 받고 새로 고침을 해야 확인 하는 문제가 있었기 떄문이다. <br>
-이를 해결 하기 위해 userName이 아무것도 없을 시를 확인 해보니 "null" 값이 나왔다.<br>
+이를 해결 하기 위해 userName이 아무것도 없을 시를 확인 해보니 "null" 값이 나왔다.
+
 ![image](https://user-images.githubusercontent.com/60457431/162089840-0dc8bcd2-e1ce-49ff-b4c8-2f21a458e2af.png)
 
 
@@ -286,11 +288,13 @@ if(savedUesrname  === null){
 > else를 보면 paintGreetings이란 것이 나오게 되었다. <br>
 이는 윗부분에서 이름을 입력시 출력한것이 여러곳에서 반복적으로 나와서 funcation을 추가 한것이다. 
 
-> if 부분 사진 추가 <br>
-![image](https://user-images.githubusercontent.com/60457431/162089975-f00d2487-f396-4698-9594-3e1a712f0b43.png)
+> if 부분 사진 추가
+
+![image](https://user-images.githubusercontent.com/60457431/162089975-f00d2487-f396-4698-9594-3e1a712f0b43.png)<br>
 ![image](https://user-images.githubusercontent.com/60457431/162090018-ceac6b52-adcb-4676-9078-02745334c319.png)
 
 > else 부분 사진 추가 <br>
+
 ![image](https://user-images.githubusercontent.com/60457431/162090105-a2bed88c-843c-4aae-8437-a01433f220ef.png)
 ![image](https://user-images.githubusercontent.com/60457431/162090154-a3145290-2894-4125-8d73-c0b93dd1681e.png)
 
