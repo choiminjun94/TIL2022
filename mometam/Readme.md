@@ -406,4 +406,5 @@ if(savedUesrname  === null){
 
 > 개발자 도구를 보면 username이라는 key와 그 값은 입력값이 있다.
 
+![image](https://user-images.githubusercontent.com/60457431/162334750-8677d992-03fa-4b27-a36d-74ed50790e07.png)
 
