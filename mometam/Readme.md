@@ -298,5 +298,112 @@ if(savedUesrname  === null){
 ![image](https://user-images.githubusercontent.com/60457431/162090105-a2bed88c-843c-4aae-8437-a01433f220ef.png)
 ![image](https://user-images.githubusercontent.com/60457431/162090154-a3145290-2894-4125-8d73-c0b93dd1681e.png)
 
+==========================================================================
+
+# Login 부분 복습 
+
+## HTML 전체 코드
+``` 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input는 div가 아닌 form안에 있어야 한다. -->
+    <!-- form 안에 input를 넣을 시 자동적으로 submit가 된다. -->
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="what is your name">
+        <button>Login</button>
+    </form>
+    <!-- 평시에는 보이지 않지만 form에서 input 값을 넣어줄시 그걸 여기에 입력 -->
+    <h1 id="greeting" class="hidden"></h1>
+    <!-- <a href="https://www.naver.com">go</a> -->
+    <script src="app.js"></script>
+</body>
+</html>
+``` 
+> 유저가 처음 앱을 열면 form과 h1은 CSS에 있는 hidden이라는 class때문에 숨져 진다. <br>
+
+## JS 전체 코드 
+```
+// querySelector를 사용시에는 대상이 id인지 명확히 설명 해야 한다.
+// querySelectot는 classname과 tagname 모두 검색이 가능하다. 
+
+// const loginForm = document.querySelector("#login-form");
+
+//문자열과 일치하는 id 속성을 가진 요소를 찾고, 이를 나타내는 Element 객체를 반환합니다. ID는 문서 내에서 유일해야 하기 때문에 특정 요소를 빠르게 찾을 때 유용
+const loginForm = document.getElementById("login-form");
+
+// input과 button을 끌어오기
+// const loginInput = loginForm.querySelector("input"); 
+// const loginButton = loginForm.querySelector("button");
+// const link  = document.querySelector("a");
+
+// 또다른 표현 
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
+const greeting = document.querySelector("#greeting"); 
+
+// Hidden Css를 변수 처리
+const hidden_ClassName = "hidden";
+// 변수 고정 
+const USERNAME_KEY = "username";
+
+// ()을 더하면 브라우저가 보자마자 자동으로 이 function을 실행 시킨다, ()안에 있는걸 argument라고 한다. 
+
+// 0408 설명 추가
+// 이부분은 아무것도 보내지 않아도 된다.
+function onLoginSubmit(evnet){
+    // preventDefault는 어떤 event의 기본행위든 발생 되지 않게 해준다.
+    // 브라우저의 동작을 허용하지 않고 막아버린다.
+    evnet.preventDefault();
+    // classList 찾아보기
+    loginForm.classList.add(hidden_ClassName)    
+    // setItem을 사용시 local storage에 정보를 저장 할 수 있다.
+    localStorage.setItem(USERNAME_KEY, loginInput.value);
+    // local storage에 뭔가를 저장하면 paintGreetings를 호출 하는 순간에 그 유저정보는 이미 local storage(USERNAME_KEY)에 저장되어 있다.
+    paintGreetings();
+}
+
+function handleLinkClick(event){
+    // preventDefault는 어떤 event의 기본행위든 발생 되지 않게 해준다.
+    // 브라우저의 동작을 허용하지 않고 막아버린다.
+    event.preventDefault();
+    console.log(event);
+}  
+
+function paintGreetings(){
+    const username = localStorage.getItem(USERNAME_KEY); 
+    greeting.innerText = `Hello ${savedUesrname}`
+    greeting.classList.remove(hidden_ClassName)
+}
+
+// link.addEventListener("click", handleLinkClick)
+
+// local storeage에 유저정보 유무 확인
+// 아무값도 없을 시 null을 뱉어낸다.
+const savedUesrname = localStorage.getItem(USERNAME_KEY);
+console.log(savedUesrname);
+
+if(savedUesrname  === null){
+    // savedUesrname이 null이면 form의 hidden class을 삭제
+    loginForm.classList.remove(hidden_ClassName)
+    // preventDefault를 사용 시 addEventListener 안에 있는 함수는 직접 실행 하지 않는다. 
+    loginForm.addEventListener("submit", onLoginSubmit);
+} else{
+    paintGreetings();
+}
+``` 
+
+> 이후 const savedUesrname = localStorage.getItem(USERNAME_KEY);의 USERNAME_KEY를 가지고 local storage를 확인 한다.<br >
+
+사진 추가　
+
+> 개발자 도구를 보면 username이라는 key와 그 값은 입력값이 있다.
 
 

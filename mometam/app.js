@@ -23,25 +23,18 @@ const USERNAME_KEY = "username";
 
 // ()을 더하면 브라우저가 보자마자 자동으로 이 function을 실행 시킨다, ()안에 있는걸 argument라고 한다. 
 
+// 0408 설명 추가
+// 이부분은 아무것도 보내지 않아도 된다.
 function onLoginSubmit(evnet){
     // preventDefault는 어떤 event의 기본행위든 발생 되지 않게 해준다.
     // 브라우저의 동작을 허용하지 않고 막아버린다.
     evnet.preventDefault();
-    // console.log(event);
-    // console.log(loginInput.value);
-
-    // username에 loginInput.value값을 저장
-    const uesrname = loginInput.value;
     // classList 찾아보기
-    loginForm.classList.add(hidden_ClassName)
-    console.log(uesrname);
-    
-    // 이것만 사용하면 hidden class가 적용 되기에 화면상에 보이지 않는다. - Line37에 대한 설명
-    // greeting.innerText = "Hello " + uesrname;
-    
+    loginForm.classList.add(hidden_ClassName)    
     // setItem을 사용시 local storage에 정보를 저장 할 수 있다.
-    localStorage.setItem(USERNAME_KEY, uesrname);
-    paintGreetings(username);
+    localStorage.setItem(USERNAME_KEY, loginInput.value);
+    // local storage에 뭔가를 저장하면 paintGreetings를 호출 하는 순간에 그 유저정보는 이미 local storage(USERNAME_KEY)에 저장되어 있다.
+    paintGreetings();
 }
 
 function handleLinkClick(event){
@@ -49,9 +42,10 @@ function handleLinkClick(event){
     // 브라우저의 동작을 허용하지 않고 막아버린다.
     event.preventDefault();
     console.log(event);
-}
+}  
 
-function paintGreetings(username){
+function paintGreetings(){
+    const username = localStorage.getItem(USERNAME_KEY); 
     greeting.innerText = `Hello ${savedUesrname}`
     greeting.classList.remove(hidden_ClassName)
 }
@@ -69,5 +63,5 @@ if(savedUesrname  === null){
     // preventDefault를 사용 시 addEventListener 안에 있는 함수는 직접 실행 하지 않는다. 
     loginForm.addEventListener("submit", onLoginSubmit);
 } else{
-    paintGreetings(savedUesrname);
+    paintGreetings();
 }
