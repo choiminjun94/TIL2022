@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1152,2094</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1152,2347</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_01_브랜트작업_필드_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -72,14 +72,13 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_01_브랜트작업_필드" sap:VirtualizedContainerService.HintSize="520,2029" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_01_브랜트작업_필드" sap:VirtualizedContainerService.HintSize="520,2282" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="aaa" />
-      <Variable x:TypeArguments="s:String[]" Name="arrayBrant" />
       <Variable x:TypeArguments="x:String" Name="brant_text" />
       <Variable x:TypeArguments="ui:Browser" Name="Uibrowser" />
     </Sequence.Variables>
@@ -88,7 +87,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="개발" sap:VirtualizedContainerService.HintSize="478,422" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <Sequence DisplayName="개발계" sap:VirtualizedContainerService.HintSize="478,422" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -99,18 +98,18 @@
           <OutArgument x:TypeArguments="x:String">[aaa]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">https://www.theice.com/products/219/Brent-Crude-Futures/data?marketId=5166944</InArgument>
+          <InArgument x:TypeArguments="x:String">["https://www.theice.com/products/910/UK-Natural-Gas-Futures/data?marketId=5253319"]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,230" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,230" sap2010:WorkflowViewState.IdRef="CommentOut_1">
         <ui:CommentOut.Body>
-          <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_7">
               <Assign.To>
                 <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[io_LNG_환율결과]</OutArgument>
               </Assign.To>
@@ -122,21 +121,25 @@
         </ui:CommentOut.Body>
       </ui:CommentOut>
     </Sequence>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" sap2010:Annotation.AnnotationText="in_Config(&quot;BRENT_URL&quot;)" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="478,1475" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[Uibrowser]" Url="[aaa]">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" sap2010:Annotation.AnnotationText="in_Config(&quot;BRENT_URL&quot;)" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="478,1728" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[Uibrowser]" Url="[aaa]">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="418,1343" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence sap:VirtualizedContainerService.HintSize="418,1595" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="376,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-            <ui:Comment sap:VirtualizedContainerService.HintSize="376,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// 3달로 이동 이후 가장 최신값 가져오기 &#xD;&#xA;" />
-            <Sequence DisplayName="3달전으로이동" sap:VirtualizedContainerService.HintSize="376,1094" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <ui:Comment sap:VirtualizedContainerService.HintSize="376,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// 3달로 이동 이후 가장 최신값 가져오기 &#xA;" />
+            <Sequence DisplayName="3달전으로이동" sap:VirtualizedContainerService.HintSize="376,1346" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="NBP_text" />
+                <Variable x:TypeArguments="s:String[]" Name="array_NBP" />
+              </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -176,7 +179,7 @@
                   </ui:CursorPosition>
                 </ui:Hover.CursorPosition>
                 <ui:Hover.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="37368e02-0dc1-4633-ba03-8aa5f4bff005" InformativeScreenshot="15be2bcade1dc191fde812c0fa2e1841" Selector="&lt;html app='chrome.exe' title='Brent Crude Futures | ICE' /&gt;&lt;webctrl omit:parentid='highcharts-5xyltwh-2976' tag='path' class='highcharts-tracker-line' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="37368e02-0dc1-4633-ba03-8aa5f4bff005" InformativeScreenshot="15be2bcade1dc191fde812c0fa2e1841" Selector="&lt;webctrl tag='path' class='highcharts-tracker-line' /&gt;">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
@@ -198,7 +201,7 @@
                   </ui:CursorPosition>
                 </ui:Hover.CursorPosition>
                 <ui:Hover.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="37368e02-0dc1-4633-ba03-8aa5f4bff005" InformativeScreenshot="15be2bcade1dc191fde812c0fa2e1841" Selector="&lt;html app='chrome.exe' title='Brent Crude Futures | ICE' /&gt;&lt;webctrl omit:parentid='highcharts-5xyltwh-2976' tag='path' class='highcharts-tracker-line' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="37368e02-0dc1-4633-ba03-8aa5f4bff005" InformativeScreenshot="15be2bcade1dc191fde812c0fa2e1841" Selector="&lt;webctrl tag='path' class='highcharts-tracker-line' /&gt;">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
@@ -208,12 +211,12 @@
                   </ui:Target>
                 </ui:Hover.Target>
               </ui:Hover>
-              <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innertext" DisplayName="Get Attribute 'RECT'" sap:VirtualizedContainerService.HintSize="334,202" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
+              <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innertext" DisplayName="Get Attribute 'RECT'" sap:VirtualizedContainerService.HintSize="334,204" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
                 <ui:GetAttribute.Result>
-                  <OutArgument x:TypeArguments="x:String">[brant_text]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String">[NBP_text]</OutArgument>
                 </ui:GetAttribute.Result>
                 <ui:GetAttribute.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9c9b647d-61a9-4e70-8518-bac520a6d10a" InformativeScreenshot="23b19ec81a172cd9135952bb5173ebbd" Selector="&lt;html app='chrome.exe' title='Brent Crude Futures | ICE' /&gt;&lt;webctrl aaname='         Series 1:        ' omit:parentid='highcharts-5xyltwh-2976' tag='DIV' class='tooltip-series' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9c9b647d-61a9-4e70-8518-bac520a6d10a" InformativeScreenshot="23b19ec81a172cd9135952bb5173ebbd" Selector="&lt;webctrl aaname='         Series 1:        ' tag='DIV' class='tooltip-series' /&gt;">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
@@ -223,30 +226,32 @@
                   </ui:Target>
                 </ui:GetAttribute.Target>
               </ui:GetAttribute>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[NBP_text]" />
               <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">[brant_text]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String">[NBP_text]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(brant_text," ","")]</InArgument>
+                  <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(NBP_text," ","")]</InArgument>
                 </Assign.Value>
               </Assign>
               <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
-                  <OutArgument x:TypeArguments="s:String[]">[arrayBrant]</OutArgument>
+                  <OutArgument x:TypeArguments="s:String[]">[array_NBP]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="s:String[]">[System.Text.RegularExpressions.Regex.Split(brant_text, "Series1:")]</InArgument>
+                  <InArgument x:TypeArguments="s:String[]">[System.Text.RegularExpressions.Regex.Split(NBP_text, "Series1:")]</InArgument>
                 </Assign.Value>
               </Assign>
               <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
                 <Assign.To>
-                  <OutArgument x:TypeArguments="x:Object">[io_LNG_환율결과("Brent")]</OutArgument>
+                  <OutArgument x:TypeArguments="x:Object">[io_LNG_환율결과("NBP")]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:Object">[arrayBrant(1).ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String">[array_NBP(1).ToString]</InArgument>
                 </Assign.Value>
               </Assign>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[io_LNG_환율결과(&quot;NBP&quot;).ToString]" />
               <ui:CloseTab Browser="[Uibrowser]" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
             </Sequence>
           </Sequence>
