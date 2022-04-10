@@ -430,6 +430,7 @@ if(savedUesrname  === null){
     <script src="js/greetings.js"></script>
 </body>
 ```
+### 일정한 간격을 두고 실행하기 - interval
 > 작업 이전 interval이란 기능을 알아 보아야 한다. <br>
 > interval이란 일정한 시간을 두고 함수를 실행하는 것이다. <br>
 > 주식이나 국제 가스, 석유가격 같이 일정한 시간을 두고 새로운 값을 얻는것에 유용하다.<br>

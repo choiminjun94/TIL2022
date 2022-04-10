@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wcZXVvent8Ok/c633/C91qB4BV6+So13L3bdN6j9TtvwhFEmylRWpeXogG/Py6NfljDjtaqRYJMh06GNEUAbnQ==",
+  "dgSpecHash": "FmjL2W3JcVzTa4Z3DD3hX+eCq9I5I3Ly6E1wpbqILgo9TDnCglDj9+dn2oFMj/j4/PKxD3ZzwxdG9gy0pk36gA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1020a\\OneDrive\\문서\\TIL2022\\대구가스공사_미니프로젝트\\.local\\",
+  "projectFilePath": "C:\\Users\\1020a\\OneDrive\\문서\\TIL2022\\국제가스및석유_환율조사\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\1020a\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\1020a\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
