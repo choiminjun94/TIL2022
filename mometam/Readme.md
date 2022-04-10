@@ -449,3 +449,65 @@ setInterval(sayHello, 3000);
 
 ![interval](https://user-images.githubusercontent.com/60457431/162621396-f337c57f-1202-4433-a460-a4324d566552.gif)
 
+### 일정한 시간 뒤에 시작하기 - setTimeout
+### JS 코드 
+```
+function sayHello(){
+    console.log("interval Check");
+}
+
+setTimeout(sayHello, 3000);
+```
+
+### 시간 불러오기
+> 시간을 불러오기 위해선 JS에서 지원하는 new Date();를 사용하면 된다.<Br>
+> new Date는 현재 시간을 지원하는 기능이다.
+
+### HTML 코드
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="what is your name">
+        <button>Login</button>
+    </form>
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+</body>
+</html>
+
+```
+### JS 코드
+> function getClock를 사용하여 현재 시간으로 호출 하고 호출한 시간은 HTML의 시간 부분에 텍스트 형식으로 넣어 주었다.<br>
+> 호출한 시간은 getClock();으로 한번 바로 호출하고 이후 setInterval을 사용하여 1초마다 한번씩 호출 하였다.
+
+```
+const clock = document.querySelector("h2#clock");
+
+function getClock(){
+    const date = new Date();
+    clock.innerText = (`${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`);
+}
+
+// getClock를 즉시 호출
+getClock();
+// 매초 마다 getClock을 다시 실행
+setInterval(getClock, 1000);
+
+// 얼마 뒤에 시작 할것인지를 지정 - setTime
+// setTimeout(sayHello, 3000);
+
+
+```
+
+
