@@ -408,3 +408,38 @@ if(savedUesrname  === null){
 
 ![image](https://user-images.githubusercontent.com/60457431/162334750-8677d992-03fa-4b27-a36d-74ed50790e07.png)
 
+===============================================================================================================================
+# 시간 넣기 
+
+> 작업 이전 파일 구조를 바꾸었다. (하기 참조)
+
+> 시간 작업을 하기 위해 HTML에 h2를 추가 하였고 id는 이전과 동일하게 hidden을 주었다<br>
+### HTML 소스 
+```
+...
+<body>
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="what is your name">
+        <button>Login</button>
+    </form>
+    <h2 id="hidden"></h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+</body>
+```
+> 작업 이전 interval이란 기능을 알아 보아야 한다. <br>
+> interval이란 일정한 시간을 두고 함수를 실행하는 것이다. <br>
+> 주식이나 국제 가스, 석유가격 같이 일정한 시간을 두고 새로운 값을 얻는것에 유용하다.<br>
+
+### JS 소스 
+```
+const clock = document.querySelector("h2#clock");
+
+function sayHello(){
+    console.log("interval Check");
+}
+
+setInterval(sayHello, 3000);
+
+```
