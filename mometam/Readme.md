@@ -413,6 +413,8 @@ if(savedUesrname  === null){
 
 > 작업 이전 파일 구조를 바꾸었다. (하기 참조)
 
+![image](https://user-images.githubusercontent.com/60457431/162621162-6cba09a6-bed0-48fa-8935-659dd497a30a.png)
+
 > 시간 작업을 하기 위해 HTML에 h2를 추가 하였고 id는 이전과 동일하게 hidden을 주었다<br>
 ### HTML 소스 
 ```
@@ -443,3 +445,6 @@ function sayHello(){
 setInterval(sayHello, 3000);
 
 ```
+
+![interval](https://user-images.githubusercontent.com/60457431/162621396-f337c57f-1202-4433-a460-a4324d566552.gif)
+
