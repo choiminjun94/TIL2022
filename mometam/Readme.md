@@ -534,6 +534,8 @@ setInterval(getClock, 1000);
 > 이러한 문제를 해결하기 위해선 padStart를 사용해야 한다. <br>
 pad란 좌우에 특정한 문자열로 채우는 기능이다. 즉 내가 가지고 있는 String 길이보다 길게 만들어 주는것이다. <br>
 첫번째 파라미터인 maxLength를 받아 문자열의 길이가 maxLength보다 작을 경우 나머지를 특정한 문자열로 채워주는 기능
+    
+ ![padStart](https://user-images.githubusercontent.com/60457431/162849591-a5c78543-5bc9-4b9c-899f-6adc28ad2486.gif)   
 
 ### JS 전체 코드
 ```
@@ -557,5 +559,5 @@ setInterval(getClock, 1000);
 // 얼마 뒤에 시작 할것인지를 지정 - setTime
 // setTimeout(sayHello, 3000);
 
-
 ```
+ 
