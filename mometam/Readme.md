@@ -513,3 +513,35 @@ setInterval(getClock, 1000);
 ![현재시간](https://user-images.githubusercontent.com/60457431/162643988-5ae3b168-9756-473c-8fd8-3bce3cc12df5.gif)
 
 
+### padStart
+> 윗쪽에서 시간이 내가 생각 한거랑 너무 다르게 나왔다.<br>
+일반적으로는 앞자리가 "0"을 입력 하고 현재 시간을 입력하는데 "0"을 제외하고 출력 되었다.<br>
+
+> 이러한 문제를 해결하기 위해선 padStart를 사용해야 한다. <br>
+pad란 좌우에 특정한 문자열로 채우는 기능이다. <br>
+첫번째 파라미터인 maxLength를 받아 문자열의 길이가 maxLength보다 작을 경우 나머지를 특정한 문자열로 채워주는 기능
+
+### JS 전체 코드
+```
+const clock = document.querySelector("h2#clock");
+
+function getClock(){
+    const date = new Date();
+    // String(다른 타입); 다른 타입을 String으로 감싸면 String으로 변환된다.
+    // padStart는 대상이 되는 String이 가져야 하는 길이를 2로 설정하고 길이가 2가 되지 않으면 앞쪽에 0을 붙인다.
+    const hours = String(date.getHours()).padStart(2,"0"); 
+    const minutes = String(date.getMinutes()).padStart(2,"0");
+    const seconds = String(date.getSeconds()).padStart(2,"0");
+    clock.innerText =`${hours} : ${minutes} : ${seconds}`;
+}
+
+// getClock를 즉시 호출
+getClock();
+// 매초 마다 getClock을 다시 실행
+setInterval(getClock, 1000);
+
+// 얼마 뒤에 시작 할것인지를 지정 - setTime
+// setTimeout(sayHello, 3000);
+
+
+```
