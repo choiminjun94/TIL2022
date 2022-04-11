@@ -512,13 +512,27 @@ setInterval(getClock, 1000);
     
 ![현재시간](https://user-images.githubusercontent.com/60457431/162643988-5ae3b168-9756-473c-8fd8-3bce3cc12df5.gif)
 
+## 시간에 0 붙이기
+
+### number type String으로 변환 
+> 만약에 number 타입을 String으로 바꾸기 위해서 큰 작업이 절대 필요 하지 않다. <br>
+>그저 String으로 바꾸면 된다<br>
+
+### 예제 코드 
+```
+    // number형 
+    const hours = date.getHours();
+
+    // number형을 string형으로 
+    const hours = String(date.getHours());
+```
 
 ### padStart
 > 윗쪽에서 시간이 내가 생각 한거랑 너무 다르게 나왔다.<br>
 일반적으로는 앞자리가 "0"을 입력 하고 현재 시간을 입력하는데 "0"을 제외하고 출력 되었다.<br>
 
 > 이러한 문제를 해결하기 위해선 padStart를 사용해야 한다. <br>
-pad란 좌우에 특정한 문자열로 채우는 기능이다. <br>
+pad란 좌우에 특정한 문자열로 채우는 기능이다. 즉 내가 가지고 있는 String 길이보다 길게 만들어 주는것이다. <br>
 첫번째 파라미터인 maxLength를 받아 문자열의 길이가 maxLength보다 작을 경우 나머지를 특정한 문자열로 채워주는 기능
 
 ### JS 전체 코드
