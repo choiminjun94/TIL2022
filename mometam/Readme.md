@@ -509,5 +509,7 @@ setInterval(getClock, 1000);
 
 
 ```
+    
+![현재시간](https://user-images.githubusercontent.com/60457431/162643988-5ae3b168-9756-473c-8fd8-3bce3cc12df5.gif)
 
 
