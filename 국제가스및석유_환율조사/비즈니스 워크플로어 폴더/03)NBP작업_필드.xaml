@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1152,2267</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1023,2264</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_01_브랜트작업_필드_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -73,10 +73,9 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_01_브랜트작업_필드" sap:VirtualizedContainerService.HintSize="596,2202" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_01_브랜트작업_필드" sap:VirtualizedContainerService.HintSize="596,2199" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="aaa" />
       <Variable x:TypeArguments="x:String" Name="brant_text" />
@@ -121,13 +120,13 @@
         </ui:CommentOut.Body>
       </ui:CommentOut>
     </Sequence>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" sap2010:Annotation.AnnotationText="in_Config(&quot;BRENT_URL&quot;)" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="554,1648" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[Uibrowser]" Url="[aaa]">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" sap2010:Annotation.AnnotationText="in_Config(&quot;BRENT_URL&quot;)" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="554,1645" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[Uibrowser]" Url="[aaa]">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="520,1515" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence sap:VirtualizedContainerService.HintSize="520,1513" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -135,7 +134,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="478,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
             <ui:Comment sap:VirtualizedContainerService.HintSize="478,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// 3달로 이동 이후 가장 최신값 가져오기 &#xA;" />
-            <Sequence DisplayName="3달전으로이동" sap:VirtualizedContainerService.HintSize="478,1266" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="3달전으로이동" sap:VirtualizedContainerService.HintSize="478,1264" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="NBP_text" />
                 <Variable x:TypeArguments="s:String[]" Name="array_NBP" />
@@ -211,7 +210,7 @@
                   </ui:Target>
                 </ui:Hover.Target>
               </ui:Hover>
-              <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innertext" DisplayName="Get Attribute 'RECT'" sap:VirtualizedContainerService.HintSize="436,204" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
+              <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innertext" DisplayName="Get Attribute 'RECT'" sap:VirtualizedContainerService.HintSize="436,202" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
                 <ui:GetAttribute.Result>
                   <OutArgument x:TypeArguments="x:String">[NBP_text]</OutArgument>
                 </ui:GetAttribute.Result>
