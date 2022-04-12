@@ -1,44 +1,44 @@
 const quotes = [
   {
-    quote: "The way to get started is to quit talking and begin doing.",
-    author: "Walt Disney",
+    quote: "인간의 능력이란 그렇게 극단적인 차이가 있는 것이 아닙니다. 자기가 하고 있는 일에 정열과 의욕을 가지면 상황도 유리해지고 올바른 해결책도 나오기 마련입니다.",
+    author: "신격호",
   },
   {
-    quote: "Life is what happens when you're busy making other plans.",
-    author: "John Lennon",
+    quote: "스스로 운이 나쁘다고 생각하지 않는 한, 나쁜 운이란 건 없다",
+    author: "정주영",
   },
   {
     quote:
-      "The world is a book and those who do not travel read only one page.",
-    author: "Saint Augustine",
+      "스스로 운이 나쁘다고 생각하지 않는 한, 나쁜 운이란 건 없다",
+    author: "정주영",
   },
   {
-    quote: "Life is either a daring adventure or nothing at all.",
-    author: "Helen Keller",
+    quote: "무슨 일을 시작하던지 된다는 확신 90%와 반드시 되게 할 수 있다는 자신감 10% 외에 안될 수도 있다는 생각은 단 1%도 가지지 않는다",
+    author: "정주영",
   },
   {
-    quote: "To Travel is to Live",
-    author: "Hans Christian Andersen",
+    quote: "시련일 뿐이지 실패는 아니다. 내가 실패라고 생각하지 않는 한 이것은 실패일 수 없다",
+    author: "정주영",
   },
   {
-    quote: "Only a life lived for others is a life worthwhile.",
-    author: "Albert Einstein",
+    quote: "마치지 않고 죽어도 되는 일만 내일로 미뤄라.",
+    author: "파블로 피카소",
   },
   {
-    quote: "You only live once, but if you do it right, once is enough.",
-    author: "Mae West",
+    quote: "나는 내가 더 노력할수록 운이 더 좋아진다는 걸 발견했다",
+    author: " 토마스 제퍼슨",
   },
   {
-    quote: "Never go on trips with anyone you do not love.",
-    author: "Hemmingway",
+    quote: "열정을 잃지 않고 실패에서 실패로 걸어가는 것이 성공이다. ",
+    author: "윈스턴 처칠",
   },
   {
-    quote: "We wander for distraction, but we travel for fulfilment.",
-    author: "Hilaire Belloc",
+    quote: "모든 일의 성패는 그 일을 하는 사람의 사고와 자세에 달려 있다.",
+    author: "정주영",
   },
   {
-    quote: "Travel expands the mind and fills the gap.",
-    author: "Sheda Savage",
+    quote: "해보기는 해봤어?",
+    author: "정주영",
   },
 ];
 
