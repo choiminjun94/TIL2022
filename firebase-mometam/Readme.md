@@ -563,3 +563,120 @@ setInterval(getClock, 1000);
 
 ### firebase로 배포를 진행 하였습니다. 
  
+## 명언 할당 
+> 명언 할당을 위해서 quotes.js라는 파일을 생성 하고 그것을 HTML에서 불러온다<br>
+> 이후 HTML에선 명언을 넣을 공간 생성 한다. <br>
+
+## HTML 전체 소스
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input는 div가 아닌 form안에 있어야 한다. -->
+    <!-- form 안에 input를 넣을 시 자동적으로 submit가 된다. -->
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="what is your name">
+        <button>Login</button>
+    </form>
+    <!-- 평시에는 보이지 않지만 form에서 input 값을 넣어줄시 그걸 여기에 입력 -->
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/quotes.js"></script>
+</body>
+</html>
+
+```
+## 선언한 명언 불러오기 
+> 선언한 HTML를 불러오기 위해서 querySelector를 사용한다. <br>
+> quote에는 quote의 첫번째 Span을 author에는 두번째 Span을 불러온다. <br>
+### JS 일부 코드 
+
+```
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+```
+
+> 이후 선언한 명언을 가져오기 위해서 math.floor를 사용한다. <br>
+> Math.floor() 함수는 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환합니다. <br>
+
+### JS 일부 코드 
+
+```
+const ㅊ = quotes[Math.floor(Math.random() * quotes.length)];
+
+```
+>코드를 설명하자면 todaysQuote에 위해서 선언한 명언 배열을 불러오고 배열의 길이와 구한 배열의 값을 곱하고 소수점 자리를 없애기 위해서 Math.floor를 사용한다. <br>
+
+>이후 구한 값을 todaysQuote에 입력 하였다. 
+
+### JS 전체 코드 
+
+```
+const quotes = [
+  {
+    quote: "The way to get started is to quit talking and begin doing.",
+    author: "Walt Disney",
+  },
+  {
+    quote: "Life is what happens when you're busy making other plans.",
+    author: "John Lennon",
+  },
+  {
+    quote:
+      "The world is a book and those who do not travel read only one page.",
+    author: "Saint Augustine",
+  },
+  {
+    quote: "Life is either a daring adventure or nothing at all.",
+    author: "Helen Keller",
+  },
+  {
+    quote: "To Travel is to Live",
+    author: "Hans Christian Andersen",
+  },
+  {
+    quote: "Only a life lived for others is a life worthwhile.",
+    author: "Albert Einstein",
+  },
+  {
+    quote: "You only live once, but if you do it right, once is enough.",
+    author: "Mae West",
+  },
+  {
+    quote: "Never go on trips with anyone you do not love.",
+    author: "Hemmingway",
+  },
+  {
+    quote: "We wander for distraction, but we travel for fulfilment.",
+    author: "Hilaire Belloc",
+  },
+  {
+    quote: "Travel expands the mind and fills the gap.",
+    author: "Sheda Savage",
+  },
+];
+
+//querySelector로 가져온 첫번째 span값을 사용할려면 first-child 라는것을 사용한다.
+
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+
+//Math.floor() 함수는 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환합니다.
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
+```

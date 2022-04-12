@@ -4,7 +4,7 @@
 // const loginForm = document.querySelector("#login-form");
 
 //문자열과 일치하는 id 속성을 가진 요소를 찾고, 이를 나타내는 Element 객체를 반환합니다. ID는 문서 내에서 유일해야 하기 때문에 특정 요소를 빠르게 찾을 때 유용
-const loginForm = document.getElementById("login-form");
+const loginForm = document.querySelector("#login-form");
 
 // input과 button을 끌어오기
 // const loginInput = loginForm.querySelector("input"); 
@@ -13,8 +13,7 @@ const loginForm = document.getElementById("login-form");
 
 // 또다른 표현 
 const loginInput = document.querySelector("#login-form input");
-const loginButton = document.querySelector("#login-form button");
-const greeting = document.querySelector("#greeting"); 
+const greeting = document.querySelector("#greeting");
 
 // Hidden Css를 변수 처리
 const hidden_ClassName = "hidden";
