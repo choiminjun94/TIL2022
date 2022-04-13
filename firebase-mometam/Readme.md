@@ -680,3 +680,35 @@ const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
 ```
+
+## 배경화면 이미지 추가
+
+> 배경에 이미지를 넣기 위해서 우선적으로 backgrounds.js파일과 img폴더와 이미지를 준비 했다. <br>
+이후 이미지를 랜덤적으로 가져오기 위하여 이전 명언에 사용 Math.floor와 Math.random을 사용하였다. 이는 즉 이미지의 파일명이 number로 되어 있어야 한다는 것이다. <br>
+
+폴더명 및 log 추가하기
+
+```
+const chosenImage = images[Math.floor(Math.random() * images.length)];
+console.log(chosenImage);
+
+```
+
+## JS에서 HTML 추가하기
+> 이제까지는 HTML에서 우선적으로 JS이 동작 할 수 있는 작업을 하고 JS파일을 생성 하였다.<br> 
+
+> 이제는 JS파일에서 HTML을 추가하는 작업을 진행 할것이다. <br>
+
+### JS 파일 일부 추가
+```
+const bgImage = document.createElement("img");
+
+bgImage.src = `img/${chosenImage}`
+
+//appendChild는 body에 HTML을 추가하는것 이다.
+document.body.appendChild(bgImage);
+
+```
+
+
+
