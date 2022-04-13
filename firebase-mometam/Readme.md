@@ -687,6 +687,12 @@ author.innerText = todaysQuote.author;
 이후 이미지를 랜덤적으로 가져오기 위하여 이전 명언에 사용 Math.floor와 Math.random을 사용하였다. 이는 즉 이미지의 파일명이 number로 되어 있어야 한다는 것이다. <br>
 
 폴더명 및 log 추가하기
+    
+![image](https://user-images.githubusercontent.com/60457431/163283687-05b6847d-dc9a-41da-b66e-621c341a391b.png)
+
+![image](https://user-images.githubusercontent.com/60457431/163283715-23e298b3-7d87-4a80-948a-6e373ed39939.png)
+
+    
 
 ```
 const chosenImage = images[Math.floor(Math.random() * images.length)];
@@ -699,6 +705,9 @@ console.log(chosenImage);
 
 > 이제는 JS파일에서 HTML을 추가하는 작업을 진행 할것이다. <br>
 
+![image](https://user-images.githubusercontent.com/60457431/163283789-aa4aaec2-3790-4c50-a05a-983a8c7e841c.png)
+    
+    
 ### JS 파일 일부 추가
 ```
 const bgImage = document.createElement("img");
