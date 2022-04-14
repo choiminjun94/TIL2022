@@ -1,0 +1,11 @@
+<!doctype html>
+
+Merit body { font-family: 'poppins'; font-size: 14px; }
+<tr width="800">
+    <td align="center" valign="top" height="200" style="background: linear-gradient(To right, #6aafe1 0%, #29bdd1 100%);">
+        <h1 style="color: #fff;">STSK PropTech</h1>
+        <p style="color: #fff;"><img src="https://drive.google.com/uc?id=1houwW1_JIu44bpfdoxj9gW20eQOcsIhR" alt="no" /> You have <span style="font-weight: bold;font-size: 20px;">NUMBEROFEMAILS</span> unread Messages </p>
+        <a href="https://www.google.com/intl/en-GB/gmail/about/" target="_blank" style="color: #fff;text-decoration: underline;">Please Check Here</a>
+    </td>
+   
+</tr>
