@@ -14,7 +14,7 @@
   /* --body-font: Hi Melody, cursive, "Shippori Mincho", serif; */
   --body-font: 'Hi Melody', cursive;
   --body-font: 'Shippori Mincho', serif;
-  --big-font-size: 2rem;
+  --big-font-size: 5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
@@ -155,8 +155,8 @@ img {
 }
 
 .section {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 20rem;
 }
 
 
@@ -387,7 +387,7 @@ img {
 }
 
 .skills__html {
-  width: 50%;
+  width: 80%;
 }
 
 .skills__css {
@@ -420,7 +420,6 @@ img {
 .skills__Netlify{
   width: 50%;
 }
-
 .skills__FireBase{
   width: 50%;
 }
@@ -571,7 +570,7 @@ img {
     margin: 0;
   }
   .section {
-    padding-top: 5rem;
+    padding-top: 5m;
     padding-bottom: 10rem;
   }
   .section-title {
