@@ -10,7 +10,7 @@
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
-  --body-font: 'Hi Melody', cursive;
+  --body-font: 'Jua', sans-serif;
   --big-font-size: 5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -29,8 +29,8 @@
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
-    --h2-font-size: 3rem;
-    --normal-font-size: 1.3rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
   }
 }
@@ -384,7 +384,7 @@ img {
 }
 
 .skills__html {
-  width: 50%;
+  width: 80%;
 }
 
 .skills__css {
