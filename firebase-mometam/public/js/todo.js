@@ -2,7 +2,16 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
 
+// paintToDo가 그려질때 마다 그 텍스트를 array에 push
+const toDos = [];
 
+//
+function saveToDos(){
+    // toDos array의 내용을 localStorage에 넣어주는것
+    localStorage.setItem("todos", toDos)
+}
+
+// 항목 삭제
 function deleteToDo(event){
     //console.dir(event.target)를 사용하여 parentElement 찾아보기
     console.dir(event.target);
@@ -10,13 +19,16 @@ function deleteToDo(event){
     li.remove();
 }
 
+// Todo List 쓰기
 function paintToDo(newTodo){
     const li = document.createElement("li");
     const span = document.createElement("span");
     // span의 텍스트는 handleToDoSubmit에서 온 newTodo 텍스트가 되는거다.
     span.innerText = newTodo;
+
     const button = document.createElement("button");
     button.innerText = "❌"
+
     //무언가 클릳 되었는다는것을 알기 위햐선 EventListener를 사용
     button.addEventListener("click", deleteToDo);
 
@@ -36,8 +48,15 @@ function handleToDoSubmit(event){
     const newTodo = toDoInput.value;
     // enter 입력시 input 비우게 만들기
     toDoInput.value = "";
-    //paintToDo를 호출
+    // 텍스트를 toDos array에 push
+    toDos.push(newTodo)
+    //paintToDo를 호출 
     paintToDo(newTodo)
+    //-- 0420 기준 화면에 그려준 toDo를 saveTodos function에 todo를 저장
+    saveToDos()
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
+
+// 입력된 String을 array로 변환
+// saved Todos를 얻어오기
