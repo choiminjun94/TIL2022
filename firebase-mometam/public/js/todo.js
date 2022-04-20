@@ -2,13 +2,15 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
 
+const TODOS_KEY = "todos";
+
 // paintToDo가 그려질때 마다 그 텍스트를 array에 push
 const toDos = [];
 
 //
 function saveToDos(){
     // toDos array의 내용을 localStorage에 넣어주는것
-    localStorage.setItem("todos", toDos)
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 
 // 항목 삭제
@@ -58,5 +60,20 @@ function handleToDoSubmit(event){
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
+function sayHello(item){
+    console.log("Helllo", item);
+}
+
 // 입력된 String을 array로 변환
 // saved Todos를 얻어오기
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+
+if(savedToDos !== null){
+    const parsedToDos= JSON.parse(savedToDos);
+    console.log(parsedToDos); 
+
+    // array는 forEach라는 것을 가질수 있다.
+    // 내가 어떤 Item를 가지고 있는지 모르면 무용지물 이다.
+    parsedToDos.forEach(sayHello);
+}
