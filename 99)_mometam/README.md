@@ -400,3 +400,322 @@ if(savedUesrname  === null){
 ``` 
 
 > 이후 const savedUesrname = localStorage.getItem(USERNAME_KEY);의 USERNAME_KEY를 가지고 local storage를 확인 한다.<br >
+사진 추가　
+
+> 개발자 도구를 보면 username이라는 key와 그 값은 입력값이 있다.
+
+![image](https://user-images.githubusercontent.com/60457431/162334750-8677d992-03fa-4b27-a36d-74ed50790e07.png)
+
+===============================================================================================================================
+# 시간 넣기 
+
+> 작업 이전 파일 구조를 바꾸었다. (하기 참조)
+
+![image](https://user-images.githubusercontent.com/60457431/162621162-6cba09a6-bed0-48fa-8935-659dd497a30a.png)
+
+> 시간 작업을 하기 위해 HTML에 h2를 추가 하였고 id는 이전과 동일하게 hidden을 주었다<br>
+### HTML 소스 
+```
+...
+<body>
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="what is your name">
+        <button>Login</button>
+    </form>
+    <h2 id="hidden"></h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+</body>
+```
+### 일정한 간격을 두고 실행하기 - interval
+> 작업 이전 interval이란 기능을 알아 보아야 한다. <br>
+> interval이란 일정한 시간을 두고 함수를 실행하는 것이다. <br>
+> 주식이나 국제 가스, 석유가격 같이 일정한 시간을 두고 새로운 값을 얻는것에 유용하다.<br>
+
+### JS 소스 
+```
+const clock = document.querySelector("h2#clock");
+
+function sayHello(){
+    console.log("interval Check");
+}
+
+setInterval(sayHello, 3000);
+
+```
+
+![interval](https://user-images.githubusercontent.com/60457431/162621396-f337c57f-1202-4433-a460-a4324d566552.gif)
+
+### 일정한 시간 뒤에 시작하기 - setTimeout
+### JS 코드 
+```
+function sayHello(){
+    console.log("interval Check");
+}
+
+setTimeout(sayHello, 3000);
+```
+
+### 시간 불러오기
+> 시간을 불러오기 위해선 JS에서 지원하는 new Date();를 사용하면 된다.<Br>
+> new Date는 현재 시간을 지원하는 기능이다.
+
+### HTML 코드
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="what is your name">
+        <button>Login</button>
+    </form>
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+</body>
+</html>
+
+```
+### JS 코드
+> function getClock를 사용하여 현재 시간으로 호출 하고 호출한 시간은 HTML의 시간 부분에 텍스트 형식으로 넣어 주었다.<br>
+> 호출한 시간은 getClock();으로 한번 바로 호출하고 이후 setInterval을 사용하여 1초마다 한번씩 호출 하였다.
+
+```
+const clock = document.querySelector("h2#clock");
+
+function getClock(){
+    const date = new Date();
+    clock.innerText = (`${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`);
+}
+
+// getClock를 즉시 호출
+getClock();
+// 매초 마다 getClock을 다시 실행
+setInterval(getClock, 1000);
+
+// 얼마 뒤에 시작 할것인지를 지정 - setTime
+// setTimeout(sayHello, 3000);
+
+
+```
+    
+![현재시간](https://user-images.githubusercontent.com/60457431/162643988-5ae3b168-9756-473c-8fd8-3bce3cc12df5.gif)
+
+## 시간에 0 붙이기
+
+### number type String으로 변환 
+> 만약에 number 타입을 String으로 바꾸기 위해서 큰 작업이 절대 필요 하지 않다. <br>
+>그저 String으로 바꾸면 된다<br>
+
+### 예제 코드 
+```
+    // number형 
+    const hours = date.getHours();
+
+    // number형을 string형으로 
+    const hours = String(date.getHours());
+```
+
+### padStart
+> 윗쪽에서 시간이 내가 생각 한거랑 너무 다르게 나왔다.<br>
+일반적으로는 앞자리가 "0"을 입력 하고 현재 시간을 입력하는데 "0"을 제외하고 출력 되었다.<br>
+
+> 이러한 문제를 해결하기 위해선 padStart를 사용해야 한다. <br>
+pad란 좌우에 특정한 문자열로 채우는 기능이다. 즉 내가 가지고 있는 String 길이보다 길게 만들어 주는것이다. <br>
+첫번째 파라미터인 maxLength를 받아 문자열의 길이가 maxLength보다 작을 경우 나머지를 특정한 문자열로 채워주는 기능
+    
+ ![padStart](https://user-images.githubusercontent.com/60457431/162849591-a5c78543-5bc9-4b9c-899f-6adc28ad2486.gif)   
+
+### JS 전체 코드
+```
+const clock = document.querySelector("h2#clock");
+
+function getClock(){
+    const date = new Date();
+    // String(다른 타입); 다른 타입을 String으로 감싸면 String으로 변환된다.
+    // padStart는 대상이 되는 String이 가져야 하는 길이를 2로 설정하고 길이가 2가 되지 않으면 앞쪽에 0을 붙인다.
+    const hours = String(date.getHours()).padStart(2,"0"); 
+    const minutes = String(date.getMinutes()).padStart(2,"0");
+    const seconds = String(date.getSeconds()).padStart(2,"0");
+    clock.innerText =`${hours} : ${minutes} : ${seconds}`;
+}
+
+// getClock를 즉시 호출
+getClock();
+// 매초 마다 getClock을 다시 실행
+setInterval(getClock, 1000);
+
+// 얼마 뒤에 시작 할것인지를 지정 - setTime
+// setTimeout(sayHello, 3000);
+
+```
+
+### firebase로 배포를 진행 하였습니다. 
+ 
+## 명언 할당 
+> 명언 할당을 위해서 quotes.js라는 파일을 생성 하고 그것을 HTML에서 불러온다<br>
+> 이후 HTML에선 명언을 넣을 공간 생성 한다. <br>
+
+## HTML 전체 소스
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input는 div가 아닌 form안에 있어야 한다. -->
+    <!-- form 안에 input를 넣을 시 자동적으로 submit가 된다. -->
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="what is your name">
+        <button>Login</button>
+    </form>
+    <!-- 평시에는 보이지 않지만 form에서 input 값을 넣어줄시 그걸 여기에 입력 -->
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/quotes.js"></script>
+</body>
+</html>
+
+```
+## 선언한 명언 불러오기 
+> 선언한 HTML를 불러오기 위해서 querySelector를 사용한다. <br>
+> quote에는 quote의 첫번째 Span을 author에는 두번째 Span을 불러온다. <br>
+### JS 일부 코드 
+
+```
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+```
+
+> 이후 선언한 명언을 가져오기 위해서 math.floor를 사용한다. <br>
+> Math.floor() 함수는 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환합니다. <br>
+
+### JS 일부 코드 
+
+```
+const ㅊ = quotes[Math.floor(Math.random() * quotes.length)];
+
+```
+>코드를 설명하자면 todaysQuote에 위해서 선언한 명언 배열을 불러오고 배열의 길이와 구한 배열의 값을 곱하고 소수점 자리를 없애기 위해서 Math.floor를 사용한다. <br>
+
+>이후 구한 값을 todaysQuote에 입력 하였다. 
+
+### JS 전체 코드 
+
+```
+const quotes = [
+  {
+    quote: "The way to get started is to quit talking and begin doing.",
+    author: "Walt Disney",
+  },
+  {
+    quote: "Life is what happens when you're busy making other plans.",
+    author: "John Lennon",
+  },
+  {
+    quote:
+      "The world is a book and those who do not travel read only one page.",
+    author: "Saint Augustine",
+  },
+  {
+    quote: "Life is either a daring adventure or nothing at all.",
+    author: "Helen Keller",
+  },
+  {
+    quote: "To Travel is to Live",
+    author: "Hans Christian Andersen",
+  },
+  {
+    quote: "Only a life lived for others is a life worthwhile.",
+    author: "Albert Einstein",
+  },
+  {
+    quote: "You only live once, but if you do it right, once is enough.",
+    author: "Mae West",
+  },
+  {
+    quote: "Never go on trips with anyone you do not love.",
+    author: "Hemmingway",
+  },
+  {
+    quote: "We wander for distraction, but we travel for fulfilment.",
+    author: "Hilaire Belloc",
+  },
+  {
+    quote: "Travel expands the mind and fills the gap.",
+    author: "Sheda Savage",
+  },
+];
+
+//querySelector로 가져온 첫번째 span값을 사용할려면 first-child 라는것을 사용한다.
+
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+
+//Math.floor() 함수는 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환합니다.
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
+```
+
+## 배경화면 이미지 추가
+
+> 배경에 이미지를 넣기 위해서 우선적으로 backgrounds.js파일과 img폴더와 이미지를 준비 했다. <br>
+이후 이미지를 랜덤적으로 가져오기 위하여 이전 명언에 사용 Math.floor와 Math.random을 사용하였다. 이는 즉 이미지의 파일명이 number로 되어 있어야 한다는 것이다. <br>
+
+폴더명 및 log 추가하기
+    
+![image](https://user-images.githubusercontent.com/60457431/163283687-05b6847d-dc9a-41da-b66e-621c341a391b.png)
+
+![image](https://user-images.githubusercontent.com/60457431/163283715-23e298b3-7d87-4a80-948a-6e373ed39939.png)
+
+    
+
+```
+const chosenImage = images[Math.floor(Math.random() * images.length)];
+console.log(chosenImage);
+
+```
+
+## JS에서 HTML 추가하기
+> 이제까지는 HTML에서 우선적으로 JS이 동작 할 수 있는 작업을 하고 JS파일을 생성 하였다.<br> 
+
+> 이제는 JS파일에서 HTML을 추가하는 작업을 진행 할것이다. <br>
+
+![image](https://user-images.githubusercontent.com/60457431/163283789-aa4aaec2-3790-4c50-a05a-983a8c7e841c.png)
+    
+    
+### JS 파일 일부 추가
+```
+const bgImage = document.createElement("img");
+
+bgImage.src = `img/${chosenImage}`
+
+//appendChild는 body에 HTML을 추가하는것 이다.
+document.body.appendChild(bgImage);
+
+```
+
+## TODO List 
+> 정리할 공간 남겨두기 
