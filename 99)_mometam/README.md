@@ -47,3 +47,70 @@ const loginButton = loginForm.querySelector("button");
  </div>
 
 ```
+> 그 다음은 input과 button을 찾는 일이다. <br>
+input과 button은 loginForm에 감싸져 있기에 document가 아닌 loginForm에서 찾을수 있다.<br>
+코드로는 하기 부분이다. 
+
+```
+const loginForm = document.getElementById("login-form");
+
+// input과 button을 끌어오기
+const loginInput = loginForm.querySelector("input");
+const loginButton = loginForm.querySelector("button");
+
+```
+> form부분을 따로 입력 하지 않고 한번에 찾는 방법도 존재 한다. 
+```
+// 또다른 표현 
+const loginInput1 = loginForm.querySelector("#login-form input");
+const loginButton2 = loginForm.querySelector("#login-form button");
+
+```
+
+## 버튼 클릭 JS 
+> 버튼을 클릭 했을때 다른 기능을 추가하고 싶으면 JS에 입력하면 된다.<br> 
+예를들면 아무값이 없거나 길이를 초과 했을때이다. <br>
+그에 관련된 코드를 하기에 작성 하겠다. 
+
+```
+
+function onLoginBtnClick(){
+    const username = loginInput.value;
+    if(username === ""){
+        alert("입력 해주세요");
+        //.length는 문자열의 길이를 구하는것
+    }else if(username.length > 15){
+        alert("이름이 너무 깁니다.");
+    }
+}
+
+loginButton.addEventListener("click", onLoginBtnClick)
+
+```
+
+> 이런식으로 작성하면 입력 된 값이 없거나 길이가 넘으면 경고 창이 발생 한다. <br>
+하지만 이런것을 사실상 작성할 필요가 없다. HTML에서 전부 해주기 때문이다. <br>
+그러기에 JS에 버튼 관련 코드를 전부 삭제 하고 여기에만 기록 하겠다. 
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input는 div가 아닌 form안에 있어야 한다. -->
+    <!-- form 안에 input를 넣을 시 자동적으로 submit가 된다. -->
+    <form id="login-form">
+        <input required maxlength="15" type="text" placeholder="what is your name">
+        <button>Login</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
+
+```
