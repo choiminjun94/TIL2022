@@ -114,3 +114,134 @@ loginButton.addEventListener("click", onLoginBtnClick)
 </html>
 
 ```
+### 아까와 가장 큰 변경점은 form이 생긴 것이다. <br>
+> input 값은 경우 form안에 넣어주어야 한다. 넣어주지 않아도 작동은 되지만 그렇지 않으면 input의 길이나 아무것도 넣지 않는 상황을 아까와 같이 전부 JS에 입력 해주어야 한다. <br>
+
+
+## submit Event (preventDefault)
+```
+const loginForm = document.getElementById("login-form");
+
+// input과 button을 끌어오기
+const loginInput = loginForm.querySelector("input"); 
+const loginButton = loginForm.querySelector("button");
+
+function onLoginSubmit(){
+    const username = loginInput.value;
+    console.log(username);
+}
+
+loginForm.addEventListener("submit", onLoginSubmit); 
+```
+
+위와 같이 작업을 하면 Submit Event는 작업이 된것을 확인 가능 하다. 
+하지만 아직 못한게 있다면 새로고침 방지 이벤트 이다. 
+
+```
+
+function onLoginSubmit(evnet){
+    
+    evnet.preventDefault();
+    console.log(loginInput.value);
+    console.log(event);
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
+
+```
+> function의 ()을 더하면 브라우저가 보자마자 자동으로 이 function을 실행 시킨다.<br>
+()안에 있는걸 argument라고 한다. 
+
+>preventDefault는 어떤 event의 기본행위든 발생 되지 않게 해준다.
+>콘솔 값을 캡쳐 하였다. 
+
+![image](https://user-images.githubusercontent.com/60457431/160620106-613aeefa-cacb-472d-b60e-ed7b07ab0156.png)
+
+### Click Event (preventDefault)
+```
+function handleLinkClick(event){
+  
+    event.preventDefault();
+    console.log(event);
+}
+
+link.addEventListener("click", handleLinkClick)
+```
+> 이전에 사용 한 preventDefault를 다시 사용하였다. <br> 
+이는 브라우저의 그 어떠한 동작도 막아 버린다.
+
+> 이렇게 하면 addEventListener 안에 있는 함수는 직접 실행 하지 않는다.
+
+### 유저이름 가져오기
+
+> input에 값을 입력시 Input 창이 없어지게 해야 한다. <br>
+
+CSS 추가
+```
+.hidden{
+    /* 요소를 숨기게 된다. */
+    display: none;
+}
+
+```
+JS 추가
+```
+...
+// Hidden Css를 변수 처리
+const hidden_ClassName = "hidden"
+...
+// username에 loginInput.value값을 저장
+const uesrname = loginInput.value;
+
+// classList 찾아보기
+loginForm.classList.add(hidden_ClassName)
+console.log(uesrname);
+
+```
+
+> 입력한 유저 이름 화면에 띄우게 하기
+
+HTML 
+```
+<Body>
+    ...
+    <h1 id="greeting" class="hidden"></h1>
+    ...
+</Body>
+```
+
+JS 
+```
+...
+const greeting = document.querySelector("#greeting"); 
+...
+greeting.innerText = `안녕하세요 ${uesrname}`;
+greeting.classList.remove(hidden_ClassName)
+
+```
+![image](https://user-images.githubusercontent.com/60457431/161166931-513aa9ce-d043-4263-998f-c5ad6a730942.png)
+![image](https://user-images.githubusercontent.com/60457431/161166947-2b37552f-9c6e-4f58-a4a3-9eac03007fb2.png)
+
+### 유저 이름 저장하기 
+
+> setItem을 사용시 local storage에 정보를 저장 할 수 있다.
+
+#### JS 코드
+```    
+localStorage.setItem("username", uesrname);
+```
+![image](https://user-images.githubusercontent.com/60457431/161863528-8a839546-460e-4ce3-8c94-02eb55f083e9.png)
+
+### 유저 이름 가져오기 
+
+> 먼저 HTML FORM을 수정 해야한다. 수정은 하기와 같이 진행 하였다.
+#### HTML 코드
+```
+<form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="what is your name">
+        <button>Login</button>
+</form>
+```
+
+
+>이전과 달라진건 class='hidden'을 추가 한것이다. <br>
