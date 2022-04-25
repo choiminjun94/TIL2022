@@ -16,6 +16,7 @@ function saveToDos(){
 function deleteToDo(event){
     //console.dir(event.target)를 사용하여 parentElement 찾아보기
     console.dir(event.target);
+    console.log(li.id);
     const li = event.target.parentElement;
     li.remove();
 }
@@ -23,9 +24,10 @@ function deleteToDo(event){
 // Todo List 쓰기
 function paintToDo(newTodo){
     const li = document.createElement("li");
+    li.id = newTodo.id;
     const span = document.createElement("span");
     // span의 텍스트는 handleToDoSubmit에서 온 newTodo 텍스트가 되는거다.
-    span.innerText = newTodo;
+    span.innerText = newTodo.text;
 
     const button = document.createElement("button");
     button.innerText = "❌"
@@ -49,10 +51,14 @@ function handleToDoSubmit(event){
     const newTodo = toDoInput.value;
     // enter 입력시 input 비우게 만들기
     toDoInput.value = "";
+    const newTodoObj = {
+        text :newTodo,
+        id : Date.now(),
+    };
     // 텍스트를 toDos array에 push
-    toDos.push(newTodo)
+    toDos.push(newTodoObj)
     //paintToDo를 호출 
-    paintToDo(newTodo)
+    paintToDo(newTodoObj)
     //-- 0420 기준 화면에 그려준 toDo를 saveTodos function에 todo를 저장
     saveToDos()
 }
@@ -75,4 +81,5 @@ if(savedToDos !== null){
     // 내가 어떤 Item를 가지고 있는지 모르면 무용지물 이다.
     parsedToDos.forEach(paintToDo);
 }
+
 
