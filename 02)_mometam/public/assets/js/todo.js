@@ -15,10 +15,11 @@ function saveToDos(){
 // 항목 삭제
 function deleteToDo(event){
     //console.dir(event.target)를 사용하여 parentElement 찾아보기
-    console.dir(event.target);
-    console.log(li.id);
+    // console.dir(event.target);
     const li = event.target.parentElement;
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
 }
 
 // Todo List 쓰기
