@@ -759,3 +759,71 @@ document.body.appendChild(bgImage);
 ### TODO List
 
 > 정리할 공간 남겨두기
+> 처음 부터 다시 하면서 정리 하기
+
+### Weather 
+
+>  JS에서 브라우저에 위치 좌표를 준다.
+>  getCurrentPosition는 2개의 argument가 필요하다.
+>  한개의 모든게 잘 되었을때 실행 될 함수이다. 
+>  다른 한개를 실패 했을시 실행 될 함수이다.
+```
+    navigator.geolocation.getCurrentPosition(onGeoOK, onGeoError);
+```
+
+> 이제 성공 시 실행 될 함수 및 에러 시 실행될 함수를 작성 한다. 
+
+```
+// 정상적인 실행 시 작업
+function onGeoOK() {
+    
+}
+//에러가 발생 시 작업
+function onGeoError() {
+    alert("에러발생~~")
+}
+```
+
+> 위치 권한 요청<br>
+
+> 위치 권한요청은 쉽다. <br>
+> 위 코드에서  성공시 실행될 함수 및 실패 시 실행될 함수를 작업했다. <br>
+> 그곳의 ()에 Success 및 Position 같은 것을 입력 하면 된다. 
+
+> 적용 코드 및 사진 
+```
+function onGeoOK(Position){
+    
+}
+...
+    navigator.geolocation.getCurrentPosition(onGeoOK, onGeoError);
+
+```
+<br>
+
+> 사진 추가<br>
+
+> 위치 받아오기 
+
+```
+function onGeoOK(Position){
+    const lat = Position.coords.latitude;
+    const lng = Position.coords.longitude;
+    console.log("니 위치는 ", lat,lng);
+}
+```
+
+> 이건 그냥 외우면 된다. 
+
+> 실행 후 사진 <br>
+
+
+> 날씨 API 사용 <br>
+
+```
+https://openweathermap.org/api
+```
+> 에 접속하면 된다. 
+
+
+
