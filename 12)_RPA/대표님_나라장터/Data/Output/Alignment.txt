@@ -1,0 +1,62 @@
+Sub Alignment()
+'
+' Alignment 매크로
+'
+
+'
+    Range("A1:K1").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent1
+        .TintAndShade = 0.599993896298105
+        .PatternTintAndShade = 0
+    End With
+    Selection.Font.Bold = True
+    Rows("1:101").Select
+    Selection.RowHeight = 25
+    Cells.Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Columns("E:E").Select
+    Selection.ColumnWidth = 45
+    Columns("I:K").Select
+    Selection.ColumnWidth = 32
+    Columns("F:H").Select
+    Selection.ColumnWidth = 25
+    Columns("B").Select
+    Selection.ColumnWidth = 16
+    Columns("D").Select
+    Selection.ColumnWidth = 47
+    Columns("I:I").Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = True
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+End Sub

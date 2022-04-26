@@ -1,0 +1,10 @@
+Sub AutoFill()
+'
+' AutoFill 매크로
+'
+
+'
+    Columns("A:A").EntireColumn.AutoFit
+    Columns("B:B").EntireColumn.AutoFit
+    Columns("C:C").EntireColumn.AutoFit
+End Sub
