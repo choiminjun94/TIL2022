@@ -803,6 +803,9 @@ function onGeoOK(Position){
 
 > 사진 추가<br>
 
+![image](https://user-images.githubusercontent.com/60457431/165409409-3f8a7a6c-0c4a-4dc2-9ab4-4daf5a7d4ddb.png)
+
+
 > 위치 받아오기 
 
 ```
@@ -816,6 +819,8 @@ function onGeoOK(Position){
 > 이건 그냥 외우면 된다. 
 
 > 실행 후 사진 <br>
+
+![image](https://user-images.githubusercontent.com/60457431/165409445-70fdfc7a-ee4f-4eb4-8790-e973e931eeb9.png)
 
 
 > 날씨 API 사용 <br>
