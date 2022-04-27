@@ -31,6 +31,7 @@ function paintToDo(newTodo){
     span.innerText = newTodo.text;
 
     const button = document.createElement("button");
+
     button.innerText = "❌"
 
     //무언가 클릳 되었는다는것을 알기 위햐선 EventListener를 사용

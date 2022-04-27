@@ -10,18 +10,22 @@
 <body>
     <!-- input는 div가 아닌 form안에 있어야 한다. -->
     <!-- form 안에 input를 넣을 시 자동적으로 submit가 된다. -->
-    <form class="hidden" id="login-form">
-        <input required maxlength="15" type="text" placeholder="what is your name">
-        <button>Login</button>
+    <form id="login-form" class="hidden" >
+        <input 
+         required maxlength="15"
+         type="text" 
+         placeholder="이름을 입력해주세요?"
+         />
+        <input type="submit" value="Log In" class="submit-form"/>
     </form>
     <!-- 평시에는 보이지 않지만 form에서 input 값을 넣어줄시 그걸 여기에 입력 -->
-    <h2 id="clock">00:00:00</h2>
+    <h2 id="clock" class="clock-font">00:00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
     <form id="todo-form">
         <input type="text" placeholder="할일을 입력해 주세요" required>
     </form>
     <ul id="todo-list"></ul>
-    <div id="quote"> 
+    <div id="quote"  class="quote-font"> 
         <span></span>
         <span></span>
     </div>

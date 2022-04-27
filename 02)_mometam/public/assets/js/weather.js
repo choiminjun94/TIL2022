@@ -1,8 +1,11 @@
+const API_KEY ="941a63cc93523e085e7e00a25cd612d7"
 // 정상적인 실행 시 작업
-function onGeoOK(Success){
+function onGeoOK(Position){
     const lat = Position.coords.latitude;
-    const lng = Position.coords.longitude;
-    console.log("니 위치는 ", lat,lng);
+    const lon = Position.coords.longitude;
+    console.log("니 위치는 ", lat,lon);
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+    console.log(url);
 }
 //에러가 발생 시 작업
 function onGeoError(){
