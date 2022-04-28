@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r+Mi3i+Jfutr0NEzOapp9PPi5pzVfp9wbJGV7Kkn0fYUhAnNyQxL1bXpg03emTl7O2kMLvYhDMnyvSXVG+Ntjg==",
+  "dgSpecHash": "XOKj+drJqu8Ay45e6CCpUcdVrZOTJKK/owaO+0L3Oyke9X52/Oi4Q/8MscKFLnAeyLFAGDU3nm3QKlkzZdIatQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1020a\\OneDrive\\문서\\UiPath\\뉴스스크래핑\\SRE (2)\\.local\\",
+  "projectFilePath": "C:\\Users\\1020a\\OneDrive\\바탕 화면\\study\\12)_RPA\\뉴스스크래핑\\SRE (2)\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\1020a\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\1020a\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
