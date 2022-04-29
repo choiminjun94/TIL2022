@@ -4,8 +4,16 @@ function onGeoOK(Position){
     const lat = Position.coords.latitude;
     const lon = Position.coords.longitude;
     console.log("니 위치는 ", lat,lon);
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
-    console.log(url);
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
+    fetch(url)
+        .then((Response) => Response.json())
+        .then((data) => {
+            const weather = document.querySelector("#weather span:first-child");
+            const city = document.querySelector("#weather span:last-child");
+            city.innerText = data.name;
+            weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+    });
+
 }
 //에러가 발생 시 작업
 function onGeoError(){

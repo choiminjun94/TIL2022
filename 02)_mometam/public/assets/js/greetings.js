@@ -15,7 +15,7 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 
-// Hidden Css를 변수 처리
+// Hidden Css를 변수 처리submit-form
 const hidden_ClassName = "hidden";
 // 변수 고정 
 const USERNAME_KEY = "username";
