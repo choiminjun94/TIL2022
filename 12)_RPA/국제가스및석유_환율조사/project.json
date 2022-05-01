@@ -1,6 +1,6 @@
 {
-  "name": "대구가스공사_미니프로젝트",
-  "description": "ACC_003_LNG가격환율조사",
+  "name": "국제가스및석유_환율조사",
+  "description": "LNG가격환율조사",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.11.4]",

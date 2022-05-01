@@ -1,6 +1,6 @@
 {
-  "name": "대표님_나라장터요청사항",
-  "description": "ACC_003_LNG가격환율조사",
+  "name": "나라장터",
+  "description": "나라장터",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.11.4]",
