@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "mometam-project"
-  }
+    "default": "mometam-project",
+    "y": "mometam-project"
+  },
+  "targets": {}
 }
