@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1020,1798</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1020,1758</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_02_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="33">
@@ -79,10 +79,10 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="03)_데이터수집" sap:VirtualizedContainerService.HintSize="552,1733" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="04)_데이터수집" sap:VirtualizedContainerService.HintSize="552,1693" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="asahi_society" />
       <Variable x:TypeArguments="x:Int32" Name="int_Count" />
+      <Variable x:TypeArguments="sd:DataTable" Name="asahi_EconomyNews" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -90,7 +90,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:Comment sap:VirtualizedContainerService.HintSize="510,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// 朝日社会" />
-    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="510,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'link  経済'" sap:VirtualizedContainerService.HintSize="510,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
@@ -102,7 +102,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="143d65bc-b83d-4cab-acea-7596a73f1585" InformativeScreenshot="64a923c55f5ad8525e5be521093ed060" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='朝日新聞デジタル：* - Chrome' /&gt;&lt;ctrl name='朝日新聞デジタル：朝日新聞社のニュースサイト' role='document' /&gt;&lt;ctrl name='社会' role='link' aastate='포커스 가능, 연결됨, opaque' idx='2' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="611b257b-fdf3-450b-beda-2231916167da" InformativeScreenshot="4fd5e507cc54556011c5a6d5353a45cc" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='社会ニュース：朝日新聞デジタル - Chrome' /&gt;&lt;ctrl name='社会ニュース：朝日新聞デジタル' role='document' /&gt;&lt;ctrl name='経済' role='link' aastate='포커스 가능, 연결됨, opaque' text='経済' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -113,27 +113,27 @@
       </ui:Click.Target>
     </ui:Click>
     <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="510,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
-    <Sequence DisplayName="데이터 스크래핑" sap:VirtualizedContainerService.HintSize="510,476" sap2010:WorkflowViewState.IdRef="Sequence_21">
+    <Sequence DisplayName="데이터 스크래핑" sap:VirtualizedContainerService.HintSize="510,436" sap2010:WorkflowViewState.IdRef="Sequence_23">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser '          Page'" sap:VirtualizedContainerService.HintSize="434,384" sap2010:WorkflowViewState.IdRef="BrowserScope_9" InformativeScreenshot="1360b752b0cd1c3c65f8a11824b53c7e" Selector="&lt;html app='chrome.exe' htmlwindowname='*' title='社会ニュース：朝日新聞デジタル' /&gt;">
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser '          Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_10" InformativeScreenshot="df46508380efb8dfd93c93722721b81c" Selector="&lt;html app='chrome.exe' htmlwindowname='*' title='経済ニュース：朝日新聞デジタル' /&gt;">
         <ui:BrowserScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_20">
+            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_22">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[asahi_society]" DisplayName="Extract Structured Data 'UL'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Title' attr='text' name2='URL' attr2='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_9" MaxNumberOfResults="100" SimulateClick="True">
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[asahi_EconomyNews]" DisplayName="Extract Structured Data 'DIV  MainInner'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Title' attr='text' name2='URL' attr2='href'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='ul' idx='1' /&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_10" MaxNumberOfResults="100" SimulateClick="True">
                 <ui:ExtractData.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="069f05bb-6ba1-4599-b956-215cbdf8121f" InformativeScreenshot="a14f78564d0d6bceed8aa05a6540d216" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' parentid='MainInner' tag='UL' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e7045e64-40f4-498a-9945-ab5a689c7077" InformativeScreenshot="f35a5caebcf24fd8afe261b9a6813ac2" Selector="&lt;webctrl id='MainInner' tag='DIV' /&gt;" WaitForReady="COMPLETE">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
@@ -153,7 +153,7 @@
         <InArgument x:TypeArguments="x:Int32">2</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[asahi_society]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,722" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[asahi_EconomyNews]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,722" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -180,8 +180,8 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ExcelWriteRange AddHeaders="True" DataTable="[asahi_society]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="asahi_society" StartingCell="A1" />
-                    <ui:ExcelWriteCell Cell="[&quot;A&quot;+int_Count.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="asahi_society" Text="[row(0).ToString]" />
+                    <ui:ExcelWriteRange AddHeaders="True" DataTable="[asahi_EconomyNews]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="asahi_Economy" StartingCell="A1" />
+                    <ui:ExcelWriteCell Cell="[&quot;A&quot;+int_Count.ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="asahi_Economy" Text="[row(0).ToString]" />
                   </Sequence>
                 </ActivityAction>
               </ui:ExcelApplicationScope.Body>
