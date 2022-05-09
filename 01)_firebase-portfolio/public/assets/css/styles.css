@@ -269,6 +269,8 @@ img {
   color: var(--first-color);
 }
 
+
+
 .home__social {
   display: flex;
   flex-direction: column;
