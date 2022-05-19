@@ -11,3 +11,5 @@ bgImage.src = `assets/img/${chosenImage}`
 
 //appendChild는 body에 HTML을 추가하는것 이다.
 document.body.appendChild(bgImage);
+
+bgImage.id = 'bgImage';
