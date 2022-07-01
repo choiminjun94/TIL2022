@@ -8069,11 +8069,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "대구가스공사_미니프로젝트",
-      "projectName": "대구가스공사_미니프로젝트",
-      "projectPath": "C:\\Users\\1020a\\OneDrive\\문서\\TIL2022\\국제가스및석유_환율조사\\.local",
+      "projectUniqueName": "국제가스및석유_환율조사",
+      "projectName": "국제가스및석유_환율조사",
+      "projectPath": "C:\\Users\\1020a\\OneDrive\\문서\\TIL2022\\12)_RPA\\국제가스및석유_환율조사\\.local",
       "packagesPath": "C:\\Users\\1020a\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1020a\\OneDrive\\문서\\TIL2022\\국제가스및석유_환율조사\\.local"
+      "outputPath": "C:\\Users\\1020a\\OneDrive\\문서\\TIL2022\\12)_RPA\\국제가스및석유_환율조사\\.local"
     },
     "frameworks": {
       "net461": {

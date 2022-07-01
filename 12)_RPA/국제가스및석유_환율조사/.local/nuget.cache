@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ImLgm/xVcihRIjK3cBoaUECTknv0Wki9PL4EsMU7LdjePDT8GyJe8Fcr1UFdtl71zMwd4vzDe3b+KHW2wXyejA==",
+  "dgSpecHash": "1BQkqGxDSe9W9YytasZ/VwfVyFkL/o5Tp8rCgwr2HnHqfGRTgoudmWqmdi/J2p8Q7dGguNYDJkB4F3M0s23Nnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1020a\\OneDrive\\문서\\TIL2022\\국제가스및석유_환율조사\\.local\\",
+  "projectFilePath": "C:\\Users\\1020a\\OneDrive\\문서\\TIL2022\\12)_RPA\\국제가스및석유_환율조사\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\1020a\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\1020a\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
