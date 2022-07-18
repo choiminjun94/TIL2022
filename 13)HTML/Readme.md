@@ -37,6 +37,8 @@
 # 0719 
 ## 속성 / 특성
 
+``` html
+
   <h1>인용문 관련 태그</h1>
   <h2>blockquote와 cite 태그</h2>
   <blockquote cite="https://developer.mozilla.org/ko/docs/Web/HTML/Element/blockquote">
@@ -79,3 +81,5 @@
     <abbr title="HyperText Markup Language">HTML</abbr
       >을 표기한 문단입니다. 소스 보기로 코드륵 확인해부세요!
   </p>
+  
+``` 
