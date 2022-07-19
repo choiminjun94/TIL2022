@@ -148,3 +148,24 @@
 ```
 ![image](https://user-images.githubusercontent.com/60457431/179636663-c220a4ce-c7c8-450e-9c98-fabe0b8a7f05.png)
 
+# 0720
+## 이미지 넣기
+
+``` html 
+  <!-- alt와 title을 동일한 이름을 넣지 않는다. -->
+  <!-- 절대경로로 이미지 입력 -->
+  <h3>절대경로 이미지</h3>
+  <img 
+    src="https://showcases.yalco.kr/html-css/01-05/coding.png" 
+    alt="코딩중인 노트북"
+    title="프로그래밍"
+    width="600"
+    height="300"
+  >
+  <br/>
+  <h3>상대경로 이미지</h3>
+  <img 
+    src="./img/사진.png" 
+    alt="상대경로 이미지"
+  >
+```
