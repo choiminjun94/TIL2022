@@ -81,7 +81,69 @@
     <abbr title="HyperText Markup Language">HTML</abbr
       >을 표기한 문단입니다. 소스 보기로 코드륵 확인해부세요!
   </p>
-  
+
 ``` 
 ![image](https://user-images.githubusercontent.com/60457431/179632479-4185f7d6-4885-485a-947a-de9c7b5f1543.png)
+
+## 나열되는 요소
+
+``` html
+
+...
+  <link rel="stylesheet" href="https://showcases.yalco.kr/html-css/01-04/05.css">
+...
+<body>
+  <!-- 여기부터는 많이 쓰이는 것들 -->
+  <!-- ★ ul, ol의 1촌 자식은 오직 li만 가능하다. ★-->
+  <ul>
+    <li>이틀치 옷</li>
+    <li>세면도구</li>
+    <li>수건</li> 
+    <li>학습도구
+      <ul>
+        <li>노트북</li>
+        <li>필기구</li>
+        <li>교재</li>
+      </ul>
+    </li>
+  </ul>
+  
+  <!-- ol은 숫자를 표시 -->
+  <ol>
+    <li>재료 준비
+      <ul>
+        <li>밥</li>
+        <li>계란</li>
+        <li>파</li>
+        <li>간장</li>
+      </ul>
+    </li>
+    <li>파를 기름에 볶기</li>
+    <li>밥 넣고 볶기</li>
+    <li>계란을 넣고 스크램블 </li>
+    <li>간장을 넣고 마저 볶아 완서</li>
+  </ol>
+
+  <!-- dl,dt, dd-->
+  <!-- 용어와 정의 나열하기 -->
+  <!-- dt : dd는 1:1 또는 n:n 가능 -->
+   
+  <dl>
+    
+    <dt>프로그래밍</dt>
+    <dd>컴퓨터 프로그램을 작성하는 일</dd>
+
+    <dt>넓이</dt>
+    <dt>광</dt>
+    <dt>면적</dt>
+    <dd>일정한 평면에 걸쳐 있는 공간이나 범위의 크기</dd>
+
+    <dt>사과</dt>
+    <dd>사과나무의 열매</dd>
+    <dd>자기의 잘못을 인정하고 용서를 빎</dd>
+
+  </dl>  
+</body>
+
+```
 
