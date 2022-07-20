@@ -4,25 +4,150 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://showcases.yalco.kr/html-css/01-06/table.css">
+  <title>표 만들기</title>
 </head>
 <body>
-  <!-- alt와 title을 동일한 이름을 넣지 않는다. -->
-  <!-- 절대경로로 이미지 입력 -->
-  <h3>절대경로 이미지</h3>
-  <img 
-    src="https://showcases.yalco.kr/html-css/01-05/coding.png" 
-    alt="코딩중인 노트북"
-    title="프로그래밍"
-    width="600"
-    height="300"
-  >
+  <table>
+    <caption>1에서 9까지의 숫자들</caption>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </table>
   <br/>
-  <h3>상대경로 이미지</h3>
-  <img 
-    src="./img/사진.png" 
-    alt="상대경로 이미지"
-  >
+  <br/>
 
+  <table>
+		<caption>웹개발 공부 기록</caption>
+		<thead>
+			<tr>
+				<th scope="col">과목</th>
+				<th scope="col">월</th>
+				<th scope="col">화</th>
+				<th scope="col">수</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">HTML</th>
+				<td>60분</td>
+				<td>60분</td>
+				<td>0분</td>
+			</tr>
+			<tr>
+				<th scope="row">CSS</th>
+				<td>0분</td>
+				<td>30분</td>
+				<td>60분</td>
+			</tr>
+			<tr>
+				<th scope="row">JS</th>
+				<td>0분</td>
+				<td>0분</td>
+				<td>60분</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>총 시간</th>
+				<td>60분</td>
+				<td>90분</td>
+				<td>120분</td>
+			</tr>
+		</tfoot>
+	</table>
+  <br/>
+  <!-- 요즘엔 거의 사용하지 않는다. -->
+  <table>
+		<tr>
+			<td>1</td>
+			<td colspan="2">2</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td colspan="2" rowspan="2">4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+		</tr>
+	</table>
+
+  
+	<table>
+		<colgroup>
+			<col class="weekend">
+			<col span="5">
+			<col class="weekend">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">일</th>
+				<th scope="col">월</th>
+				<th scope="col">화</th>
+				<th scope="col">수</th>
+				<th scope="col">목</th>
+				<th scope="col">금</th>
+				<th scope="col">토</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+		</tbody>
+	</table>
+  
 </body>
 </html>

@@ -170,3 +170,37 @@
   >
 ```
 ![image](https://user-images.githubusercontent.com/60457431/179864490-5c8c223f-b387-4c47-b862-e7d5eb33a072.png)
+
+## 표 그리기 
+
+> table - 테이플 
+
+> caption - 표 설명 또는 제목 (선택사항) 
+
+> tr - 테이블 행
+
+> td - 테이블의 데이터 셀 
+
+``` html 
+  <table>
+    <caption>1에서 9까지의 숫자들</caption>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </table>
+
+```
+
+> thead - 테이블의 헤더 부분	 - [tbody] 앞에 와야 함
