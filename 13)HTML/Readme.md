@@ -202,6 +202,8 @@
   </table>
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/180095324-e5ef46a5-105a-4ab5-9a28-c009710ba128.png)
+
 
 > thead - 테이블의 헤더 부분	 - [tbody] 앞에 와야 함
 
@@ -252,6 +254,8 @@
 		</tfoot>
 	</table>
 ```
+![image](https://user-images.githubusercontent.com/60457431/180095365-8181a24a-da56-48f4-a096-7e5815555cec.png)
+
 
 ``` html
 
@@ -277,6 +281,8 @@
 		</tr>
 	</table>
 ```
+![image](https://user-images.githubusercontent.com/60457431/180095408-1087c200-62d6-422e-9d81-f2870d053407.png)
+
 
 ``` html 
 	<table>
@@ -338,4 +344,6 @@
   
 </body>
 ```
+![image](https://user-images.githubusercontent.com/60457431/180095431-8f9955b8-5e7e-4f15-a0af-513c7d1c3e66.png)
+
 
