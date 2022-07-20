@@ -204,3 +204,138 @@
 ```
 
 > thead - 테이블의 헤더 부분	 - [tbody] 앞에 와야 함
+
+> tbody - 테이블의 본문	 - 본 내용을 담음
+
+> tfoot - 테이블의 푸터 부분	 - [tbody] 뒤에 와야 함
+
+> th - 열 또는 행의 헤더	- [scope] 속성으로 row, col 중 선택
+
+``` html 
+  <table>
+		<caption>웹개발 공부 기록</caption>
+		<thead>
+			<tr>
+				<th scope="col">과목</th>
+				<th scope="col">월</th>
+				<th scope="col">화</th>
+				<th scope="col">수</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">HTML</th>
+				<td>60분</td>
+				<td>60분</td>
+				<td>0분</td>
+			</tr>
+			<tr>
+				<th scope="row">CSS</th>
+				<td>0분</td>
+				<td>30분</td>
+				<td>60분</td>
+			</tr>
+			<tr>
+				<th scope="row">JS</th>
+				<td>0분</td>
+				<td>0분</td>
+				<td>60분</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>총 시간</th>
+				<td>60분</td>
+				<td>90분</td>
+				<td>120분</td>
+			</tr>
+		</tfoot>
+	</table>
+```
+
+``` html
+
+<!-- 요즘엔 거의 사용하지 않는다. -->
+  <table>
+		<tr>
+			<td>1</td>
+			<td colspan="2">2</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td colspan="2" rowspan="2">4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+		</tr>
+	</table>
+```
+
+``` html 
+	<table>
+		<colgroup>
+			<col class="weekend">
+			<col span="5">
+			<col class="weekend">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">일</th>
+				<th scope="col">월</th>
+				<th scope="col">화</th>
+				<th scope="col">수</th>
+				<th scope="col">목</th>
+				<th scope="col">금</th>
+				<th scope="col">토</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+			<tr>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+				<td>_</td>
+			</tr>
+		</tbody>
+	</table>
+  
+</body>
+```
+
