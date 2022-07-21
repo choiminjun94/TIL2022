@@ -347,3 +347,53 @@
 ![image](https://user-images.githubusercontent.com/60457431/180095431-8f9955b8-5e7e-4f15-a0af-513c7d1c3e66.png)
 
 
+``` html 
+
+	<a href="https://www.google.com" target="_blank">구글로 가기</a>
+<br/>
+<br/>
+<br/>
+
+	<a href="https://www.google.com" target="_blank" >
+		<img src="https://showcases.yalco.kr/html-css/01-07/yalco-logo.png" alt="강의 사이트로 가기">
+</a>
+
+```
+
+
+``` html 
+
+<a href="#target_20">타깃으로 이동</a>
+
+<p id="target_1">id: target_1</p>
+<p id="target_2">id: target_2</p>
+<p id="target_3">id: target_3</p>
+<p id="target_4">id: target_4</p>
+<p id="target_5">id: target_5</p>
+<p id="target_6">id: target_6</p>
+<p id="target_7">id: target_7</p>
+<p id="target_8">id: target_8</p>
+<p id="target_9">id: target_9</p>
+<p id="target_10">id: target_10</p>
+<p id="target_11">id: target_11</p>
+<p id="target_12">id: target_12</p>
+<p id="target_13">id: target_13</p>
+<p id="target_14">id: target_14</p>
+<p id="target_15">id: target_15</p>
+<p id="target_16">id: target_16</p>
+<p id="target_17">id: target_17</p>
+<p id="target_18">id: target_18</p>
+<p id="target_19">id: target_19</p>
+<p id="target_20">id: target_20</p>
+<p id="target_21">id: target_21</p>
+<p id="target_22">id: target_22</p>
+<p id="target_23">id: target_23</p>
+<p id="target_24">id: target_24</p>
+<p id="target_25">id: target_25</p>
+<p id="target_26">id: target_26</p>
+<p id="target_27">id: target_27</p>
+<p id="target_28">id: target_28</p>
+<p id="target_29">id: target_29</p>
+<p id="target_30">id: target_30</p>
+
+```
