@@ -353,12 +353,12 @@
 <br/>
 <br/>
 <br/>
-
 	<a href="https://www.google.com" target="_blank" >
-		<img src="https://showcases.yalco.kr/html-css/01-07/yalco-logo.png" alt="강의 사이트로 가기">
+	<img src="https://showcases.yalco.kr/html-css/01-07/yalco-logo.png" alt="강의 사이트로 가기">
 </a>
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/180331346-af70760c-402f-4cc8-a10c-74f456e9538c.png)
 
 
 ``` html 
@@ -397,3 +397,5 @@
 <p id="target_30">id: target_30</p>
 
 ```
+
+![image](https://user-images.githubusercontent.com/60457431/180331374-45c623cc-f8f4-40a1-a584-d9f78f7f47b8.png)
