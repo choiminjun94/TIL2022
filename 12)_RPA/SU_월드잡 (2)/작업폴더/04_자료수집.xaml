@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1048,2318</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1110,2318</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_04_자료수집_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="58">
@@ -70,8 +70,8 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="_04_자료수집" sap:VirtualizedContainerService.HintSize="376,2253" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -152,7 +152,7 @@
         </ui:Target>
       </ui:TakeScreenshot.Target>
     </ui:TakeScreenshot>
-    <ui:SaveImage DisplayName="Save Image" FileName="[&quot;이미지\&quot;+in_str_ComName+&quot;\제목 없음.png&quot;]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[img_자격요건]" />
+    <ui:SaveImage DisplayName="Save Image" FileName="[&quot;이미지\&quot;+in_str_ComName+&quot;\자격요건.png&quot;]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[img_자격요건]" />
     <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_3" Screenshot="[img_근무조건]">
       <ui:TakeScreenshot.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7ad6d827-d159-452c-98e8-1d02b9c8d386" InformativeScreenshot="76385bf7b5eda2a56c9614d9d85dae7f" Selector="&lt;wnd app='chrome.exe' cls='*' title='해외취업 - Chrome' /&gt;&lt;ctrl name='해외취업' role='document' /&gt;&lt;ctrl idx='61' role='grouping' /&gt;">
@@ -226,9 +226,7 @@
     </ui:GetValue>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 05_업로드 workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="작업폴더\05_업로드.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_str_ComName">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_str_ComName" />
-        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_str_ComName">[in_str_ComName]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'page tab  해외취업'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
