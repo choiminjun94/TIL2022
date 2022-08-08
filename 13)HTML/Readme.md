@@ -403,7 +403,7 @@
 # 0809
 ## 사용자로부터 입력 받기 1
 
-이미지 추가 (태그 설명)
+![image](https://user-images.githubusercontent.com/60457431/183528505-59798fc4-0666-4815-9b99-05b82df8cfca.png)
 
 ``` html 
 	<!-- autocomplete은  자동완성을 설정해 주는것 민감은 정보를 입력시 에는 OFF를 사용하는것이 좋다.-->
@@ -425,10 +425,11 @@
 
 ```
 
-결과 이미지 추가 
+![image](https://user-images.githubusercontent.com/60457431/183528530-669af520-40de-417a-ab0e-27dfda95b36b.png)
+
 <br>
 
-이미지 추가 (태그 설명)
+![image](https://user-images.githubusercontent.com/60457431/183528573-ed2530b5-aae2-45c6-adf7-90bbff4001b8.png)
 
 ``` html 
 
@@ -471,4 +472,4 @@
 	</fieldset>
 
 ```
-결과 이미지 추가 
+![image](https://user-images.githubusercontent.com/60457431/183528635-3fe23183-c03b-4ad9-a649-771427338269.png)
