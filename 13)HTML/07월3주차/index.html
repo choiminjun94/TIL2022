@@ -1,52 +1,68 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 </head>
-	<a href="https://www.google.com" target="_blank">구글로 가기</a>
-<br/>
-<br/>
-<br/>
+<body>
+	<!-- autocomplete은  자동완성을 설정해 주는것 민감은 정보를 입력시 에는 OFF를 사용하는것이 좋다.-->
+	<form method="get" autocomplete="off">
+		<label for="name">이름</label>
+    <input id="name" name="my-name" type="text">
 
-	<a href="https://www.google.com" target="_blank" >
-		<img src="https://showcases.yalco.kr/html-css/01-07/yalco-logo.png" alt="강의 사이트로 가기">
-</a>
-<br><br><br><br><br>
-<a href="#target_20">타깃으로 이동</a>
+    <br><br>
 
-<p id="target_1">id: target_1</p>
-<p id="target_2">id: target_2</p>
-<p id="target_3">id: target_3</p>
-<p id="target_4">id: target_4</p>
-<p id="target_5">id: target_5</p>
-<p id="target_6">id: target_6</p>
-<p id="target_7">id: target_7</p>
-<p id="target_8">id: target_8</p>
-<p id="target_9">id: target_9</p>
-<p id="target_10">id: target_10</p>
-<p id="target_11">id: target_11</p>
-<p id="target_12">id: target_12</p>
-<p id="target_13">id: target_13</p>
-<p id="target_14">id: target_14</p>
-<p id="target_15">id: target_15</p>
-<p id="target_16">id: target_16</p>
-<p id="target_17">id: target_17</p>
-<p id="target_18">id: target_18</p>
-<p id="target_19">id: target_19</p>
-<p id="target_20">id: target_20</p>
-<p id="target_21">id: target_21</p>
-<p id="target_22">id: target_22</p>
-<p id="target_23">id: target_23</p>
-<p id="target_24">id: target_24</p>
-<p id="target_25">id: target_25</p>
-<p id="target_26">id: target_26</p>
-<p id="target_27">id: target_27</p>
-<p id="target_28">id: target_28</p>
-<p id="target_29">id: target_29</p>
-<p id="target_30">id: target_30</p>
+    <label for="age">나이</label>
+    <input id="age" name="my-age" type="number">
+
+    <br><br>
+
+    <button type="submit">제출</button>
+    <button type="reset">초기화</button>
+
+	</form>
+
+	<br>
+	<br>
+	<!-- fieldset는  폼 태그 내 입력요소와 라벨들을 그룹화	// disabled 속성: 포함된 입력요소 비활성화-->
+	<fieldset>
+		<legend>반장</legend>
+
+		<label for="name">이름</label>
+		<input id="name_1" name="name_1" type="text">
+		<br><br>
+
+		<label for="age">나이</label>
+		<input id="age_1" name="age_1" type="number">
+
+	</fieldset>
+	<br>
+
+	<fieldset>
+		<legend>부반장</legend>
+
+		<label for="name">이름</label>
+		<input id="name_2" name="name_2" type="text">
+		<br><br>
+
+		<label for="age">나이</label>
+		<input id="age_2" name="age_2" type="number">
+
+	</fieldset>
+	<br>
+
+	<fieldset form="classForm" disabled>
+		<legend>서기</legend>
+
+		<label for="name">이름</label>
+		<input id="name_3" name="name_3" type="text">
+		<br><br>
+
+		<label for="age">나이</label>
+		<input id="age_3" name="age_3" type="number">
+	</fieldset>
 
 </body>
 </html>

@@ -399,3 +399,76 @@
 ```
 
 ![image](https://user-images.githubusercontent.com/60457431/180331374-45c623cc-f8f4-40a1-a584-d9f78f7f47b8.png)
+
+# 0809
+## 사용자로부터 입력 받기 1
+
+이미지 추가 (태그 설명)
+
+``` html 
+	<!-- autocomplete은  자동완성을 설정해 주는것 민감은 정보를 입력시 에는 OFF를 사용하는것이 좋다.-->
+	<form method="get" autocomplete="off">
+		<label for="name">이름</label>
+    <input id="name" name="my-name" type="text">
+
+    <br><br>
+
+    <label for="age">나이</label>
+    <input id="age" name="my-age" type="number">
+
+    <br><br>
+
+    <button type="submit">제출</button>
+    <button type="reset">초기화</button>
+
+	</form>
+
+```
+
+결과 이미지 추가 
+<br>
+
+이미지 추가 (태그 설명)
+
+``` html 
+
+<!-- fieldset는  폼 태그 내 입력요소와 라벨들을 그룹화	// disabled 속성: 포함된 입력요소 비활성화-->
+	<fieldset>
+		<legend>반장</legend>
+
+		<label for="name">이름</label>
+		<input id="name_1" name="name_1" type="text">
+		<br><br>
+
+		<label for="age">나이</label>
+		<input id="age_1" name="age_1" type="number">
+
+	</fieldset>
+	<br>
+
+	<fieldset>
+		<legend>부반장</legend>
+
+		<label for="name">이름</label>
+		<input id="name_2" name="name_2" type="text">
+		<br><br>
+
+		<label for="age">나이</label>
+		<input id="age_2" name="age_2" type="number">
+
+	</fieldset>
+	<br>
+
+	<fieldset form="classForm" disabled>
+		<legend>서기</legend>
+
+		<label for="name">이름</label>
+		<input id="name_3" name="name_3" type="text">
+		<br><br>
+
+		<label for="age">나이</label>
+		<input id="age_3" name="age_3" type="number">
+	</fieldset>
+
+```
+결과 이미지 추가 
