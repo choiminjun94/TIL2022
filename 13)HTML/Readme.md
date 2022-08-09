@@ -479,7 +479,7 @@
 
 ### 텍스트 관련 인풋 타입
 
--- 설명 이미지 -- 
+![image](https://user-images.githubusercontent.com/60457431/183779037-d003817d-9dfc-4d6f-9bdb-ba981273c2ff.png) 
 
 ``` html 
 <h1>텍스트 관련 인풋 타입</h1>
@@ -516,13 +516,13 @@
 
 ```
 
--- 결과 이미지 --
+![image](https://user-images.githubusercontent.com/60457431/183779093-00d67e0c-cc38-4615-aeec-4e378f802451.png)
 
 <br><br>
 
 ### 숫자 관련 인풋 타입
 
--- 설명 이미지 -- 
+![image](https://user-images.githubusercontent.com/60457431/183779118-bba7cc8c-2b30-4a5b-8dd8-79b33b080101.png) 
 
 ``` html 
 
@@ -563,13 +563,14 @@
 
   ```
 
-  -- 결과 이미지 --
+ ![image](https://user-images.githubusercontent.com/60457431/183779153-d726cba8-d048-4253-9470-ee819ccec77e.png)
+ 
   <br><br>
 
 
 ### 체크 관련 인풋 타입
 
--- 설명 이미지 -- 
+![image](https://user-images.githubusercontent.com/60457431/183779188-08dfab64-09eb-48c0-84b2-7b0811fe9ef6.png) 
 
 ``` html 
 	<h1>체크 관련 인풋 타입</h1>
@@ -636,12 +637,13 @@
 
 ```
 
-  -- 결과 이미지 --
+  ![image](https://user-images.githubusercontent.com/60457431/183779223-507f994b-a4c0-420b-a346-468cd297e24a.png)
+  
   <br><br>
 
   ### 기타 인풋 타입
 
--- 설명 이미지 --
+![image](https://user-images.githubusercontent.com/60457431/183779255-c1a44cc0-ec68-4d83-a5a0-315716bab22a.png)
 
   
   ``` html 
@@ -684,5 +686,6 @@
 
   ```
 
-  -- 결과 이미지 --
+ ![image](https://user-images.githubusercontent.com/60457431/183779280-f2b01166-fa7a-4aee-bbb2-c27f904e1c9d.png)
+ 
   <br><br>
