@@ -1,177 +1,115 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-	  
-  <h1>텍스트 관련 인풋 타입</h1>
+  <textarea name="" id="" cols="30" rows="10">두리두 입니다.</textarea>
+  <br/>
+  <br/>
+  <br/>
+  <textarea name="" id="" cols="30" rows="10" placeholder="두리두 입니다."></textarea>
 
-  <form action="#">
-		<!-- 글자수 5개로 제한 -->
-    <label for="txtIp">text</label> <br>
-    <input 
-      id="txtIp"
-      type="text"
-      placeholder="5자 이하"
-      maxlength="5"
-    >
-    <br><br>
-		<!-- 글자수 4개 이상으로 제한 -->
-    <label for="pwdIp">password</label> <br>
-    <input
-      id="pwdIp"
-      type="password"
-      placeholder="4자 이상"
-      minlength="4"
-    >
-    <br><br>
-		<!-- Search는 Chrome으로 제한 시 X가 생긴다. -->
-    <label for="srchIp">search</label> <br>
-    <input id="srchIp" type="search">
-    <br><br>
-		<!--  -->
-    <label for="tlIp">tel</label> <br>
-    <input id="tlIp" type="tel">
-    <br><br>
-    <button type="submit">제출</button>
-  </form>
+  <br/>
+  <br/>
+  <br/>
+
+  <h1>옵션들을 사용하는 태그</h1>
+
+  <h2>select, option 태그</h2>
+
+  <label for="lang">언어</label> <br>
+  <!-- value : 서버에 전송될 값들 -->
+  
+  <select id="lang" >
+    <option value="">-- 언어 선택 --</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">자바스크립트</option>
+    <option value="ts">타입스크립트</option>
+  </select>
+
+  <br><br>
+  <!-- 셀렉트 그룹화 -->
+  <h2>optgroup 태그</h2>
+
+  <label for="shopping">쇼핑 목록</label> <br>
+  <select id="shopping">
+    <optgroup label="과일">
+      <option value="f_apl">사과</option>
+      <option value="f_grp">포도</option>
+      <option value="f_org">오렌지</option>
+    </optgroup>
+    <optgroup label="채소">
+      <option value="v_crt">당근</option>
+      <option value="v_tmt">토마토</option>
+      <option value="v_ept">가지</option>
+    </optgroup>
+    <optgroup label="육류">
+      <option value="m_bef">소고기</option>
+      <option value="m_prk">돼지고기</option>
+      <option value="m_ckn">닭고기</option>
+    </optgroup>
+  </select>
+
+  <br><br>
+
+  <h2>datalist 태그</h2>
+
+  <label for="job">현재 직업</label> <br>
+  <!-- list와 id는 동일해야 한다. -->
+  <input id="job" list="jobs">
+  <datalist id="jobs">
+    <option value="학생">
+    <option value="디자이너">
+    <option value="퍼블리셔">
+    <option value="개발자">
+  </datalist>
 
 
-	  
-  <h1>숫자 관련 인풋 타입</h1>
+  <br><br><br>
 
-  <form action="#">
-    <label for="numIp">number</label> <br>
-    <input 
-      id="numIp"
-      type="number"
-      min="0"
-      max="10"
-    >
-    <br><br>
+  <h1>정도를 표현하는 태그</h1>
+  <!-- 무언가 동적으로 움직일때 JS를 통해 사용 -->
+  <h2>
+    progress 태그
+  </h2>
+  <progress 
+    id="progressBar" 
+    max="100">
+    0%
+  </progress>
+  <button id="prgStartBtn" type="button">시작</button>
 
-		<!-- 이 자제로는 사용하기 힘들다. JS와 연동해서 사용 -->
-		<!-- step는 늘어나는 크기 -->
-    <label for="rgIp">range</label> <br>
-    <input
-      id="rgIp"
-      type="range"
-      min="0"
-      max="100"
-      step="20"
-    >
-    <br><br>
+  <h2>
+    meter 태그
+  </h2>
+  <!-- 고정 되어있는 수치 -->
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="20">
+    20달러
+  </meter>
 
-    <label for="dtIp">date</label> <br>
-    <input
-      id="dtIp"
-      type="date"
-      min="2020-01-01"
-      max="2030-12-31"
-    >
-    <br><br>
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="50">
+    50달러
+  </meter>
 
-  </form>
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="80">
+    80달러
+  </meter>
 
-	<h1>체크 관련 인풋 타입</h1>
-	<!-- label이 뒤로 쓰는것이 다르다. -->
-	<!-- [checked] 이게 없으면 체크가 표시 되지 않는다. -->
-  <form action="#">
-    <h2>checkbox</h2>
-    <input 
-      id="cbIp"
-      type="checkbox"
-      checked
-    >
-    <label for="cbIp">유기농</label> <br>
-
-    <h2>radio</h2>
-    <input
-      type="radio"
-      name="fruit"
-      id="f_apple"
-      value="apple"
-      checked
-    >
-    <label for="f_apple">사과</label>
-    <input
-      type="radio"
-      name="fruit"
-      id="f_grape"
-      value="grape"
-    >
-    <label for="f_grape">포도</label>
-    <input
-      type="radio"
-      name="fruit"
-      id="f_orange"
-      value="orange"
-    >
-    <label for="f_orange">오렌지</label>
-    <br>
-
-    <input
-      type="radio"
-      name="vege"
-      id="v_carrot"
-      value="carrot"
-      checked
-    >
-    <label for="v_carrot">당근</label>
-    <input
-      type="radio"
-      name="vege"
-      id="v_tomato"
-      value="tomato"
-    >
-    <label for="v_tomato">토마토</label>
-    <input
-      type="radio"
-      name="vege"
-      id="v_eggplant"
-      value="eggplant"
-    >
-    <label for="v_eggplant">가지</label>
-
-  </form>
-
-	<h1>기타 인풋 타입</h1>
-
-  <form action="#">
-    <label for="fileIp">file</label> <br>
-		<!-- accept로  받아들일 수 있는 파일 형식을 입력 -->
-		<!-- 아무것도 입력하지 않으면 전부다 가져올수 있다. -->
-		<!-- 참고 :  https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input/file#%EA%B3%A0%EC%9C%A0_%ED%8C%8C%EC%9D%BC_%EC%9C%A0%ED%98%95_%EC%A7%80%EC%A0%95%EC%9E%90-->
-    <input 
-      id="fileIp"
-      type="file"
-      accept="image/png, image/jpeg"
-      multiple
-    >
-    <br><br>
-
-    <label for="hdnIp">hidden</label> <br>
-    <input
-      id="hdnIp"
-      type="hidden"
-    >
-  </form>
-
-  <br><hr><br>
-
-  <form action="#">
-    <label for="emlIp">email</label> <br>
-    <input 
-      id="emlIp"
-      type="email"
-    >
-    <br><br>
-
-    <button type="submit">제출</button>
-  </form>
+  <br>
+  <br><br>
 </body>
 </html>

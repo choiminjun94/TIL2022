@@ -689,3 +689,128 @@
  ![image](https://user-images.githubusercontent.com/60457431/183779280-f2b01166-fa7a-4aee-bbb2-c27f904e1c9d.png)
  
   <br><br>
+
+# 0810
+## 사용자로부터 입력 받기 3
+
+### <textarea> 전용 속성들
+
+-- 설명 이미지
+
+``` html 
+ <textarea name="" id="" cols="30" rows="10">두리두 입니다.</textarea>
+  <br/>
+  <br/>
+  <br/>
+  <textarea name="" id="" cols="30" rows="10" placeholder="두리두 입니다."></textarea>
+
+
+```
+
+-- 결과 이미지 
+
+### 옵션들을 사용하는 태그
+
+-- 설명 이미지 
+
+``` html 
+<h1>옵션들을 사용하는 태그</h1>
+
+  <h2>select, option 태그</h2>
+
+  <label for="lang">언어</label> <br>
+  <!-- value : 서버에 전송될 값들 -->
+  
+  <select id="lang" >
+    <option value="">-- 언어 선택 --</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">자바스크립트</option>
+    <option value="ts">타입스크립트</option>
+  </select>
+
+  <br><br>
+  <!-- 셀렉트 그룹화 -->
+  <h2>optgroup 태그</h2>
+
+  <label for="shopping">쇼핑 목록</label> <br>
+  <select id="shopping">
+    <optgroup label="과일">
+      <option value="f_apl">사과</option>
+      <option value="f_grp">포도</option>
+      <option value="f_org">오렌지</option>
+    </optgroup>
+    <optgroup label="채소">
+      <option value="v_crt">당근</option>
+      <option value="v_tmt">토마토</option>
+      <option value="v_ept">가지</option>
+    </optgroup>
+    <optgroup label="육류">
+      <option value="m_bef">소고기</option>
+      <option value="m_prk">돼지고기</option>
+      <option value="m_ckn">닭고기</option>
+    </optgroup>
+  </select>
+
+  <br><br>
+
+  <h2>datalist 태그</h2>
+
+  <label for="job">현재 직업</label> <br>
+  <!-- list와 id는 동일해야 한다. -->
+  <input id="job" list="jobs">
+  <datalist id="jobs">
+    <option value="학생">
+    <option value="디자이너">
+    <option value="퍼블리셔">
+    <option value="개발자">
+  </datalist>
+
+```
+-- 결과 이미지 
+
+### 정도를 표현하는 태그
+
+--- 설명 이미지 
+
+``` html 
+<h1>정도를 표현하는 태그</h1>
+  <!-- 무언가 동적으로 움직일때 JS를 통해 사용 -->
+  <h2>
+    progress 태그
+  </h2>
+  <progress 
+    id="progressBar" 
+    max="100">
+    0%
+  </progress>
+  <button id="prgStartBtn" type="button">시작</button>
+
+  <h2>
+    meter 태그
+  </h2>
+  <!-- 고정 되어있는 수치 -->
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="20">
+    20달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="50">
+    50달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="80">
+    80달러
+  </meter>
+
+```
+
+--- 결과 이미지
