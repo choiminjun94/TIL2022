@@ -399,3 +399,293 @@
 ```
 
 ![image](https://user-images.githubusercontent.com/60457431/180331374-45c623cc-f8f4-40a1-a584-d9f78f7f47b8.png)
+
+# 0809
+## 사용자로부터 입력 받기 1
+
+![image](https://user-images.githubusercontent.com/60457431/183528505-59798fc4-0666-4815-9b99-05b82df8cfca.png)
+
+``` html 
+	<!-- autocomplete은  자동완성을 설정해 주는것 민감은 정보를 입력시 에는 OFF를 사용하는것이 좋다.-->
+	<form method="get" autocomplete="off">
+		<label for="name">이름</label>
+    <input id="name" name="my-name" type="text">
+
+    <br><br>
+
+    <label for="age">나이</label>
+    <input id="age" name="my-age" type="number">
+
+    <br><br>
+
+    <button type="submit">제출</button>
+    <button type="reset">초기화</button>
+
+	</form>
+
+```
+
+![image](https://user-images.githubusercontent.com/60457431/183528530-669af520-40de-417a-ab0e-27dfda95b36b.png)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/60457431/183528573-ed2530b5-aae2-45c6-adf7-90bbff4001b8.png)
+
+``` html 
+
+<!-- fieldset는  폼 태그 내 입력요소와 라벨들을 그룹화	// disabled 속성: 포함된 입력요소 비활성화-->
+	<fieldset>
+		<legend>반장</legend>
+
+		<label for="name">이름</label>
+		<input id="name_1" name="name_1" type="text">
+		<br><br>
+
+		<label for="age">나이</label>
+		<input id="age_1" name="age_1" type="number">
+
+	</fieldset>
+	<br>
+
+	<fieldset>
+		<legend>부반장</legend>
+
+		<label for="name">이름</label>
+		<input id="name_2" name="name_2" type="text">
+		<br><br>
+
+		<label for="age">나이</label>
+		<input id="age_2" name="age_2" type="number">
+
+	</fieldset>
+	<br>
+
+	<fieldset form="classForm" disabled>
+		<legend>서기</legend>
+
+		<label for="name">이름</label>
+		<input id="name_3" name="name_3" type="text">
+		<br><br>
+
+		<label for="age">나이</label>
+		<input id="age_3" name="age_3" type="number">
+	</fieldset>
+
+```
+![image](https://user-images.githubusercontent.com/60457431/183528635-3fe23183-c03b-4ad9-a649-771427338269.png)
+
+# 0810
+## 사용자로부터 입력 받기 2
+
+### 텍스트 관련 인풋 타입
+
+![image](https://user-images.githubusercontent.com/60457431/183779037-d003817d-9dfc-4d6f-9bdb-ba981273c2ff.png) 
+
+``` html 
+<h1>텍스트 관련 인풋 타입</h1>
+
+  <form action="#">
+		<!-- 글자수 5개로 제한 -->
+    <label for="txtIp">text</label> <br>
+    <input 
+      id="txtIp"
+      type="text"
+      placeholder="5자 이하"
+      maxlength="5"
+    >
+    <br><br>
+		<!-- 글자수 4개 이상으로 제한 -->
+    <label for="pwdIp">password</label> <br>
+    <input
+      id="pwdIp"
+      type="password"
+      placeholder="4자 이상"
+      minlength="4"
+    >
+    <br><br>
+		<!-- Search는 Chrome으로 제한 시 X가 생긴다. -->
+    <label for="srchIp">search</label> <br>
+    <input id="srchIp" type="search">
+    <br><br>
+		<!--  -->
+    <label for="tlIp">tel</label> <br>
+    <input id="tlIp" type="tel">
+    <br><br>
+    <button type="submit">제출</button>
+  </form>
+
+```
+
+![image](https://user-images.githubusercontent.com/60457431/183779093-00d67e0c-cc38-4615-aeec-4e378f802451.png)
+
+<br><br>
+
+### 숫자 관련 인풋 타입
+
+![image](https://user-images.githubusercontent.com/60457431/183779118-bba7cc8c-2b30-4a5b-8dd8-79b33b080101.png) 
+
+``` html 
+
+  <h1>숫자 관련 인풋 타입</h1>
+
+  <form action="#">
+    <label for="numIp">number</label> <br>
+    <input 
+      id="numIp"
+      type="number"
+      min="0"
+      max="10"
+    >
+    <br><br>
+
+		<!-- 이 자제로는 사용하기 힘들다. JS와 연동해서 사용 -->
+		<!-- step는 늘어나는 크기 -->
+    <label for="rgIp">range</label> <br>
+    <input
+      id="rgIp"
+      type="range"
+      min="0"
+      max="100"
+      step="20"
+    >
+    <br><br>
+
+    <label for="dtIp">date</label> <br>
+    <input
+      id="dtIp"
+      type="date"
+      min="2020-01-01"
+      max="2030-12-31"
+    >
+    <br><br>
+
+  </form>
+
+  ```
+
+ ![image](https://user-images.githubusercontent.com/60457431/183779153-d726cba8-d048-4253-9470-ee819ccec77e.png)
+ 
+  <br><br>
+
+
+### 체크 관련 인풋 타입
+
+![image](https://user-images.githubusercontent.com/60457431/183779188-08dfab64-09eb-48c0-84b2-7b0811fe9ef6.png) 
+
+``` html 
+	<h1>체크 관련 인풋 타입</h1>
+	<!-- label이 뒤로 쓰는것이 다르다. -->
+	<!-- [checked] 이게 없으면 체크가 표시 되지 않는다. -->
+  <form action="#">
+    <h2>checkbox</h2>
+    <input 
+      id="cbIp"
+      type="checkbox"
+      checked
+    >
+    <label for="cbIp">유기농</label> <br>
+
+    <h2>radio</h2>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_apple"
+      value="apple"
+      checked
+    >
+    <label for="f_apple">사과</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_grape"
+      value="grape"
+    >
+    <label for="f_grape">포도</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_orange"
+      value="orange"
+    >
+    <label for="f_orange">오렌지</label>
+    <br>
+
+    <input
+      type="radio"
+      name="vege"
+      id="v_carrot"
+      value="carrot"
+      checked
+    >
+    <label for="v_carrot">당근</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_tomato"
+      value="tomato"
+    >
+    <label for="v_tomato">토마토</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_eggplant"
+      value="eggplant"
+    >
+    <label for="v_eggplant">가지</label>
+
+  </form>
+
+```
+
+  ![image](https://user-images.githubusercontent.com/60457431/183779223-507f994b-a4c0-420b-a346-468cd297e24a.png)
+  
+  <br><br>
+
+  ### 기타 인풋 타입
+
+![image](https://user-images.githubusercontent.com/60457431/183779255-c1a44cc0-ec68-4d83-a5a0-315716bab22a.png)
+
+  
+  ``` html 
+
+	<h1>기타 인풋 타입</h1>
+
+  <form action="#">
+    <label for="fileIp">file</label> <br>
+		<!-- accept로  받아들일 수 있는 파일 형식을 입력 -->
+		<!-- 아무것도 입력하지 않으면 전부다 가져올수 있다. -->
+		<!-- 참고 :  https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input/file#%EA%B3%A0%EC%9C%A0_%ED%8C%8C%EC%9D%BC_%EC%9C%A0%ED%98%95_%EC%A7%80%EC%A0%95%EC%9E%90-->
+    <input 
+      id="fileIp"
+      type="file"
+      accept="image/png, image/jpeg"
+      multiple
+    >
+    <br><br>
+
+    <label for="hdnIp">hidden</label> <br>
+    <input
+      id="hdnIp"
+      type="hidden"
+    >
+  </form>
+
+  <br><hr><br>
+
+  <form action="#">
+    <label for="emlIp">email</label> <br>
+    <input 
+      id="emlIp"
+      type="email"
+    >
+    <br><br>
+
+    <button type="submit">제출</button>
+  </form>
+</body>
+
+  ```
+
+ ![image](https://user-images.githubusercontent.com/60457431/183779280-f2b01166-fa7a-4aee-bbb2-c27f904e1c9d.png)
+ 
+  <br><br>

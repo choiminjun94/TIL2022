@@ -6,47 +6,172 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 </head>
-	<a href="https://www.google.com" target="_blank">구글로 가기</a>
-<br/>
-<br/>
-<br/>
+<body>
+	  
+  <h1>텍스트 관련 인풋 타입</h1>
 
-	<a href="https://www.google.com" target="_blank" >
-		<img src="https://showcases.yalco.kr/html-css/01-07/yalco-logo.png" alt="강의 사이트로 가기">
-</a>
-<br><br><br><br><br>
-<a href="#target_20">타깃으로 이동</a>
+  <form action="#">
+		<!-- 글자수 5개로 제한 -->
+    <label for="txtIp">text</label> <br>
+    <input 
+      id="txtIp"
+      type="text"
+      placeholder="5자 이하"
+      maxlength="5"
+    >
+    <br><br>
+		<!-- 글자수 4개 이상으로 제한 -->
+    <label for="pwdIp">password</label> <br>
+    <input
+      id="pwdIp"
+      type="password"
+      placeholder="4자 이상"
+      minlength="4"
+    >
+    <br><br>
+		<!-- Search는 Chrome으로 제한 시 X가 생긴다. -->
+    <label for="srchIp">search</label> <br>
+    <input id="srchIp" type="search">
+    <br><br>
+		<!--  -->
+    <label for="tlIp">tel</label> <br>
+    <input id="tlIp" type="tel">
+    <br><br>
+    <button type="submit">제출</button>
+  </form>
 
-<p id="target_1">id: target_1</p>
-<p id="target_2">id: target_2</p>
-<p id="target_3">id: target_3</p>
-<p id="target_4">id: target_4</p>
-<p id="target_5">id: target_5</p>
-<p id="target_6">id: target_6</p>
-<p id="target_7">id: target_7</p>
-<p id="target_8">id: target_8</p>
-<p id="target_9">id: target_9</p>
-<p id="target_10">id: target_10</p>
-<p id="target_11">id: target_11</p>
-<p id="target_12">id: target_12</p>
-<p id="target_13">id: target_13</p>
-<p id="target_14">id: target_14</p>
-<p id="target_15">id: target_15</p>
-<p id="target_16">id: target_16</p>
-<p id="target_17">id: target_17</p>
-<p id="target_18">id: target_18</p>
-<p id="target_19">id: target_19</p>
-<p id="target_20">id: target_20</p>
-<p id="target_21">id: target_21</p>
-<p id="target_22">id: target_22</p>
-<p id="target_23">id: target_23</p>
-<p id="target_24">id: target_24</p>
-<p id="target_25">id: target_25</p>
-<p id="target_26">id: target_26</p>
-<p id="target_27">id: target_27</p>
-<p id="target_28">id: target_28</p>
-<p id="target_29">id: target_29</p>
-<p id="target_30">id: target_30</p>
 
+	  
+  <h1>숫자 관련 인풋 타입</h1>
+
+  <form action="#">
+    <label for="numIp">number</label> <br>
+    <input 
+      id="numIp"
+      type="number"
+      min="0"
+      max="10"
+    >
+    <br><br>
+
+		<!-- 이 자제로는 사용하기 힘들다. JS와 연동해서 사용 -->
+		<!-- step는 늘어나는 크기 -->
+    <label for="rgIp">range</label> <br>
+    <input
+      id="rgIp"
+      type="range"
+      min="0"
+      max="100"
+      step="20"
+    >
+    <br><br>
+
+    <label for="dtIp">date</label> <br>
+    <input
+      id="dtIp"
+      type="date"
+      min="2020-01-01"
+      max="2030-12-31"
+    >
+    <br><br>
+
+  </form>
+
+	<h1>체크 관련 인풋 타입</h1>
+	<!-- label이 뒤로 쓰는것이 다르다. -->
+	<!-- [checked] 이게 없으면 체크가 표시 되지 않는다. -->
+  <form action="#">
+    <h2>checkbox</h2>
+    <input 
+      id="cbIp"
+      type="checkbox"
+      checked
+    >
+    <label for="cbIp">유기농</label> <br>
+
+    <h2>radio</h2>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_apple"
+      value="apple"
+      checked
+    >
+    <label for="f_apple">사과</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_grape"
+      value="grape"
+    >
+    <label for="f_grape">포도</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_orange"
+      value="orange"
+    >
+    <label for="f_orange">오렌지</label>
+    <br>
+
+    <input
+      type="radio"
+      name="vege"
+      id="v_carrot"
+      value="carrot"
+      checked
+    >
+    <label for="v_carrot">당근</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_tomato"
+      value="tomato"
+    >
+    <label for="v_tomato">토마토</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_eggplant"
+      value="eggplant"
+    >
+    <label for="v_eggplant">가지</label>
+
+  </form>
+
+	<h1>기타 인풋 타입</h1>
+
+  <form action="#">
+    <label for="fileIp">file</label> <br>
+		<!-- accept로  받아들일 수 있는 파일 형식을 입력 -->
+		<!-- 아무것도 입력하지 않으면 전부다 가져올수 있다. -->
+		<!-- 참고 :  https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input/file#%EA%B3%A0%EC%9C%A0_%ED%8C%8C%EC%9D%BC_%EC%9C%A0%ED%98%95_%EC%A7%80%EC%A0%95%EC%9E%90-->
+    <input 
+      id="fileIp"
+      type="file"
+      accept="image/png, image/jpeg"
+      multiple
+    >
+    <br><br>
+
+    <label for="hdnIp">hidden</label> <br>
+    <input
+      id="hdnIp"
+      type="hidden"
+    >
+  </form>
+
+  <br><hr><br>
+
+  <form action="#">
+    <label for="emlIp">email</label> <br>
+    <input 
+      id="emlIp"
+      type="email"
+    >
+    <br><br>
+
+    <button type="submit">제출</button>
+  </form>
 </body>
 </html>
