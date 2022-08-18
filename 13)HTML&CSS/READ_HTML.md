@@ -689,3 +689,133 @@
  ![image](https://user-images.githubusercontent.com/60457431/183779280-f2b01166-fa7a-4aee-bbb2-c27f904e1c9d.png)
  
   <br><br>
+
+# 0810
+## 사용자로부터 입력 받기 3
+
+### <textarea> 전용 속성들
+
+![image](https://user-images.githubusercontent.com/60457431/184040952-325396c6-6aff-4c0e-b103-347d128b6dae.png)
+
+``` html 
+ <textarea name="" id="" cols="30" rows="10">두리두 입니다.</textarea>
+  <br/>
+  <br/>
+  <br/>
+  <textarea name="" id="" cols="30" rows="10" placeholder="두리두 입니다."></textarea>
+
+
+```
+
+![image](https://user-images.githubusercontent.com/60457431/184040991-3d254122-70e7-48e1-b6b1-010186b5461a.png)
+
+### 옵션들을 사용하는 태그
+
+![image](https://user-images.githubusercontent.com/60457431/184041016-c95e6f64-3a57-499c-8e78-3adde0804015.png) 
+
+``` html 
+<h1>옵션들을 사용하는 태그</h1>
+
+  <h2>select, option 태그</h2>
+
+  <label for="lang">언어</label> <br>
+  <!-- value : 서버에 전송될 값들 -->
+  
+  <select id="lang" >
+    <option value="">-- 언어 선택 --</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">자바스크립트</option>
+    <option value="ts">타입스크립트</option>
+  </select>
+
+  <br><br>
+  <!-- 셀렉트 그룹화 -->
+  <h2>optgroup 태그</h2>
+
+  <label for="shopping">쇼핑 목록</label> <br>
+  <select id="shopping">
+    <optgroup label="과일">
+      <option value="f_apl">사과</option>
+      <option value="f_grp">포도</option>
+      <option value="f_org">오렌지</option>
+    </optgroup>
+    <optgroup label="채소">
+      <option value="v_crt">당근</option>
+      <option value="v_tmt">토마토</option>
+      <option value="v_ept">가지</option>
+    </optgroup>
+    <optgroup label="육류">
+      <option value="m_bef">소고기</option>
+      <option value="m_prk">돼지고기</option>
+      <option value="m_ckn">닭고기</option>
+    </optgroup>
+  </select>
+
+  <br><br>
+
+  <h2>datalist 태그</h2>
+
+  <label for="job">현재 직업</label> <br>
+  <!-- list와 id는 동일해야 한다. -->
+  <input id="job" list="jobs">
+  <datalist id="jobs">
+    <option value="학생">
+    <option value="디자이너">
+    <option value="퍼블리셔">
+    <option value="개발자">
+  </datalist>
+
+```
+![image](https://user-images.githubusercontent.com/60457431/184041052-cea194d3-a5f8-4f5b-a93d-6ac89d18f623.png)
+
+![image](https://user-images.githubusercontent.com/60457431/184041065-fbf76b3f-7266-4177-b8d5-56311f940fa7.png)
+
+![image](https://user-images.githubusercontent.com/60457431/184041115-bda312a0-2bb5-4001-ba04-e90f98f52e8e.png)
+
+
+### 정도를 표현하는 태그
+
+![image](https://user-images.githubusercontent.com/60457431/184041136-96dd7650-7c20-4ed1-b7c7-84a13ffef5b2.png) 
+
+``` html 
+<h1>정도를 표현하는 태그</h1>
+  <!-- 무언가 동적으로 움직일때 JS를 통해 사용 -->
+  <h2>
+    progress 태그
+  </h2>
+  <progress 
+    id="progressBar" 
+    max="100">
+    0%
+  </progress>
+  <button id="prgStartBtn" type="button">시작</button>
+
+  <h2>
+    meter 태그
+  </h2>
+  <!-- 고정 되어있는 수치 -->
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="20">
+    20달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="50">
+    50달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="80">
+    80달러
+  </meter>
+
+```
+
+![image](https://user-images.githubusercontent.com/60457431/184041155-29999b53-6e06-4f52-9333-d41479890377.png)
