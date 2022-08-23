@@ -2,45 +2,42 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../pretty.css">
-  <title>HTML & CSS 02-01-01</title>
-
-
-  <link rel="stylesheet" href="../CSS/style.css">
-
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../pretty.css">
+	<link rel="stylesheet" href="../CSS/style.css">
+  <title>HTML & CSS 02-01-03</title>
 </head>
 <body>
 
-  <h1>기본 & 그룹 선택자</h1>
+	<h1>결합자와 가상 클래스</h1>
 
-  <span>
-    span 요소
-  </span>
+	<ul class="outer">
+		<li>육류</li>
+		<li>채소</li>
+		<li>유제품</li>
+		<li>과일
+			<ul>
+				<li>사과</li>
+				<li>포도</li>
+				<li>딸기</li>
+				<li>키위</li>
+			</ul>
+		</li>
+	</ul>
 
-  <p>
-    p 요소
-  </p>
-
-  <p class="blue">
-    p 요소, class는 blue
-  </p>
-
-  <span class="blue">
-    span 요소, class는 blue
-  </span>
-<!-- 2개의 클래스를 가지고 있다. -->
-<!-- 이럴때에는 스페이스를 넣어 구분 -->
-  <p class="blue dark">
-    p 요소, class는 blue와 dark
-  </p>
-
-  <p id="red">
-    p 요소, class는 blue, id는 red
-  </p>
-  
-  
+	<ol>
+		<li>한놈</li>
+		<li>두시기</li>
+		<li class="starter">석삼</li>
+		<li>너구리</li>
+		<li>다섯놈</li>
+		<li>육개장</li>
+		<li>칠푼이</li>
+		<li>팔보채</li>
+		<li>구공탄</li>
+	</ol>
+	
 </body>
 </html>

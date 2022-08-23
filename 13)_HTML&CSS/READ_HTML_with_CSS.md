@@ -138,7 +138,110 @@ span, .dark, #red{
   text-decoration: underline;
 }
 
-```
 
+```
 ![image](https://user-images.githubusercontent.com/60457431/186282819-01b5c9e8-6592-40e1-90ca-fcce8856ee34.png)
 
+## HTML 
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<link rel="stylesheet" href="../CSS/style.css">
+  <title>HTML & CSS 02-01-03</title>
+</head>
+<body>
+
+	<h1>결합자와 가상 클래스</h1>
+
+	<ul class="outer">
+		<li>육류</li>
+		<li>채소</li>
+		<li>유제품</li>
+		<li>과일
+			<ul>
+				<li>사과</li>
+				<li>포도</li>
+				<li>딸기</li>
+				<li>키위</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ol>
+		<li>한놈</li>
+		<li>두시기</li>
+		<li class="starter">석삼</li>
+		<li>너구리</li>
+		<li>다섯놈</li>
+		<li>육개장</li>
+		<li>칠푼이</li>
+		<li>팔보채</li>
+		<li>구공탄</li>
+	</ol>
+	
+</body>
+</html>
+
+```
+## CSS 
+
+``` CSS
+/* 자손 결합자 */
+.outer li {
+	color: olivedrab;
+}
+
+/* 자식(1촌 자손) 결합자 */
+.outer > li {
+	color: dodgerblue;
+}
+/* 1촌 자손의 자손 */
+.outer > li li {
+	text-decoration: underline;
+}
+
+/* 뒤따르는 모든 동생들 결합자 */
+/*  이 클래스 아래 부터 적용 */
+.starter ~ li {
+	font-style: italic;
+}
+
+/* 뒤따르는 바로 다음 동생 결합자 */
+.starter + li {
+	font-weight: bold;
+}
+
+/* 첫 번째, 마지막 요소 가상 클래스 */
+ol li:first-child,
+ol li:last-child {
+	color: yellowgreen;
+}
+
+/* ~가 아닌 요소 가상 클래스 */
+.outer > li:not(:last-child) {
+	text-decoration: line-through;
+}
+
+ul:not(.outer) li {
+	font-weight: bold;
+}
+
+/* ~번째 요소 가상 클래스 */
+/* nth-child는 부모안에 모든 요소 중 N번째 요소*/
+/* #, #n, #n+#, odd, even 등 시도해보기 */
+ol li:nth-child(even) {
+	font-weight: bold;
+	color: deeppink;
+}
+
+/* 마우스오버 가상 클래스 */
+li:hover, 
+ol li:nth-child(even):hover {
+	font-weight: bold;
+	color: blue;
+}
+
+```
