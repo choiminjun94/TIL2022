@@ -7,10 +7,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../pretty.css">
+  ...
   <title>HTML & CSS 02-01-01</title>
 
   <!-- Head 안에서는 어디에서든 사용이 가능하다. -->
@@ -61,3 +58,86 @@
 ```
 
 ![image](https://user-images.githubusercontent.com/60457431/184736453-f91bf055-3de4-441b-a254-e1cbf9351ffa.png)
+
+# 0824
+
+## 기본 & 그룹선택자
+## HTML
+``` html
+<head>
+...
+<link rel="stylesheet" href="../CSS/style.css">
+...
+</head>
+<body>
+  <h1>기본 & 그룹 선택자</h1>
+  <span>
+    span 요소
+  </span>
+  <p>
+    p 요소
+  </p>
+  <p class="blue">
+    p 요소, class는 blue
+  </p>
+  <span class="blue">
+    span 요소, class는 blue
+  </span>
+  <!-- 2개의 클래스를 가지고 있다. -->
+  <!-- 이럴때에는 스페이스를 넣어 구분 -->
+  <p class="blue dark">
+    p 요소, class는 blue와 dark
+  </p>
+  <p id="red">
+    p 요소, class는 blue, id는 red
+  </p>
+</body>
+</html>
+```
+## CSS
+``` css
+/* 모든 요소 선택 */
+* {
+  font-weight: bold;
+  color : darkgoldenrod;
+}
+
+/* 같은 선택자의 경우 뒤에 오는 것이 우선순위가 높다. */
+* {
+  color: red;
+}
+
+p {
+  color: olive;
+}
+/* class 선택자  */
+/* 태그보다 우선순위가 높다. */
+/* 페이지상의 여러 요소가 같은 class를 가질 수 있음  */
+.blue {
+  color : slateblue
+}
+
+/* 다른 선택자에 이어붙일 수 있음 (태그, 클래스 등 ....) */
+/* 선택자는 구체적일수록 우선순위 높음 */
+p.blue {
+  color: pink;
+}
+/* 2개의 클래스인 경우 */
+.blue.dark{
+  color: mediumblue;
+}
+
+/* id 선택자  */
+/* class보다 우선순위가 높음 */
+/* id는 페이지상에서 요소보다 고유해야 함 */
+#red{
+  color: tomato;
+}
+/* 그룹 선택자 */
+span, .dark, #red{
+  text-decoration: underline;
+}
+
+```
+
+
