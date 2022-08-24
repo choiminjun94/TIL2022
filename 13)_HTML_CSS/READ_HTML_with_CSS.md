@@ -247,3 +247,52 @@ ol li:nth-child(even):hover {
 ```
 ![image](https://user-images.githubusercontent.com/60457431/186286220-9b2b4649-90fa-4ebd-a5a6-555a4af43989.png)
 
+# 0825
+
+## 글자와 텍스트 스타일
+## HTML
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<title>CSS 글자와 텍스트 스타일</title>
+</head>
+<body>
+	<p>폰트 스타일과 굵기</p>
+	<br/>
+
+	바깥
+	<div>중간
+		<div>안쪽</div>
+	</div>
+	
+</body>
+</html>
+
+```
+
+``` Css
+
+p {
+	/* 폰트 기울기 */
+	/* normal, italic, oblique*/
+	font-style: oblique;
+	/* normal, bold, 100 ~ 900 */
+	font-weight: bold;
+} 
+
+html { font-size: 14px; }
+/* html의 font 사이즈에 영향을 받는다. */
+/* html font-size의 200가 커진다.  */
+div { 
+		font-size: 2em; 
+}
+
+
+```

@@ -1,0 +1,14 @@
+p {
+	/* 폰트 기울기 */
+	/* normal, italic, oblique*/
+	font-style: oblique;
+	/* normal, bold, 100 ~ 900 */
+	font-weight: bold;
+} 
+
+html { font-size: 14px; }
+/* html의 font 사이즈에 영향을 받는다. */
+/* html font-size의 200가 커진다.  */
+div { 
+		font-size: 2em; 
+}
