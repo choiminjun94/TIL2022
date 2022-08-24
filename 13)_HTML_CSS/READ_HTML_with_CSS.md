@@ -302,4 +302,37 @@ div {
 
 ![image](https://user-images.githubusercontent.com/60457431/186536999-6656c20b-b712-46bc-ba0f-b46881749b3f.png)
 
+``` html
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<title>CSS 글자와 텍스트 스타일</title>
+</head>
+<body>
+	
+	<p>HTML & CSS Programming is fun!</p>
+
+</body>
+</html>
+
+```
+
+``` css 
+
+p {
+	
+  text-decoration: wavy overline blue;
+	/* 나중에 나온것이 우선 순위가 높다. */
+	text-decoration: red wavy underline;
+
+  /* capitalize(영문 첫번째 글자들 대문자화, uppercase(전부 대문자), lowercase(전부 소문자) */
+  text-transform: uppercase;
+}
+
+```
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/text-decoration
