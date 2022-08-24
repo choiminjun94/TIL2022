@@ -1,9 +1,8 @@
 p {
-	
-  text-decoration: wavy overline blue;
-	/* 나중에 나온것이 우선 순위가 높다. */
-	text-decoration: red wavy underline;
+  /* left, center, right, justify */
+  text-align: justify;
 
-  /* capitalize(영문 첫번째 글자들 대문자화, uppercase(전부 대문자), lowercase(전부 소문자) */
-  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 0;
+  line-height: 1.5em;
 }

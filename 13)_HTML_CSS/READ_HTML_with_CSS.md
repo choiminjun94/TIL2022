@@ -276,7 +276,7 @@ ol li:nth-child(even):hover {
 </html>
 
 ```
-
+## CSS
 ``` Css
 
 p {
@@ -305,6 +305,7 @@ div {
 <br/>
 <br/>
 
+## HTML
 ``` html
 
 <!DOCTYPE html>
@@ -324,7 +325,7 @@ div {
 </html>
 
 ```
-
+## CSS
 ``` css 
 
 p {
@@ -342,3 +343,39 @@ p {
 
 
 참고 : https://developer.mozilla.org/ko/docs/Web/CSS/text-decoration
+
+##  문단과 목록 스타일
+## HTML
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<title>Lesson 3. 문단과 목록 스타일</title>
+</head>
+<body>
+
+	<p>소년은 개울가에서 소녀를 보자 곧 윤 초시네 증손녀(曾孫女)딸이라는 걸 알 수 있었다. 소녀는 개울에다 손을 잠그고 물장난을 하고 있는 것이다. 서울서는 이런 개울물을 보지 못하기나 한 듯이. 벌써 며칠째 소녀는, 학교에서 돌아오는 길에 물장난이었다. 그런데, 어제까지 개울 기슭에서 하더니, 오늘은 징검다리 한가운데 앉아서 하고 있다. 소년은 개울둑에 앉아 버렸다. 소녀가 비키기를 기다리자는 것이다.</p>
+
+</body>
+</html>
+
+
+```
+## CSS
+``` css
+
+p {
+  /* left, center, right, justify */
+  text-align: justify;
+
+  letter-spacing: 5px;
+  word-spacing: 0;
+  line-height: 1.5em;
+}
+
+```
