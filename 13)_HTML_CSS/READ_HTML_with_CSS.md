@@ -379,10 +379,53 @@ p {
 }
 
 ```
-<<<<<<< HEAD
 
-=======
-![image](https://user-images.githubusercontent.com/60457431/186541172-8912d59f-1825-4fb1-a4f7-f93fbfdcb1f3.png)
+## HTML 
 
-![image](https://user-images.githubusercontent.com/60457431/186541187-d40d0e2a-2544-4ef5-a635-d87f40222d93.png)
->>>>>>> 8b1b8241de0ca71fbc69ceb803926e772f36af5d
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<title>Lesson 3. 문단과 목록 스타일</title>
+</head>
+<body>
+
+	<ul>
+		<li>ul 아이템 1</li>
+		<li>ul 아이템 2</li>
+		<li>ul 아이템 3</li>
+	</ul>
+	<ol>
+		<li>li 아이템 1</li>
+		<li>li 아이템 2</li>
+		<li>li 아이템 3</li>
+	</ol>
+	
+</body>
+</html>
+
+```
+
+``` CSS 
+
+ul {
+  list-style: circle;
+}
+
+/* li별로 지정하는 것도 가능 */
+/* url을 사용하여 이미지도 넣을 수 있다. */
+/* ul 안에 들어 있는 li 중 첫번째 아이 */
+ul > li:first-child {
+  list-style: "🚩 "
+}
+
+ol {
+  list-style: lower-alpha;
+}
+
+```
