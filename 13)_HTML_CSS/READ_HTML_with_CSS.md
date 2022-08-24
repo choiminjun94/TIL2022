@@ -302,6 +302,9 @@ div {
 
 ![image](https://user-images.githubusercontent.com/60457431/186536999-6656c20b-b712-46bc-ba0f-b46881749b3f.png)
 
+<br/>
+<br/>
+
 ``` html
 
 <!DOCTYPE html>
@@ -335,4 +338,7 @@ p {
 }
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/186537775-ba11c9b7-4f35-45db-8dfe-f017622cf2e1.png)
+
+
 참고 : https://developer.mozilla.org/ko/docs/Web/CSS/text-decoration
