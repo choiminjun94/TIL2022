@@ -379,6 +379,10 @@ p {
 }
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/186660642-1ff13fd9-c232-4985-8db4-7f4b2b59f6d6.png)
+
+![image](https://user-images.githubusercontent.com/60457431/186660812-d5b5c988-30bc-44f1-b9b7-4a2978c9ab7b.png)
+
 
 ## HTML 
 
@@ -429,3 +433,5 @@ ol {
 }
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/186660723-e057334b-e6ef-486e-9ee2-ce2f56b383b2.png)
+
