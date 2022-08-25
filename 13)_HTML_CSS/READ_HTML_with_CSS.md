@@ -247,3 +247,185 @@ ol li:nth-child(even):hover {
 ```
 ![image](https://user-images.githubusercontent.com/60457431/186286220-9b2b4649-90fa-4ebd-a5a6-555a4af43989.png)
 
+# 0825
+
+## 글자와 텍스트 스타일
+## HTML
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<title>CSS 글자와 텍스트 스타일</title>
+</head>
+<body>
+	<p>폰트 스타일과 굵기</p>
+	<br/>
+
+	바깥
+	<div>중간
+		<div>안쪽</div>
+	</div>
+	
+</body>
+</html>
+
+```
+## CSS
+``` Css
+
+p {
+	/* 폰트 기울기 */
+	/* normal, italic, oblique*/
+	font-style: oblique;
+	/* normal, bold, 100 ~ 900 */
+	font-weight: bold;
+} 
+
+html { font-size: 14px; }
+/* html의 font 사이즈에 영향을 받는다. */
+/* html font-size의 200가 커진다.  */
+div { 
+		font-size: 2em; 
+}
+
+
+```
+![image](https://user-images.githubusercontent.com/60457431/186537047-b4ed948c-1019-446e-a655-00158b0ac1ab.png)
+
+![image](https://user-images.githubusercontent.com/60457431/186537077-d5ee82e8-21fc-49f5-a00f-3c95a6704047.png)
+
+![image](https://user-images.githubusercontent.com/60457431/186536999-6656c20b-b712-46bc-ba0f-b46881749b3f.png)
+
+<br/>
+<br/>
+
+## HTML
+``` html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<title>CSS 글자와 텍스트 스타일</title>
+</head>
+<body>
+	
+	<p>HTML & CSS Programming is fun!</p>
+
+</body>
+</html>
+
+```
+## CSS
+``` css 
+
+p {
+	
+  text-decoration: wavy overline blue;
+	/* 나중에 나온것이 우선 순위가 높다. */
+	text-decoration: red wavy underline;
+
+  /* capitalize(영문 첫번째 글자들 대문자화, uppercase(전부 대문자), lowercase(전부 소문자) */
+  text-transform: uppercase;
+}
+
+```
+![image](https://user-images.githubusercontent.com/60457431/186537775-ba11c9b7-4f35-45db-8dfe-f017622cf2e1.png)
+
+
+참고 : https://developer.mozilla.org/ko/docs/Web/CSS/text-decoration
+
+##  문단과 목록 스타일
+## HTML
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<title>Lesson 3. 문단과 목록 스타일</title>
+</head>
+<body>
+
+	<p>소년은 개울가에서 소녀를 보자 곧 윤 초시네 증손녀(曾孫女)딸이라는 걸 알 수 있었다. 소녀는 개울에다 손을 잠그고 물장난을 하고 있는 것이다. 서울서는 이런 개울물을 보지 못하기나 한 듯이. 벌써 며칠째 소녀는, 학교에서 돌아오는 길에 물장난이었다. 그런데, 어제까지 개울 기슭에서 하더니, 오늘은 징검다리 한가운데 앉아서 하고 있다. 소년은 개울둑에 앉아 버렸다. 소녀가 비키기를 기다리자는 것이다.</p>
+
+</body>
+</html>
+
+
+```
+## CSS
+``` css
+
+p {
+  /* left, center, right, justify */
+  text-align: justify;
+
+  letter-spacing: 5px;
+  word-spacing: 0;
+  line-height: 1.5em;
+}
+
+```
+
+## HTML 
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<title>Lesson 3. 문단과 목록 스타일</title>
+</head>
+<body>
+
+	<ul>
+		<li>ul 아이템 1</li>
+		<li>ul 아이템 2</li>
+		<li>ul 아이템 3</li>
+	</ul>
+	<ol>
+		<li>li 아이템 1</li>
+		<li>li 아이템 2</li>
+		<li>li 아이템 3</li>
+	</ol>
+	
+</body>
+</html>
+
+```
+
+``` CSS 
+
+ul {
+  list-style: circle;
+}
+
+/* li별로 지정하는 것도 가능 */
+/* url을 사용하여 이미지도 넣을 수 있다. */
+/* ul 안에 들어 있는 li 중 첫번째 아이 */
+ul > li:first-child {
+  list-style: "🚩 "
+}
+
+ol {
+  list-style: lower-alpha;
+}
+
+```

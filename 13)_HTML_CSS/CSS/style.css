@@ -1,0 +1,14 @@
+ul {
+  list-style: circle;
+}
+
+/* li별로 지정하는 것도 가능 */
+/* url을 사용하여 이미지도 넣을 수 있다. */
+/* ul 안에 들어 있는 li 중 첫번째 아이 */
+ul > li:first-child {
+  list-style: "🚩 "
+}
+
+ol {
+  list-style: lower-alpha;
+}
