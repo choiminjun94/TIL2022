@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_02_작업화면_이전까지" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1179,1314" sap2010:WorkflowViewState.IdRef="_02_작업화면_이전까지_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_02_작업화면_이전까지" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1179,1620" sap2010:WorkflowViewState.IdRef="_02_작업화면_이전까지_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -55,7 +55,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_02_작업화면_이전까지" sap:VirtualizedContainerService.HintSize="509,1249" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_02_작업화면_이전까지" sap:VirtualizedContainerService.HintSize="509,1555" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -84,13 +84,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
-    <Sequence DisplayName="팝업창 끄기" sap:VirtualizedContainerService.HintSize="467,902" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="팝업창 끄기" sap:VirtualizedContainerService.HintSize="467,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'push button  닫기'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+      <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'push button  닫기'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
         <ui:UiElementExists.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c81fd334-7798-458e-8a6f-a69b65fd3b5c" InformativeScreenshot="cb18cbd3914e9e2b9eab2056363fb9fd" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*' /&gt;&lt;ctrl name='페이지 복원' role='alert' /&gt;&lt;ctrl name='닫기' role='push button' /&gt;">
             <ui:Target.TimeoutMS>
@@ -102,7 +103,7 @@
           </ui:Target>
         </ui:UiElementExists.Target>
       </ui:UiElementExists>
-      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  닫기'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  닫기'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
         <ui:Click.CursorPosition>
           <ui:CursorPosition Position="Center">
             <ui:CursorPosition.OffsetX>
@@ -124,7 +125,7 @@
           </ui:Target>
         </ui:Click.Target>
       </ui:Click>
-      <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="418,518" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:03">
+      <ui:RetryScope DisplayName="팝업 끄기" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:03">
         <ui:RetryScope.ActivityBody>
           <ActivityAction>
             <Sequence DisplayName="액션" sap:VirtualizedContainerService.HintSize="376,344" sap2010:WorkflowViewState.IdRef="Sequence_4">
@@ -172,11 +173,162 @@
         </ui:RetryScope.Condition>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:RetryScope>
+    </Sequence>
+    <Sequence sap:VirtualizedContainerService.HintSize="467,1102" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /advnc/epmtList.do?m...'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3d0370bc-8995-4e69-92e2-1e0ab9b7776e" InformativeScreenshot="70ddfecd697c32d7426da0e44eb56d6a" Selector="&lt;html app='msedge.exe' title='월드잡플러스' /&gt;&lt;webctrl parentid='container_sub' tag='A' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="59b16f19-f470-4c27-8819-aece1bb99133" InformativeScreenshot="34cc449c6367cea6ac1e5f79f02a3f99" Selector="&lt;html app='msedge.exe' title='*' /&gt;&lt;webctrl parentid='div_getEpmtSearchTop' tag='BUTTON' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'LI  continent1'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c593e577-1219-4f0a-9bda-852156360d4d" InformativeScreenshot="de75b70a3f3c5597d4954a6f5387dd7a" Selector="&lt;html app='msedge.exe' title='*' /&gt;&lt;webctrl id='continent1' tag='LI' aaname='아시아' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Hover DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" DisplayName="Hover 'LI  nation392'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Hover_1">
+        <ui:Hover.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Hover.CursorPosition>
+        <ui:Hover.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ccf2e8e5-c553-42fd-824c-606981ae8ab3" InformativeScreenshot="5c5a7277106f7a9ee0a4bd3d7d748688" Selector="&lt;html app='msedge.exe' title='*' /&gt;&lt;webctrl id='nation392' tag='LI' aaname='일본' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Hover.Target>
+      </ui:Hover>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'LI  nation392'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9657fd56-dc71-46ec-8c07-2165ffef6ba9" InformativeScreenshot="5c5a7277106f7a9ee0a4bd3d7d748688" Selector="&lt;html app='msedge.exe' title='*' /&gt;&lt;webctrl id='nation392' tag='LI' aaname='일본' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  keyword'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="web">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5598657f-07ce-46cc-a5e6-e5aa108140f6" InformativeScreenshot="0ded6e4f90d63fae9d1eb6e7155f72e3" Selector="&lt;html app='msedge.exe' title='https://www.worldjob.or.kr/advnc/epmtList.do?menuId=1000002033' /&gt;&lt;webctrl id='keyword' tag='INPUT' type='text' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  eventType'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2449f6f3-5a5d-4236-92d4-adca0ace1252" InformativeScreenshot="d0bb8d7eb653c60c84cb024c47e6a6e2" Selector="&lt;html app='msedge.exe' title='https://www.worldjob.or.kr/advnc/epmtList.do?menuId=1000002033' /&gt;&lt;webctrl id='eventType' tag='INPUT' type='button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
     </Sequence>
   </Sequence>
 </Activity>
