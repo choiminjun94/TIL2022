@@ -435,3 +435,41 @@ ol {
 ```
 ![image](https://user-images.githubusercontent.com/60457431/186660723-e057334b-e6ef-486e-9ee2-ce2f56b383b2.png)
 
+# 0829
+
+## 색 선택
+
+## HTML
+
+```html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 4. 색표현</title>
+	<link rel="stylesheet" href=".././CSS/style.css">
+</head>
+<body>
+	<p>글자와 배경에 색상을 적용해보세요!</p>
+</body>
+</html>
+
+```
+
+## CSS
+
+```CSS
+p {
+  /* 글자색 */
+  color: white;
+
+  /* 배경색 */
+  background-color: #D24C75	;
+
+  font-weight: bold;
+}
+
+```
