@@ -34,3 +34,4 @@ app.listen(port,() => console.log(`listen port ${port}`));
 ```
 
 > 결과
+![image](https://user-images.githubusercontent.com/60457431/187343165-9be63479-dcfb-406d-8bd5-c85596fee832.png)
