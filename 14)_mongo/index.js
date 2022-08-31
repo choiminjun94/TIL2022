@@ -29,6 +29,9 @@ app.post('/register', (req, res) =>{
     // 그것들을 데이터베이스에 넣어준다.
 
     const user = new User(req.body)
+    // 비밀번호 암호화
+    
+
     //유저 정보들을 저장 
     user.save((err, userinfo)=>{
         if(err) return res.json({
