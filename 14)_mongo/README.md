@@ -57,13 +57,15 @@ app.get('/', (req, res)=>res.send('Hello World'));
 app.listen(port, ()=> console.log(`Example app listening on port ${port}!`))
 
 ```
->사진 추가 
+![image](https://user-images.githubusercontent.com/60457431/187564905-9877e61b-ce3f-4583-9916-4a96b00261d2.png)
+
 
 ## 스키마 작성
 
 > User.js 생성
 
->사진추가
+![image](https://user-images.githubusercontent.com/60457431/187564965-1d1be235-1cbe-4bbf-b774-1f22e1e99152.png)
+
 
 ``` js
 const mongoose = require('mongoose');
@@ -169,4 +171,8 @@ app.listen(port, ()=> console.log(`Example app listening on port ${port}!`))
 ## postman 설치 및 테스트 
 
 url : https://www.postman.com/
+
+![image](https://user-images.githubusercontent.com/60457431/187565022-7c183e26-dc53-4008-9b72-700115613b72.png)
+
+
 
