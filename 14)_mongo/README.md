@@ -174,5 +174,35 @@ url : https://www.postman.com/
 
 ![image](https://user-images.githubusercontent.com/60457431/187565022-7c183e26-dc53-4008-9b72-700115613b72.png)
 
+## nodemon install 
+
+> npm install nodemon --save
+
+## package.json 수정
+
+> start를 수정
+
+``` json 
+{
+  "name": "login-study02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.3",
+    "nodemon": "^2.0.19"
+  }
+}
+
+
+```
 
 
