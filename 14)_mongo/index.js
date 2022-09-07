@@ -1,20 +1,21 @@
 const express = require('express'); 
 const app = express();
-const port = 3000;
+const port = 6000;
 // bodyParser 가져오기
 const bodyParser = require('body-parser');
-
+const cookieParser = require('cookie-parser');
 const config = require('./config/key')
 // 유저 가져오기
 const {User} = require('./models/User')
+const mongoose = require('mongoose')
 
 //bodyParser 옵션 주기
 // 
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(bodyParser.json());
+app.use(cookieParser());
 
-const mongoose = require('mongoose')
 mongoose.connect(config.mongoURI, {
     //  useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
 }).then(()=> console.log('몽고 DB 연결중'))
@@ -41,7 +42,9 @@ app.post('/register', (req, res) =>{
             success: true
         })
     })  
-
 })
+app.post('/login', (rer, res) =>{
+    
+})    
 
 app.listen(port, ()=> console.log(`Example app listening on port ${port}!`))
