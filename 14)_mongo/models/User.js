@@ -1,13 +1,8 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-<<<<<<< HEAD
 const saltRounds = 10
 const jwt = require('jsonwebtoken')
-=======
-const jwt = require('jsonwebtoken');
-//const { JsonWebTokenError } = require('jsonwebtoken');
-const saltRounds = 10; 
->>>>>>> f7431e679e8c370c0d602f97f7cbba648fcf5912
+
 
 const userSchema = mongoose.Schema({
     name: {
@@ -40,25 +35,6 @@ const userSchema = mongoose.Schema({
 
 })
 
-<<<<<<< HEAD
-// 유저 정보를 저장하기 전에 작업
-userSchema.pre('save', function (next) {
-  var user = this;
-  if (user.isModified('password')) {
-      //비밀번호를 암호화 시킨다.
-      bcrypt.genSalt(saltRounds, function (err, salt) {
-          if (err) return next(err)
-
-          bcrypt.hash(user.password, salt, function (err, hash) {
-              if (err) return next(err)
-              user.password = hash
-              next()
-          })
-      })
-  } else {
-      next()
-  }
-=======
 userSchema.pre('save', function (next){
     var user = this;
 
@@ -80,7 +56,6 @@ userSchema.pre('save', function (next){
         //비밀번호 바꾸는게 아니라면 그냥 넘김
         next()
     }
->>>>>>> f7431e679e8c370c0d602f97f7cbba648fcf5912
 })
 userSchema.methods.comparePassword = function (plainPassword, cb) {
 
