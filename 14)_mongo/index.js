@@ -4,7 +4,11 @@ const port = 3000;
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const config = require('./config/key');
+
+const { auth } = require("./middleware/auth");
 const { User } = require("./models/User");
+// 새로운 스카마 가져옴
+const {Stoke}  = require("./models/Stoke")
 const mongoose = require('mongoose');
 
 //application/x-www-form-urlencoded 이런식으로 된 데이터를 가져와서 분석해주는 코드
@@ -22,7 +26,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.post('/register', (req, res) =>{
+app.post('/api/users/register', (req, res) =>{
     //회원가입 할때 필요한 정보들을 Clinent 에서 가져오면
     //그것들을 데이터베이스에 넣어준다 
 
@@ -36,14 +40,24 @@ app.post('/register', (req, res) =>{
     })
 })
 
-app.post('/api/users/login', (req, res) => {
-    console.log('pinga');
+app.post('/api/users/stoke', (req, res) =>{
+    //회원가입 할때 필요한 정보들을 Clinent 에서 가져오면
+    //그것들을 데이터베이스에 넣어준다 
 
+    const stoke = new Stoke(req.body);
+
+    stoke.save((err, stokeInfo) => {
+        if (err) return res.json({ success: false, err })
+        return res.status(200).json({
+            success: true
+        })
+    })
+})
+
+app.post('/api/users/login', (req, res) => {
     //요청된 이메일을 데이터베이스에서 있는지 찾는다.
     User.findOne({ email: req.body.email }, (err, user) => {
-        console.log('pingb');
         if(!user) {
-            console.log('pingc');
             return res.json({
                 loginSuccess: false,
                 message: "제공된 이메일에 해당하는 유저가 없습니다."
@@ -51,11 +65,8 @@ app.post('/api/users/login', (req, res) => {
         }
     // 요청된 이메일이 데이터 베이스에 있다면 비밀번호가 맞는 비밀번호 인지 확인.
     //User.js에서 comparePassword 메소드를 만들어서 사용하면됨
-    console.log('pingk');
     user.comparePassword(req.body.password , (err, isMatch) => {
-        console.log('ping0');
         if(!isMatch){
-            console.log('pingl');
             return res.json({ loginSuccess: false, message: "비밀번호가 틀렸습니다."})
         }
         // 비밀번호까지 맞다면 토큰을 생성하기
@@ -68,7 +79,33 @@ app.post('/api/users/login', (req, res) => {
         })
     })
     })
+})
+app.get('/api/users/auth', auth, (req, res) =>{
+    res.status(200).json({
+        _id: req.user._id,
+        isAdmin: req.user.role === 0 ? false:true,
+        isAuth: true,
+        email: req.user.email,
+        name: req.user.name,
+        lastname: req.user.lastname,
+        role: req.user.role,
+        image: req.user.image
+    })
+})
 
+<<<<<<< HEAD
+=======
+app.get('/logout',auth,  (req, res) =>{
+    User.findOneAndUpdate({_id: req.user._id},
+        { token: ""}
+        , (err, user) =>{
+            if(err) return res.json({success: false, err});
+            return res.status(200).send({
+                success: true
+            })
+        }    
+    )
+>>>>>>> 51ac6f6ba0075bf724dc8de7d242df22c66d6409
 })
 
 app.listen(port, () => {
