@@ -1,19 +1,5 @@
 const express = require('express')
 const app = express();
-<<<<<<< HEAD
-const port = 6000;
-// bodyParser 가져오기
-const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser');
-const config = require('./config/key')
-// 유저 가져오기
-const {User} = require('./models/User')
-const mongoose = require('mongoose')
-
-//bodyParser 옵션 주기
-// 
-app.use(bodyParser.urlencoded({extended: true}));
-=======
 const port = 3000;
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
@@ -23,7 +9,6 @@ const mongoose = require('mongoose');
 
 //application/x-www-form-urlencoded 이런식으로 된 데이터를 가져와서 분석해주는 코드
 app.use(bodyParser.urlencoded({ extended: true }));
->>>>>>> f7431e679e8c370c0d602f97f7cbba648fcf5912
 
 //application/json 으로된 데이터를 가져와서 분석할수있게 하는 코드
 app.use(bodyParser.json());
@@ -48,9 +33,6 @@ app.post('/register', (req, res) =>{
         return res.status(200).json({
             success: true
         })
-<<<<<<< HEAD
-    })  
-=======
     })
 })
 
@@ -87,11 +69,7 @@ app.post('/api/users/login', (req, res) => {
     })
     })
 
->>>>>>> f7431e679e8c370c0d602f97f7cbba648fcf5912
 })
-app.post('/login', (rer, res) =>{
-    
-})    
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
