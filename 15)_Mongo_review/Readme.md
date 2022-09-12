@@ -70,3 +70,4 @@ app.get('/', (req,res) => res.send('화면 실험'))
 app.listen(port, () => console.log(`현재 포트번호 ${port} 입니다.`));
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/189676391-656dd883-588a-4c92-9e7c-dc10d3682b37.png)
