@@ -93,8 +93,6 @@ app.get('/api/users/auth', auth, (req, res) =>{
     })
 })
 
-<<<<<<< HEAD
-=======
 app.get('/logout',auth,  (req, res) =>{
     User.findOneAndUpdate({_id: req.user._id},
         { token: ""}
@@ -105,7 +103,6 @@ app.get('/logout',auth,  (req, res) =>{
             })
         }    
     )
->>>>>>> 51ac6f6ba0075bf724dc8de7d242df22c66d6409
 })
 
 app.listen(port, () => {
