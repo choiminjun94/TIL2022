@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a434dc-3e63-4a3f-ac06-cbb3f3881f09" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/templates/Instagram/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Instagram/main.html" afterDir="false" />
-    </list>
+    <list default="true" id="27a434dc-3e63-4a3f-ac06-cbb3f3881f09" name="Changes" comment="Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,6 +97,7 @@
       <workItem from="1648136552963" duration="5104000" />
       <workItem from="1648163720245" duration="541000" />
       <workItem from="1648167886318" duration="1270000" />
+      <workItem from="1663332246260" duration="597000" />
     </task>
     <servers />
   </component>
