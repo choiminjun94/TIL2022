@@ -21,3 +21,21 @@ const nonsense = [1,2, "hello", false, null, true, undefined, "minjun"]
 console.log(dayOfWeek);
 console.log(nonsense);
 ```
+
+배열 특정 값 찾기 
+
+PC는 0부터 시작하기에 2인 경우 3번째 값을 찾는다. 
+
+```js
+//배열에서 특정 값 찾기
+console.log(dayOfWeek[2]);
+
+```
+
+배열에 값 추가하기 
+
+``` js
+
+dayOfWeek.push("fri")
+
+```
