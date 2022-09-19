@@ -21,6 +21,8 @@ const nonsense = [1,2, "hello", false, null, true, undefined, "minjun"]
 console.log(dayOfWeek);
 console.log(nonsense);
 ```
+![image](https://user-images.githubusercontent.com/60457431/191134804-1221328c-4fa7-4420-ac2a-9bce4f7562b3.png)
+
 
 배열 특정 값 찾기 
 
@@ -31,6 +33,7 @@ PC는 0부터 시작하기에 2인 경우 3번째 값을 찾는다.
 console.log(dayOfWeek[2]);
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/191134847-9196bd32-ce07-42d7-bab5-6e653c2157cf.png)
 
 배열에 값 추가하기 
 
@@ -39,3 +42,4 @@ console.log(dayOfWeek[2]);
 dayOfWeek.push("fri")
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/191134877-a6fffff4-3eb0-446a-a56c-9d5e56d5944f.png)
