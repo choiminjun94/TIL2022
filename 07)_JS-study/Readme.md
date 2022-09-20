@@ -115,3 +115,30 @@ functionStudy("진건", 28);
 
 ```
 ![image](https://user-images.githubusercontent.com/60457431/191380965-0f6b1b5f-e2de-4a44-8273-4119e8f11587.png)
+
+### Function을 활용한 계산식과 Object 내에서의 사용
+```js
+function plus(FirstName, SecondNumber){
+  console.log(FirstName + SecondNumber);
+}
+
+plus(50, 20)
+
+function divide(FirstName, SecondNumber){
+  console.log(FirstName / SecondNumber);
+}
+divide(40, 20)
+
+const player = {
+  name : "Minjun",
+  sayHello: function(otherPlayerName){
+    console.log("hello "+ otherPlayerName+" nice to meet you");
+  }
+}
+
+console.log(player.name);
+
+player.sayHello("Kim")
+player.sayHello("Choi")
+
+```
