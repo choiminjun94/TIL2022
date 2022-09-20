@@ -1,21 +1,17 @@
-//Object
-// 항목을 가진 데이터를 저장해주는 역할
-// 배열과 다른 점은 무엇을 뜻하는지 알수 없기 때문이다. 
-const player = {
-  name : "민준",
-  points : 20,
-  fat : true
+// Function Part 1 
+// Function은 계속 반복해서 사용할 수  있는 코드 조각이라 생각 
+
+function sayHello(){
+  console.log("Function 공부!!");
 }
 
-console.log(player);
-console.log(player.name);
+sayHello();
+sayHello();
+sayHello();
+sayHello();
+sayHello();
+sayHello();
 
-// 배열 항목 추가하기
-player.country ="ROK";
-console.log(player);
-
-// 배열 항목 값 변경하기 
-player.points = player.points+30;
-console.log(player.points);
-
-
+function functionStudy(){
+  console.log("Function 공부!!");
+}
