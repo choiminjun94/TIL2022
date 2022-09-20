@@ -1,4 +1,6 @@
 # 0920
+
+# Arrays
 ## 배열  선언의 이유
 
 배열을 사용하지 않으면 하기와 같이 여러 변수 선언을 진행 해야 한다.
@@ -43,3 +45,26 @@ dayOfWeek.push("fri")
 
 ```
 ![image](https://user-images.githubusercontent.com/60457431/191134877-a6fffff4-3eb0-446a-a56c-9d5e56d5944f.png)
+
+# Object
+### 항목을 가진 데이터를 저장해주는 역할
+###  배열과 다른 점은 무엇을 뜻하는지 알수 없기 때문이다. 
+
+```js
+const player = {
+  name : "민준",
+  points : 20,
+  fat : true
+}
+
+console.log(player);
+console.log(player.name);
+
+// 배열 항목 추가하기
+player.country ="ROK";
+console.log(player);
+
+// 배열 항목 값 변경하기 
+player.points = player.poi
+
+```
