@@ -91,3 +91,26 @@ sayHello();
 ```
 
 ![image](https://user-images.githubusercontent.com/60457431/191380119-2a40fea6-b817-4eb5-9f4e-55cc0da89b8a.png)
+
+### 바깥 세상에서 뭔가를 받는 방법 
+
+``` js
+// 바깥 세상에서 뭔가를 받는 방법
+function functionStudy1(nameOfPerson){
+  console.log(nameOfPerson);
+}
+
+functionStudy1("민준");
+functionStudy1("용래");
+functionStudy1("진건");
+
+// argument를 하나만 받을수 잇는것이 아니다.
+function functionStudy(nameOfPerson, ageOfPerson){
+  console.log(nameOfPerson, ageOfPerson);
+}
+
+functionStudy("민준", 29);
+functionStudy("용래", 25);
+functionStudy("진건", 28);
+
+```
