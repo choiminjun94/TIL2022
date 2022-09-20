@@ -1,21 +1,21 @@
-// 배열이 없는 경우
-const mon  ="mon";
-const tue = "tue";
-const wed = "wed";
-const thu = "thu";
+//Object
+// 항목을 가진 데이터를 저장해주는 역할
+// 배열과 다른 점은 무엇을 뜻하는지 알수 없기 때문이다. 
+const player = {
+  name : "민준",
+  points : 20,
+  fat : true
+}
 
-// 배열 선언 및 출력
-// 배열 안에는 String, 숫자등등을 넣을 수 있다.
-const dayOfWeek = [mon, tue, wed, thu]
+console.log(player);
+console.log(player.name);
 
-const nonsense = [1,2, "hello", false, null, true, undefined, "minjun"]
+// 배열 항목 추가하기
+player.country ="ROK";
+console.log(player);
 
-console.log(dayOfWeek);
-console.log(nonsense);
+// 배열 항목 값 변경하기 
+player.points = player.points+30;
+console.log(player.points);
 
-//배열에서 특정 값 찾기
-console.log(dayOfWeek[2]);
 
-//배열에 값 추가하기
-dayOfWeek.push("fri")
-console.log(dayOfWeek);
