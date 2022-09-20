@@ -142,3 +142,4 @@ player.sayHello("Kim")
 player.sayHello("Choi")
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/191381993-f3aa4996-1af6-4c4a-b3c4-1f1519b98557.png)
