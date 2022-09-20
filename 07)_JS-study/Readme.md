@@ -114,3 +114,4 @@ functionStudy("용래", 25);
 functionStudy("진건", 28);
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/191380965-0f6b1b5f-e2de-4a44-8273-4119e8f11587.png)
