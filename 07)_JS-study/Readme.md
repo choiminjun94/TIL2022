@@ -71,6 +71,8 @@ player.points = player.poi
 
 ![image](https://user-images.githubusercontent.com/60457431/191378941-0e24679d-3388-4783-8406-a944fcfc9377.png)
 
+# 0921
+
 # Function 
 ### Function은 계속 반복해서 사용할 수  있는 코드 조각이라 생각 
 
