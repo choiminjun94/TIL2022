@@ -1,22 +1,17 @@
-function plus(FirstName, SecondNumber){
-  console.log(FirstName + SecondNumber);
-}
+// Recap (복습)
 
-plus(50, 20)
+const a = 5; 
 
-function divide(FirstName, SecondNumber){
-  console.log(FirstName / SecondNumber);
-}
-divide(40, 20)
+// let은 업데이트가 가능, const는 불가능, var는 왠만해서는 사용하지 않기
+// const isMinFat = true;
+let isMinFat = true;
 
-const player = {
-  name : "Minjun",
-  sayHello: function(otherPlayerName){
-    console.log("hello "+ otherPlayerName+" nice to meet you");
-  }
-}
+isMinFat = false;
+console.log(isMinFat);
 
-console.log(player.name);
+// null와 undefined
+let hello;
+console.log(hello); 
 
-player.sayHello("Kim")
-player.sayHello("Choi")
+let hello2 = null;
+console.log(hello2);
