@@ -147,13 +147,24 @@ player.sayHello("Choi")
 # 0922 
 ## Recap No.1 
 
+### let은 업데이트가 가능, const는 불가능, var는 왠만해서는 사용하지 않기
+
+### null 타입 변수의 경우는 명시적으로 값이 비어있음을 나타내는데 사용
+### 아무것도 참조하고 있지 않다라는 의미가 담겨 있으며 주로 객체를 담을 변수를 초기화할 때 많이 사용
+### 타입은 데이터 타입이다. 
+
+### 값이 할당되지 않은 변수
+### undefined 타입은 변수 자체의 값 또한 undefined 이다. 
+### 정의되지 않은 것, 초기화되어 있지 않거나 존재하지 않는 객체의 프로퍼티 및 존재하지 않는 배열의 원소값에 접근하려고 할때 얻어지는 변수의 값입니다
+
+### 차이점 : 분명한 차이점은 undefined는 변수를 선언만 하더라도 할당되지만 null은 변수를 선언한 후에 null로 값을 바꾼다는 점입니다.
+
 ``` js 
 
 // Recap (복습)
 
 const a = 5; 
 
-// let은 업데이트가 가능, const는 불가능, var는 왠만해서는 사용하지 않기
 // const isMinFat = true;
 let isMinFat = true;
 
@@ -171,3 +182,4 @@ console.log(hello2);
 ```
 
 ![image](https://user-images.githubusercontent.com/60457431/191626242-dc0ef3d3-f383-4072-a047-61d2f3648dd2.png)
+
