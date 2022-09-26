@@ -250,3 +250,5 @@ const divideResult = calculator.divide(timesResult, plusResult);
 const powerResult = calculator.power(divideResult, minusResult);
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/192398349-a39eec7e-58b0-4ebd-8d72-4a56cbe9ce60.png)
+
