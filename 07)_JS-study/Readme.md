@@ -219,3 +219,34 @@ console.log(minIns);
 ```
 ![image](https://user-images.githubusercontent.com/60457431/192397337-0ec4a53c-3a2a-42fe-9193-fcc5a9225123.png)
 
+아래의 코드는 서로 의존하는 형식이기에 log가 따로 입력 되지는 않는다. <br>
+결과과는  아래의 이미지를 참조 하기
+
+``` js 
+// Returns
+
+const calculator = {
+  plus : function(a,b){
+    return a+b 
+  },
+  minus : function(a,b){
+    return a-b;
+  },
+  times: function(a,b){
+    return a*b;
+  },
+  divide: function(a,b){
+    return a/b;
+  },
+  power: function(a,b){
+    return a ** b;
+  }
+}
+
+const plusResult = calculator.plus(2,3);
+const minusResult = calculator.minus(plusResult, 10 );
+const timesResult = calculator.times(10, minusResult);
+const divideResult = calculator.divide(timesResult, plusResult);
+const powerResult = calculator.power(divideResult, minusResult);
+
+```
