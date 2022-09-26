@@ -1,17 +1,23 @@
-// Recap (복습)
+// Returns (복습)
 
-const a = 5; 
+const age = 24;
 
-// let은 업데이트가 가능, const는 불가능, var는 왠만해서는 사용하지 않기
-// const isMinFat = true;
-let isMinFat = true;
+function calculateKrage(ageOfForeigner){
+  return ageOfForeigner+2;
+}
 
-isMinFat = false;
-console.log(isMinFat);
+const krAge = calculateKrage(age);
 
-// null와 undefined
-let hello;
-console.log(hello); 
+console.log(krAge);
 
-let hello2 = null;
-console.log(hello2);
+const min = 1; 
+
+function mintest(minreturn){
+  min + 10000;
+  return "hello";
+}
+
+const minIns = mintest(min);
+
+console.log(minIns);
+

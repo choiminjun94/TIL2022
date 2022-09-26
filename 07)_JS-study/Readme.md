@@ -186,3 +186,34 @@ console.log(hello2);
 
 ![image](https://user-images.githubusercontent.com/60457431/191626242-dc0ef3d3-f383-4072-a047-61d2f3648dd2.png)
 
+# 0927 
+
+## Return 
+
+``` js
+// Returns
+
+const age = 24;
+
+function calculateKrage(ageOfForeigner){
+  return ageOfForeigner+2;
+}
+
+const krAge = calculateKrage(age);
+
+console.log(krAge);
+
+// return 이해
+const min = 1; 
+
+function mintest(minreturn){
+  min + 10000;
+  return "hello";
+}
+
+const minIns = mintest(min);
+
+console.log(minIns);
+
+
+```
