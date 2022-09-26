@@ -188,7 +188,7 @@ console.log(hello2);
 
 # 0927 
 
-## Return 
+## Return의 이해 
 
 ``` js
 // Returns
@@ -215,6 +215,6 @@ const minIns = mintest(min);
 
 console.log(minIns);
 
+
 ```
 
-![image](https://user-images.githubusercontent.com/60457431/192397058-ae7ea032-2757-45c6-b1ac-0b4458a0aabd.png)
