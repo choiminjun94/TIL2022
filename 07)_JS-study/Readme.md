@@ -217,4 +217,5 @@ console.log(minIns);
 
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/192397337-0ec4a53c-3a2a-42fe-9193-fcc5a9225123.png)
 
