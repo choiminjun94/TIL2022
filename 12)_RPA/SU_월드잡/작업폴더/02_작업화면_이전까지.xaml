@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_02_작업화면_이전까지" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1179,1620" sap2010:WorkflowViewState.IdRef="_02_작업화면_이전까지_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_02_작업화면_이전까지" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1022,2456" sap2010:WorkflowViewState.IdRef="_02_작업화면_이전까지_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -55,7 +55,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_02_작업화면_이전까지" sap:VirtualizedContainerService.HintSize="509,1555" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_02_작업화면_이전까지" sap:VirtualizedContainerService.HintSize="509,2391" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -84,14 +84,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
-    <Sequence DisplayName="팝업창 끄기" sap:VirtualizedContainerService.HintSize="467,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="팝업창 끄기" sap:VirtualizedContainerService.HintSize="467,902" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'push button  닫기'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+      <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'push button  닫기'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
         <ui:UiElementExists.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c81fd334-7798-458e-8a6f-a69b65fd3b5c" InformativeScreenshot="cb18cbd3914e9e2b9eab2056363fb9fd" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*' /&gt;&lt;ctrl name='페이지 복원' role='alert' /&gt;&lt;ctrl name='닫기' role='push button' /&gt;">
             <ui:Target.TimeoutMS>
@@ -103,7 +103,7 @@
           </ui:Target>
         </ui:UiElementExists.Target>
       </ui:UiElementExists>
-      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  닫기'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'push button  닫기'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
         <ui:Click.CursorPosition>
           <ui:CursorPosition Position="Center">
             <ui:CursorPosition.OffsetX>
@@ -115,17 +115,14 @@
           </ui:CursorPosition>
         </ui:Click.CursorPosition>
         <ui:Click.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dc38da08-e002-4fcd-ba09-16fa346f8e6b" InformativeScreenshot="a243aa7c7c14824182ecfaf9d0d95e59" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='페이지 복원' /&gt;&lt;ctrl name='페이지 복원' role='alert' /&gt;&lt;ctrl name='닫기' role='push button' /&gt;">
-            <ui:Target.TimeoutMS>
-              <InArgument x:TypeArguments="x:Int32" />
-            </ui:Target.TimeoutMS>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dc38da08-e002-4fcd-ba09-16fa346f8e6b" InformativeScreenshot="a243aa7c7c14824182ecfaf9d0d95e59" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='페이지 복원' /&gt;&lt;ctrl name='페이지 복원' role='alert' /&gt;&lt;ctrl name='닫기' role='push button' /&gt;" TimeoutMS="3000">
             <ui:Target.WaitForReady>
               <InArgument x:TypeArguments="ui:WaitForReady" />
             </ui:Target.WaitForReady>
           </ui:Target>
         </ui:Click.Target>
       </ui:Click>
-      <ui:RetryScope DisplayName="팝업 끄기" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:03">
+      <ui:RetryScope DisplayName="팝업 끄기" sap:VirtualizedContainerService.HintSize="418,518" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:03">
         <ui:RetryScope.ActivityBody>
           <ActivityAction>
             <Sequence DisplayName="액션" sap:VirtualizedContainerService.HintSize="376,344" sap2010:WorkflowViewState.IdRef="Sequence_4">
@@ -173,7 +170,7 @@
         </ui:RetryScope.Condition>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>

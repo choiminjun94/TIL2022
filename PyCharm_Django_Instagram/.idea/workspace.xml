@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a434dc-3e63-4a3f-ac06-cbb3f3881f09" name="Changes" comment="Changes" />
+    <list default="true" id="27a434dc-3e63-4a3f-ac06-cbb3f3881f09" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/../12)_RPA/SU_월드잡/.local/ProjectSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../12)_RPA/SU_월드잡/.local/ProjectSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12)_RPA/SU_월드잡/.local/db/references.db" beforeDir="false" afterPath="$PROJECT_DIR$/../12)_RPA/SU_월드잡/.local/db/references.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12)_RPA/SU_월드잡/작업폴더/03_데이터스크랩.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../12)_RPA/SU_월드잡/작업폴더/03_데이터스크랩.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12)_RPA/SU_월드잡/작업폴더/04)자료수집.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../12)_RPA/SU_월드잡/작업폴더/04)자료수집.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12)_RPA/국제가스및석유_환율조사/.local/AllDependencies.json" beforeDir="false" afterPath="$PROJECT_DIR$/../12)_RPA/국제가스및석유_환율조사/.local/AllDependencies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12)_RPA/국제가스및석유_환율조사/.local/PackageBindingsMetadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/../12)_RPA/국제가스및석유_환율조사/.local/PackageBindingsMetadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12)_RPA/국제가스및석유_환율조사/.local/db/references.db" beforeDir="false" afterPath="$PROJECT_DIR$/../12)_RPA/국제가스및석유_환율조사/.local/db/references.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12)_RPA/국제가스및석유_환율조사/.local/nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../12)_RPA/국제가스및석유_환율조사/.local/nuget.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +107,7 @@
       <workItem from="1648163720245" duration="541000" />
       <workItem from="1648167886318" duration="1270000" />
       <workItem from="1663332246260" duration="597000" />
+      <workItem from="1664612264657" duration="38000" />
     </task>
     <servers />
   </component>

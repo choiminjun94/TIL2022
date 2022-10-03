@@ -7,3 +7,12 @@ p {
 
   font-weight: bold;
 }
+
+h1{
+  color: white;
+
+  /* 배경색 */
+  background-color: #D24C75	;
+
+  font-weight: bold;
+}
