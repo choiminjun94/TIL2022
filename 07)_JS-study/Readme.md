@@ -257,5 +257,24 @@ const powerResult = calculator.power(divideResult, minusResult);
 # 1005 조건문 
 
 prompt은 사용자에게 창을 띄어 주는 역할을 한다. <br>
-하지만 이제는 안 사용하는 방식이다. 
+하지만 이제는 안 사용하는 방식이다. <br>
+prompt가 실행되고 값을 입력 하지 않으면 JS는 멈추어 있는다. <br>
+int형타입을 string형 타입으로 변경을 위해서는 parseInt()를 사용 
 
+``` js 
+const age = prompt("how old are you");
+
+// 변수의 타입을 알기 위해서는 typeof를 사용
+console.log(typeof age);
+console.log(age, parseInt(age));
+
+```
+
+``` js 
+
+const age = parseInt(prompt("how old are you"))
+
+console.log(typeof age);
+console.log(age, parseInt(age));
+
+```
