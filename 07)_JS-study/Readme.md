@@ -223,7 +223,9 @@ console.log(minIns);
 결과과는  아래의 이미지를 참조 하기
 
 ``` js 
-// Returns
+# Return
+### return을 하는 순간 function은 종료 된다.
+
 
 const calculator = {
   plus : function(a,b){
@@ -251,4 +253,9 @@ const powerResult = calculator.power(divideResult, minusResult);
 
 ```
 ![image](https://user-images.githubusercontent.com/60457431/192398349-a39eec7e-58b0-4ebd-8d72-4a56cbe9ce60.png)
+
+# 1005 조건문 
+
+prompt은 사용자에게 창을 띄어 주는 역할을 한다. <br>
+하지만 이제는 안 사용하는 방식이다. 
 

@@ -1,25 +1,11 @@
-// Returns
+// 조건문 
 
-const calculator = {
-  plus : function(a,b){
-    return a+b 
-  },
-  minus : function(a,b){
-    return a-b;
-  },
-  times: function(a,b){
-    return a*b;
-  },
-  divide: function(a,b){
-    return a/b;
-  },
-  power: function(a,b){
-    return a ** b;
-  }
-}
+// prompt은 사용자에게 창을 띄어 주는 역할을 한다. 
+// Message을 입력하지 않으면 JS는 멈추어 있다. 
+const age = prompt("how old are you");
+// const age = parseInt(prompt("how old are you"))
+// int형타입을 string형 타입으로 변경을 위해서는 parseInt()를 사용 
 
-const plusResult = calculator.plus(2,3);
-const minusResult = calculator.minus(plusResult, 10 );
-const timesResult = calculator.times(10, minusResult);
-const divideResult = calculator.divide(timesResult, plusResult);
-const powerResult = calculator.power(divideResult, minusResult);
+//변수의 타입을 알기 위해서는 typeof를 사용
+console.log(typeof age);
+console.log(age, parseInt(age));
