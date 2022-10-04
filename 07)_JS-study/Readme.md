@@ -269,6 +269,9 @@ console.log(typeof age);
 console.log(age, parseInt(age));
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/193948477-6d04b487-7566-44df-af19-0bdfa6faaba8.png)
+
+![image](https://user-images.githubusercontent.com/60457431/193948487-77eb79f3-9677-4b7c-9f15-789a28405b87.png)
 
 ``` js 
 
@@ -278,3 +281,7 @@ console.log(typeof age);
 console.log(age, parseInt(age));
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/193948527-482b2139-a9f1-4856-9842-e68cea6c6bcf.png)
+
+![image](https://user-images.githubusercontent.com/60457431/193948544-fd30b246-be98-4422-afda-c65e2012a5c7.png)
+
