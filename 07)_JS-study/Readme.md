@@ -325,3 +325,33 @@ if(isNaN(age)){
 ![image](https://user-images.githubusercontent.com/60457431/194179377-d289470b-5dd3-485e-ba14-2e88433e05a5.png)
 ![image](https://user-images.githubusercontent.com/60457431/194179390-498af1c7-ba29-48b7-a86a-2bd5b529db0c.png)
 
+```js 
+
+const age = parseInt(prompt("how old are you"))
+
+
+if(isNaN(age)){
+  console.log("숫자를 입력 하시오");
+}else if (age < 18) {
+  console.log("미성년자 입니다.");
+}else { 
+  console.log("성인 입니다. ");
+}
+
+```
+
+
+``` js 
+
+if(isNaN(age) || age < 0){
+  console.log("양의 나이를 입력 하세요");
+}else if (age < 18) {
+  console.log("미성년자 입니다.");
+}else if(age >= 18 && age <= 62) { 
+  console.log("빡세게 일하세요");
+}else{
+  console.log("복지 해택을 받으세요");
+}
+
+```
+

@@ -2,14 +2,14 @@
 
 
 const age = parseInt(prompt("how old are you"))
-// isNaN() 함수는 숫자가 아닌 값을 찾는 함수입니다.
-//  인수가 숫자가 아니면(Not a Number) True를 반환합니다. 
-// 인수가 숫자이면 False를 반환합니다.
 
-// console.log(isNaN(age));
 
-if(isNaN(age)){
-  console.log("숫자를 입력 하시오");
+if(isNaN(age) || age < 0){
+  console.log("양의 나이를 입력 하세요");
+}else if (age < 18) {
+  console.log("미성년자 입니다.");
+}else if(age >= 18 && age <= 62) { 
+  console.log("빡세게 일하세요");
 }else{
-  console.log("숫자 입니다.");
+  console.log("복지 해택을 받으세요");
 }
