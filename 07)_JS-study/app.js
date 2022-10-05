@@ -1,11 +1,15 @@
 // 조건문 
 
-// prompt은 사용자에게 창을 띄어 주는 역할을 한다. 
-// Message을 입력하지 않으면 JS는 멈추어 있다. 
-//const age = prompt("how old are you");
-const age = parseInt(prompt("how old are you"))
-// int형타입을 string형 타입으로 변경을 위해서는 parseInt()를 사용 
 
-//변수의 타입을 알기 위해서는 typeof를 사용
-console.log(typeof age);
-console.log(age, parseInt(age));
+const age = parseInt(prompt("how old are you"))
+// isNaN() 함수는 숫자가 아닌 값을 찾는 함수입니다.
+//  인수가 숫자가 아니면(Not a Number) True를 반환합니다. 
+// 인수가 숫자이면 False를 반환합니다.
+
+// console.log(isNaN(age));
+
+if(isNaN(age)){
+  console.log("숫자를 입력 하시오");
+}else{
+  console.log("숫자 입니다.");
+}

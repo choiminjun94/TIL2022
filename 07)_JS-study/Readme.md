@@ -285,3 +285,29 @@ console.log(age, parseInt(age));
 
 ![image](https://user-images.githubusercontent.com/60457431/193948544-fd30b246-be98-4422-afda-c65e2012a5c7.png)
 
+# 1006 조건문2 
+
+isNaN() 함수는 숫자가 아닌 값을 찾는 함수입니다.<br/>
+인수가 숫자가 아니면(Not a Number) True를 반환합니다.<br/>
+인수가 숫자이면 False를 반환합니다. <br/>
+
+```js 
+
+const age = parseInt(prompt("how old are you"))
+console.log(isNaN(age));
+
+```
+
+
+
+``` js 
+
+const age = parseInt(prompt("how old are you"))
+
+if(isNaN(age)){
+  console.log("숫자를 입력 하시오");
+}else{
+  console.log("숫자 입니다.");
+}
+
+```
