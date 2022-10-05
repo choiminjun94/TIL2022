@@ -370,3 +370,20 @@ if(isNaN(age) || age < 0){
 ![image](https://user-images.githubusercontent.com/60457431/194181828-39f2643c-f024-4705-8bea-9d6b47534a6f.png)
 ![image](https://user-images.githubusercontent.com/60457431/194181840-d4be9b88-0306-47bd-bd5e-c3b1ba8d130b.png)
 
+<br/>
+<br/>
+
+### and와 or의 조건 정리
+
+``` js 
+true || true  === true
+false || true === true 
+true || false === true
+false || false === false 
+
+true && true  === true
+false && true === false 
+true && false === false
+false && false === false 
+
+```
