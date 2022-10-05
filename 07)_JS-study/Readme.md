@@ -297,7 +297,14 @@ const age = parseInt(prompt("how old are you"))
 console.log(isNaN(age));
 
 ```
-
+![image](https://user-images.githubusercontent.com/60457431/194179166-769e3f54-f01d-4b2f-b9e0-b62b7c140244.png)
+![image](https://user-images.githubusercontent.com/60457431/194179188-7698c1d8-d732-4980-a87c-5e155ddf4ec0.png)
+<br/>
+<br/>
+![image](https://user-images.githubusercontent.com/60457431/194179241-1a01ea24-e0ec-46eb-b675-e995614c7878.png)
+![image](https://user-images.githubusercontent.com/60457431/194179254-10974eca-c784-446f-a1a6-92754830c229.png)
+<br/>
+<br/>
 
 
 ``` js 
@@ -311,3 +318,10 @@ if(isNaN(age)){
 }
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/194179341-95fadba7-0cad-498c-876a-6e3d6ffb4697.png)
+![image](https://user-images.githubusercontent.com/60457431/194179352-a722b6a1-313e-4698-bee5-8efeeb11cd82.png)
+<br/>
+<br/>
+![image](https://user-images.githubusercontent.com/60457431/194179377-d289470b-5dd3-485e-ba14-2e88433e05a5.png)
+![image](https://user-images.githubusercontent.com/60457431/194179390-498af1c7-ba29-48b7-a86a-2bd5b529db0c.png)
+
