@@ -387,3 +387,33 @@ true && false === false
 false && false === false 
 
 ```
+
+# 1007
+## The Document Object 
+
+HTML의 요소들을 HTML 코드 내 뿐만 아니라 JS에서 컨트롤이 가능하다. <br>
+title을 주시하고 코드 및 스크린샷 참고
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>크롬앱</title>
+</head>
+<body>
+    <script src="app.js"></script>
+</body>
+</html>
+
+```
+``` js 
+
+document.title = "Hello From JS"
+
+```
+
