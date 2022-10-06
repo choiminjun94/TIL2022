@@ -416,4 +416,8 @@ title을 주시하고 코드 및 스크린샷 참고
 document.title = "Hello From JS"
 
 ```
+![image](https://user-images.githubusercontent.com/60457431/194435315-6f9ff0db-092a-4a42-868c-ea8a7cf11e58.png)
+<br>
+<br>
+![image](https://user-images.githubusercontent.com/60457431/194435341-55e3113a-98f8-42b8-a6e2-4560222a943a.png)
 
