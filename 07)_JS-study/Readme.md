@@ -223,7 +223,9 @@ console.log(minIns);
 결과과는  아래의 이미지를 참조 하기
 
 ``` js 
-// Returns
+# Return
+### return을 하는 순간 function은 종료 된다.
+
 
 const calculator = {
   plus : function(a,b){
@@ -251,4 +253,171 @@ const powerResult = calculator.power(divideResult, minusResult);
 
 ```
 ![image](https://user-images.githubusercontent.com/60457431/192398349-a39eec7e-58b0-4ebd-8d72-4a56cbe9ce60.png)
+
+# 1005 조건문 
+
+prompt은 사용자에게 창을 띄어 주는 역할을 한다. <br>
+하지만 이제는 안 사용하는 방식이다. <br>
+prompt가 실행되고 값을 입력 하지 않으면 JS는 멈추어 있는다. <br>
+int형타입을 string형 타입으로 변경을 위해서는 parseInt()를 사용 
+
+``` js 
+const age = prompt("how old are you");
+
+// 변수의 타입을 알기 위해서는 typeof를 사용
+console.log(typeof age);
+console.log(age, parseInt(age));
+
+```
+![image](https://user-images.githubusercontent.com/60457431/193948477-6d04b487-7566-44df-af19-0bdfa6faaba8.png)
+
+![image](https://user-images.githubusercontent.com/60457431/193948487-77eb79f3-9677-4b7c-9f15-789a28405b87.png)
+
+``` js 
+
+const age = parseInt(prompt("how old are you"))
+
+console.log(typeof age);
+console.log(age, parseInt(age));
+
+```
+![image](https://user-images.githubusercontent.com/60457431/193948527-482b2139-a9f1-4856-9842-e68cea6c6bcf.png)
+
+![image](https://user-images.githubusercontent.com/60457431/193948544-fd30b246-be98-4422-afda-c65e2012a5c7.png)
+
+# 1006 조건문2 
+
+isNaN() 함수는 숫자가 아닌 값을 찾는 함수입니다.<br/>
+인수가 숫자가 아니면(Not a Number) True를 반환합니다.<br/>
+인수가 숫자이면 False를 반환합니다. <br/>
+
+```js 
+
+const age = parseInt(prompt("how old are you"))
+console.log(isNaN(age));
+
+```
+![image](https://user-images.githubusercontent.com/60457431/194179166-769e3f54-f01d-4b2f-b9e0-b62b7c140244.png)
+![image](https://user-images.githubusercontent.com/60457431/194179188-7698c1d8-d732-4980-a87c-5e155ddf4ec0.png)
+<br/>
+<br/>
+![image](https://user-images.githubusercontent.com/60457431/194179241-1a01ea24-e0ec-46eb-b675-e995614c7878.png)
+![image](https://user-images.githubusercontent.com/60457431/194179254-10974eca-c784-446f-a1a6-92754830c229.png)
+<br/>
+<br/>
+
+
+``` js 
+
+const age = parseInt(prompt("how old are you"))
+
+if(isNaN(age)){
+  console.log("숫자를 입력 하시오");
+}else{
+  console.log("숫자 입니다.");
+}
+
+```
+![image](https://user-images.githubusercontent.com/60457431/194179341-95fadba7-0cad-498c-876a-6e3d6ffb4697.png)
+![image](https://user-images.githubusercontent.com/60457431/194179352-a722b6a1-313e-4698-bee5-8efeeb11cd82.png)
+<br/>
+<br/>
+![image](https://user-images.githubusercontent.com/60457431/194179377-d289470b-5dd3-485e-ba14-2e88433e05a5.png)
+![image](https://user-images.githubusercontent.com/60457431/194179390-498af1c7-ba29-48b7-a86a-2bd5b529db0c.png)
+
+```js 
+
+const age = parseInt(prompt("how old are you"))
+
+
+if(isNaN(age)){
+  console.log("숫자를 입력 하시오");
+}else if (age < 18) {
+  console.log("미성년자 입니다.");
+}else { 
+  console.log("성인 입니다. ");
+}
+
+```
+![image](https://user-images.githubusercontent.com/60457431/194181678-193c64b3-ab37-4e5d-bdfb-3ffa46a54cd0.png)
+![image](https://user-images.githubusercontent.com/60457431/194181693-f1b2ecdd-0c8e-4097-9cc5-4b17168b8b01.png)
+<br/>
+<br/>
+![image](https://user-images.githubusercontent.com/60457431/194181722-49e9038f-e844-4d13-b77a-60d1136bc3fa.png)
+![image](https://user-images.githubusercontent.com/60457431/194181729-0e4cfa36-9dc6-4152-871a-acabdf1ab6e0.png)
+
+``` js 
+
+if(isNaN(age) || age < 0){
+  console.log("양의 나이를 입력 하세요");
+}else if (age < 18) {
+  console.log("미성년자 입니다.");
+}else if(age >= 18 && age <= 62) { 
+  console.log("빡세게 일하세요");
+}else{
+  console.log("복지 해택을 받으세요");
+}
+
+```
+![image](https://user-images.githubusercontent.com/60457431/194181757-c0c6bebb-8bbb-4994-9a18-aa9da22417c3.png)
+![image](https://user-images.githubusercontent.com/60457431/194181765-0d7c67ea-985e-4bc2-a8cb-83dc926a47f2.png)
+<br/>
+<br/>
+![image](https://user-images.githubusercontent.com/60457431/194181790-05d658e9-c9fa-4408-bba5-a2e7159f03ea.png)
+![image](https://user-images.githubusercontent.com/60457431/194181812-01c2516a-d6c5-45e5-88cc-40f44f37dca2.png)
+<br/>
+<br/>
+![image](https://user-images.githubusercontent.com/60457431/194181828-39f2643c-f024-4705-8bea-9d6b47534a6f.png)
+![image](https://user-images.githubusercontent.com/60457431/194181840-d4be9b88-0306-47bd-bd5e-c3b1ba8d130b.png)
+
+<br/>
+<br/>
+
+### and와 or의 조건 정리
+
+``` js 
+true || true  === true
+false || true === true 
+true || false === true
+false || false === false 
+
+true && true  === true
+false && true === false 
+true && false === false
+false && false === false 
+
+```
+
+# 1007
+## The Document Object 
+
+HTML의 요소들을 HTML 코드 내 뿐만 아니라 JS에서 컨트롤이 가능하다. <br>
+title을 주시하고 코드 및 스크린샷 참고
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>크롬앱</title>
+</head>
+<body>
+    <script src="app.js"></script>
+</body>
+</html>
+
+```
+``` js 
+
+document.title = "Hello From JS"
+
+```
+![image](https://user-images.githubusercontent.com/60457431/194435315-6f9ff0db-092a-4a42-868c-ea8a7cf11e58.png)
+<br>
+<br>
+![image](https://user-images.githubusercontent.com/60457431/194435341-55e3113a-98f8-42b8-a6e2-4560222a943a.png)
 
