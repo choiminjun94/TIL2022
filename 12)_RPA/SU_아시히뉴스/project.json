@@ -3,6 +3,7 @@
   "description": "아시히뉴스 수집",
   "main": "Main.xaml",
   "dependencies": {
+    "MouseKeyboardActivityMonitor": "[4.0.5150.10665]",
     "UiPath.Excel.Activities": "[2.12.3]",
     "UiPath.Mail.Activities": "[1.15.2]",
     "UiPath.System.Activities": "[22.4.4]",
