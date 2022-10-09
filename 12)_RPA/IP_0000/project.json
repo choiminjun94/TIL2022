@@ -1,6 +1,6 @@
 {
-  "name": "IP_0003",
-  "description": "월드잡 자료 수집",
+  "name": "IP_0000",
+  "description": "PC 종료",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.12.3]",
@@ -12,7 +12,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.4.0",
-  "projectVersion": "1.0.3",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -45,14 +45,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main1.xaml",
-      "uniqueId": "be7cfcc5-769a-4839-94d7-e64d7003d186",
-      "input": [],
-      "output": []
-    },
-    {
       "filePath": "Main.xaml",
-      "uniqueId": "01f761a9-9d0f-42d8-ad2d-a0afc02551cd",
+      "uniqueId": "4d4133ee-ebd2-4e46-b591-fbfe5a80347a",
       "input": [],
       "output": []
     }
