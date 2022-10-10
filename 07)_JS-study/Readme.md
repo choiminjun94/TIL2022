@@ -421,3 +421,19 @@ document.title = "Hello From JS"
 <br>
 ![image](https://user-images.githubusercontent.com/60457431/194435341-55e3113a-98f8-42b8-a6e2-4560222a943a.png)
 
+# 1010
+
+getElementById는 HTML에서 ID를 통해 elemnet를 찾아준다.
+
+``` js 
+document.title = "Hello From JS"
+
+// getElementById는 HTML에서 ID를 통해 elemnet를 찾아준다. 
+const title = document.getElementById("title")
+
+title.innerText ="innerText Test"
+
+console.log(title.id);
+console.log(title.className);
+
+``` 
