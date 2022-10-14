@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1087,1333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1087,1325" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
       <x:String>System.Activities</x:String>
@@ -67,10 +67,9 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="476,1268" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="476,1260" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="test" />
     </Sequence.Variables>
@@ -79,14 +78,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="434,134" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="TeamViewer.exe" />
-    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'teamviewer.exe  TeamVie...'" FileName="C:\Program Files\TeamViewer\teamviewer.exe" sap:VirtualizedContainerService.HintSize="434,1002" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="a28764cc27791092ee3183aa4ec58155" Selector="&lt;wnd app='teamviewer.exe' cls='MainWindowFull' title='TeamViewer' /&gt;">
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="434,132" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="TeamViewer.exe" />
+    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'teamviewer.exe  TeamVie...'" FileName="C:\Program Files\TeamViewer\teamviewer.exe" sap:VirtualizedContainerService.HintSize="434,996" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="a28764cc27791092ee3183aa4ec58155" Selector="&lt;wnd app='teamviewer.exe' cls='MainWindowFull' title='TeamViewer' /&gt;">
       <ui:OpenApplication.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="376,856" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="376,850" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:Image" Name="img_팀뷰어" />
               <Variable x:TypeArguments="x:String" Name="str_ID" />
@@ -100,7 +99,7 @@
             <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
             <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'text  837 737 767'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
               <ui:GetValue.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b6142075-f0bc-47a1-8731-5b04c0c28e46" InformativeScreenshot="410476364f6ce566b68736138d034a4a" Selector="&lt;ctrl name='837 737 767' role='text' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b6142075-f0bc-47a1-8731-5b04c0c28e46" InformativeScreenshot="410476364f6ce566b68736138d034a4a" Selector="&lt;ctrl name='*' role='text' aastate='읽기 전용, 포커스 가능' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -113,10 +112,10 @@
                 <OutArgument x:TypeArguments="x:String">[str_ID]</OutArgument>
               </ui:GetValue.Value>
             </ui:GetValue>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;아이디 : &quot;+str_ID]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;아이디 : &quot;+str_ID]" />
             <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'text  YourPassword'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
               <ui:GetValue.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="de34b7b6-4e2e-417f-9756-c1616a056d37" InformativeScreenshot="e84dfc5060f2ca8207e4714baa794e3f" Selector="&lt;ctrl name='YourPassword' role='text' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="de34b7b6-4e2e-417f-9756-c1616a056d37" InformativeScreenshot="e84dfc5060f2ca8207e4714baa794e3f" Selector="&lt;ctrl name='*' role='text' aastate='읽기 전용, 포커스 가능' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -129,8 +128,8 @@
                 <OutArgument x:TypeArguments="x:String">[str_PW]</OutArgument>
               </ui:GetValue.Value>
             </ui:GetValue>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;비번 : &quot;+str_PW]" />
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;비번 : &quot;+str_PW]" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -159,15 +158,15 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="376,226" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="376,224" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:SaveImage DisplayName="Save Image" FileName="[&quot;img\&quot;+now.ToString(&quot;yyyyMMdd&quot;)+&quot;_원격번호&quot;+&quot;.png&quot;]" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[img_팀뷰어]" />
+                  <ui:SaveImage DisplayName="Save Image" FileName="[&quot;img\&quot;+now.ToString(&quot;yyyyMMdd&quot;)+&quot;_원격번호&quot;+&quot;.png&quot;]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[img_팀뷰어]" />
                 </Sequence>
               </ui:CommentOut.Body>
               <sap:WorkflowViewStateService.ViewState>
