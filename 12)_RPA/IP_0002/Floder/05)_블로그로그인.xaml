@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1367,2846</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1367,2858</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_04__뉴스추가_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="28">
@@ -74,7 +74,7 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_04__뉴스추가" sap:VirtualizedContainerService.HintSize="1377,2781" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_04__뉴스추가" sap:VirtualizedContainerService.HintSize="1377,2793" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_블로그" />
       <Variable x:TypeArguments="x:String" Name="str_카카오계정" />
@@ -88,19 +88,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="str_카카오계정" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1335,183" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[str_카카오계정비번]" Username="[str_카카오계정]" />
-    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="str_블로그URL" DisplayName="Get Asset" sap:VirtualizedContainerService.HintSize="1335,139" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="str_카카오계정" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1335,180" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[str_카카오계정비번]" Username="[str_카카오계정]" />
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="str_블로그URL" DisplayName="Get Asset" sap:VirtualizedContainerService.HintSize="1335,137" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
       <ui:GetRobotAsset.Value>
         <OutArgument x:TypeArguments="x:String">[str_블로그]</OutArgument>
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1335,2287" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[str_블로그]">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1335,2304" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[str_블로그]">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="1301,2185" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Sequence sap:VirtualizedContainerService.HintSize="1301,2203" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -116,7 +116,7 @@
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[ele_카카오 = true]" sap:VirtualizedContainerService.HintSize="1259,1885" sap2010:WorkflowViewState.IdRef="If_3">
+            <If Condition="[ele_카카오 = true]" sap:VirtualizedContainerService.HintSize="1259,1903" sap2010:WorkflowViewState.IdRef="If_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -124,7 +124,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="604,1726" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence sap:VirtualizedContainerService.HintSize="604,1746" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -164,7 +164,7 @@
                       </ui:Target>
                     </ui:UiElementExists.Target>
                   </ui:UiElementExists>
-                  <If Condition="[ele_카카오로그인 = true]" sap:VirtualizedContainerService.HintSize="562,1342" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If Condition="[ele_카카오로그인 = true]" sap:VirtualizedContainerService.HintSize="562,1362" sap2010:WorkflowViewState.IdRef="If_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -172,7 +172,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence sap:VirtualizedContainerService.HintSize="526,1153" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence sap:VirtualizedContainerService.HintSize="526,1176" sap2010:WorkflowViewState.IdRef="Sequence_8">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -205,19 +205,9 @@
                             </ui:Target>
                           </ui:TypeSecureText.Target>
                         </ui:TypeSecureText>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
-                          <ui:Click.CursorPosition>
-                            <ui:CursorPosition Position="Center">
-                              <ui:CursorPosition.OffsetX>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetX>
-                              <ui:CursorPosition.OffsetY>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:CursorPosition.OffsetY>
-                            </ui:CursorPosition>
-                          </ui:Click.CursorPosition>
-                          <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a03b0097-ca22-497e-aed3-4b972ed0e885" InformativeScreenshot="4d604b953a3b4a5d1e6098cc29b75038" Selector="&lt;webctrl aaname='로그인' parentid='login-form' tag='BUTTON' /&gt;">
+                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="484,132" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                          <ui:SendHotkey.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="c1376d80-4bb5-40e4-b6d3-5154738bf234">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -225,8 +215,8 @@
                                 <InArgument x:TypeArguments="ui:WaitForReady" />
                               </ui:Target.WaitForReady>
                             </ui:Target>
-                          </ui:Click.Target>
-                        </ui:Click>
+                          </ui:SendHotkey.Target>
+                        </ui:SendHotkey>
                         <ui:UiElementExists DisplayName="Element Exists 'push button  취소'" Exists="[ele_이어쓰기]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
                           <ui:UiElementExists.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb01d558-0538-40f5-b075-fe7bb0f8587b" InformativeScreenshot="b58bf50dc800c774799bdc91874010d1" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='글쓰기 - 개인 - Microsoft​ Edge' /&gt;&lt;ctrl name='duridan-program.tistory.com의 메시지' role='dialog' /&gt;&lt;ctrl name='취소' role='push button' /&gt;" TimeoutMS="3000">
@@ -242,7 +232,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:UiElementExists>
-                        <If Condition="[ele_이어쓰기 = true]" sap:VirtualizedContainerService.HintSize="484,387" sap2010:WorkflowViewState.IdRef="If_4">
+                        <If Condition="[ele_이어쓰기 = true]" sap:VirtualizedContainerService.HintSize="484,384" sap2010:WorkflowViewState.IdRef="If_4">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -306,7 +296,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence sap:VirtualizedContainerService.HintSize="610,955" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                <Sequence sap:VirtualizedContainerService.HintSize="610,952" sap2010:WorkflowViewState.IdRef="Sequence_16">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -331,14 +321,14 @@
                       </ui:Target>
                     </ui:Click.Target>
                   </ui:Click>
-                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="568,717" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="568,714" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence sap:VirtualizedContainerService.HintSize="526,625" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <Sequence sap:VirtualizedContainerService.HintSize="526,622" sap2010:WorkflowViewState.IdRef="Sequence_13">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -360,7 +350,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:UiElementExists>
-                      <If Condition="[ele_이어쓰기 = true]" sap:VirtualizedContainerService.HintSize="484,387" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If Condition="[ele_이어쓰기 = true]" sap:VirtualizedContainerService.HintSize="484,384" sap2010:WorkflowViewState.IdRef="If_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
