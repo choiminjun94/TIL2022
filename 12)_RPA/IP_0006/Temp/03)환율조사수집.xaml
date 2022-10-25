@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1087,753</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1021,794</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_03__원달러자료_수집_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
@@ -66,16 +66,16 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="05__위안달러자료_수집" sap:VirtualizedContainerService.HintSize="376,481" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="05__위안달러자료_수집" sap:VirtualizedContainerService.HintSize="400,671" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="GetValue_2">
       <ui:GetValue.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7e7de51d-3c1d-46bc-b343-3ed81504a2c7" InformativeScreenshot="8b2d3a30826c75bcfba092d6b55247de" Selector="&lt;html app='msedge.exe' title='* — TradingView' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='anchor-page-1' tag='DIV' idx='1' /&gt;&lt;webctrl aaname='*' parentid='anchor-page-1' tag='DIV' /&gt;">
           <ui:Target.TimeoutMS>
@@ -90,8 +90,18 @@
         <OutArgument x:TypeArguments="x:String">[out_환율]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[str_설명+&quot; : &quot;+ out_환율]" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 01)_초기화 workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Temp\01)_초기화.xaml">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="358,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[str_설명+&quot; : &quot;+ out_환율]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 04)_엑셀저장 workflow" sap:VirtualizedContainerService.HintSize="358,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Temp\04)_엑셀저장.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="str_설명">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_설명" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="str_환율">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="out_환율" />
+        </InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 01)_초기화 workflow" sap:VirtualizedContainerService.HintSize="358,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Temp\01)_초기화.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
