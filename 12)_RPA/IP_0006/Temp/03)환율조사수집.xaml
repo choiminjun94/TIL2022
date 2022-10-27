@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1050,1074</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1113,1070</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_03__원달러자료_수집_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="29">
@@ -43,7 +43,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="27">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="54">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -71,9 +71,10 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="05__위안달러자료_수집" sap:VirtualizedContainerService.HintSize="478,1009" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="05__위안달러자료_수집" sap:VirtualizedContainerService.HintSize="478,1005" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_환율" />
     </Sequence.Variables>
@@ -123,18 +124,14 @@
         </ui:Target>
       </ui:ExtractData.Target>
     </ui:ExtractData>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,103" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[str_설명+&quot; : &quot;+ out_dt_환율.rows(0).ToString]" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 04)_엑셀저장 workflow" sap:VirtualizedContainerService.HintSize="436,123" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Temp\04)_엑셀저장.xaml">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[str_설명+&quot; : &quot;+ out_dt_환율.rows(0).Item(&quot;column1&quot;).ToString]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 04)_엑셀저장 workflow" sap:VirtualizedContainerService.HintSize="436,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Temp\04)_엑셀저장.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="str_설명">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_설명" />
-        </InArgument>
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="dt_환율">
-          <mva:VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="out_dt_환율" />
-        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="str_설명">[str_설명]</InArgument>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="dt_환율">[out_dt_환율]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 01)_초기화 workflow" sap:VirtualizedContainerService.HintSize="436,123" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Temp\01)_초기화.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 01)_초기화 workflow" sap:VirtualizedContainerService.HintSize="436,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Temp\01)_초기화.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
