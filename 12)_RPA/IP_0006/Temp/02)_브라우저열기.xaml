@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_02__브라우저열기" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_02__브라우저열기" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="str_환율" Type="InArgument(x:String)" />
     <x:Property Name="str_설명" Type="InArgument(x:String)" />
@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1087,1539</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1115,1760</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_02__브라우저열기_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="33">
@@ -46,7 +46,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+    <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -75,12 +75,12 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-    </scg:List>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+    </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_02__브라우저열기" sap:VirtualizedContainerService.HintSize="661,1474" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_02__브라우저열기" sap:VirtualizedContainerService.HintSize="661,1695" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_원달러" />
       <Variable x:TypeArguments="x:Boolean" Name="ele_팝업" />
@@ -93,7 +93,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="619,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="619,70" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[int_test]</OutArgument>
       </Assign.To>
@@ -101,13 +101,13 @@
         <InArgument x:TypeArguments="x:Int32">2</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="619,1282" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="test.xlsx">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="619,1495" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="test.xlsx">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="585,1173" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="585,1376" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="test" />
             </Sequence.Variables>
@@ -116,53 +116,61 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelReadRange AddHeaders="True" DataTable="[dt_sheet]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="543,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[dt_sheet]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="543,69" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
               <ui:ExcelReadRange.Range>
                 <InArgument x:TypeArguments="x:String">
                   <Literal x:TypeArguments="x:String" Value="" />
                 </InArgument>
               </ui:ExcelReadRange.Range>
             </ui:ExcelReadRange>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_sheet]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="543,982" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_sheet]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="543,1177" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="509,867" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="509,1053" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ExcelReadCell Cell="[&quot;B&quot;+int_test.ToString]" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="467,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_1" SheetName="Sheet1">
+                    <ui:ExcelReadCell Cell="[&quot;B&quot;+int_test.ToString]" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="467,69" sap2010:WorkflowViewState.IdRef="ExcelReadCell_1" SheetName="Sheet1">
                       <ui:ExcelReadCell.Result>
                         <OutArgument x:TypeArguments="x:String">[str_url]</OutArgument>
                       </ui:ExcelReadCell.Result>
                     </ui:ExcelReadCell>
-                    <ui:ExcelReadCell Cell="[&quot;C&quot;+int_test.ToString]" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="467,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_2" SheetName="Sheet1">
+                    <ui:ExcelReadCell Cell="[&quot;C&quot;+int_test.ToString]" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="467,69" sap2010:WorkflowViewState.IdRef="ExcelReadCell_2" SheetName="Sheet1">
                       <ui:ExcelReadCell.Result>
                         <OutArgument x:TypeArguments="x:String">[str_설명]</OutArgument>
                       </ui:ExcelReadCell.Result>
                     </ui:ExcelReadCell>
-                    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,216" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[str_url]">
+                    <Assign sap:VirtualizedContainerService.HintSize="467,70" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[str_설명]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[str_설명.Trim]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,233" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[str_url]">
                       <ui:OpenBrowser.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="400,122" sap2010:WorkflowViewState.IdRef="Sequence_2">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="358,32" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
                           </Sequence>
                         </ActivityAction>
                       </ui:OpenBrowser.Body>
                     </ui:OpenBrowser>
-                    <Sequence DisplayName="팝업창 끄기" sap:VirtualizedContainerService.HintSize="467,68" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence DisplayName="팝업창 끄기" sap:VirtualizedContainerService.HintSize="467,90" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -290,17 +298,13 @@
                         </If.Else>
                       </If>
                     </Sequence>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 05)_위안달러자료 수집 workflow" sap:VirtualizedContainerService.HintSize="467,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Temp\03)환율조사수집.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke 05)_위안달러자료 수집 workflow" sap:VirtualizedContainerService.HintSize="467,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Temp\03)환율조사수집.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
-                        <OutArgument x:TypeArguments="x:String" x:Key="out_환율">
-                          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_환율" />
-                        </OutArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="str_설명">
-                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="str_설명" />
-                        </InArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="out_환율">[str_환율]</OutArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="str_설명">[str_설명]</InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
-                    <Assign sap:VirtualizedContainerService.HintSize="467,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign sap:VirtualizedContainerService.HintSize="467,70" sap2010:WorkflowViewState.IdRef="Assign_2">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[int_test]</OutArgument>
                       </Assign.To>

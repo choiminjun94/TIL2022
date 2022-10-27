@@ -1,12 +1,12 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="_04__엑셀저장" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="str_설명" Type="InArgument(x:String)" />
-    <x:Property Name="str_환율" Type="InArgument(x:String)" />
+    <x:Property Name="dt_환율" Type="InArgument(sd:DataTable)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>922,904</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1115,1035</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_04__엑셀저장_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="62">
@@ -73,27 +73,27 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_04__엑셀저장" sap:VirtualizedContainerService.HintSize="476,839" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_04__엑셀저장" sap:VirtualizedContainerService.HintSize="476,970" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,749" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[&quot;ExcelTemp\outPut\&quot;+now.ToString(&quot;yyyy-MM-dd&quot;)+&quot;_환율 정보 수집.xlsx&quot;]">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,880" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[&quot;ExcelTemp\outPut\&quot;+now.ToString(&quot;yyyy-MM-dd&quot;)+&quot;_환율 정보 수집.xlsx&quot;]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="400,630" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="400,761" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dt_sheet" />
             </Sequence.Variables>
@@ -102,7 +102,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="358,62" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="CommentOut_2">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="400,159" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
@@ -126,27 +126,27 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="358,62" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="CommentOut_3">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="476,503" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="476,502" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_sheet]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,413" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_sheet]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,409" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,288" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,285" sap2010:WorkflowViewState.IdRef="Sequence_3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[CurrentRow.ItemArray]" DataTable="[dt_sheet]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="358,198" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[CurrentRow.ItemArray]" DataTable="[dt_sheet]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="358,195" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
                         </Sequence>
                       </ActivityAction>
                     </ui:ForEachRow.Body>
@@ -160,9 +160,10 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:ExcelWriteCell Cell="A2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="358,97" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="[str_설명]" Text="[now.ToString]" />
-            <ui:ExcelWriteCell Cell="B2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="358,97" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="[str_설명]" Text="[str_환율]" />
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="358,62" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="358,94" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[str_설명]" />
+            <ui:ExcelWriteCell Cell="A2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="358,97" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="[str_설명.Trim]" Text="[now.ToString(&quot;yyyy-MM-dd&quot;)]" />
+            <ui:ExcelWriteRange AddHeaders="False" DataTable="[dt_환율]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="358,97" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="B2" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="400,159" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
