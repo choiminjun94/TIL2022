@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_04_자료수집" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_04_자료수집" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_str_ComName" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1415,11757</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1841,12250</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_04_자료수집_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -43,7 +43,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+    <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -72,9 +72,10 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
-    </scg:List>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+    </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_04_자료수집" sap:VirtualizedContainerService.HintSize="1425,11692" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_04_자료수집" sap:VirtualizedContainerService.HintSize="1851,12185" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_ComName" />
       <Variable x:TypeArguments="ui:Image" Name="img_자격요건" />
@@ -96,7 +97,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'H5'" sap:VirtualizedContainerService.HintSize="1383,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'H5'" sap:VirtualizedContainerService.HintSize="1809,116" sap2010:WorkflowViewState.IdRef="GetValue_1">
       <ui:GetValue.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a5bf02d2-707f-4b8d-8a43-449a03ec5160" InformativeScreenshot="6e600f3f1ccaea06c30f8f4408b64eb5" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='* - Microsoft​ Edge' /&gt;&lt;ctrl name='공고 상세보기' role='document' /&gt;&lt;ctrl name='* ' role='link' /&gt;">
           <ui:Target.TimeoutMS>
@@ -111,7 +112,7 @@
         <OutArgument x:TypeArguments="x:String">[str_ComName]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <Assign sap:VirtualizedContainerService.HintSize="1383,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="1809,70" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[in_str_ComName]</OutArgument>
       </Assign.To>
@@ -119,7 +120,7 @@
         <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(str_ComName, "(\ \)", "")]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'H3'" sap:VirtualizedContainerService.HintSize="1383,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'H3'" sap:VirtualizedContainerService.HintSize="1809,116" sap2010:WorkflowViewState.IdRef="GetValue_2">
       <ui:GetValue.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4d462663-f386-4d46-a17f-fb1ccf836d3f" InformativeScreenshot="3beeb2382d4e3afb4012acbcff46877a" Selector="&lt;html app='msedge.exe' title='공고 상세보기' /&gt;&lt;webctrl tag='H3' aaname='*' /&gt;">
           <ui:Target.TimeoutMS>
@@ -134,7 +135,7 @@
         <OutArgument x:TypeArguments="x:String">[str_공고명]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'link  http://www.workpo...'" sap:VirtualizedContainerService.HintSize="1383,106" sap2010:WorkflowViewState.IdRef="GetValue_3">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'link  http://www.workpo...'" sap:VirtualizedContainerService.HintSize="1809,116" sap2010:WorkflowViewState.IdRef="GetValue_3">
       <ui:GetValue.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="33c7d90a-6fec-48e7-b4f4-cf2230f82cb5" InformativeScreenshot="06f50dacfbd67db6cccf9d11a6af87dd" Selector="&lt;html app='msedge.exe' title='공고 상세보기' /&gt;&lt;webctrl aaname='http://*' parentid='container_sub' tag='A' /&gt;">
           <ui:Target.TimeoutMS>
@@ -149,7 +150,7 @@
         <OutArgument x:TypeArguments="x:String">[str_URL]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'LI'" sap:VirtualizedContainerService.HintSize="1383,106" sap2010:WorkflowViewState.IdRef="GetValue_4">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'LI'" sap:VirtualizedContainerService.HintSize="1809,116" sap2010:WorkflowViewState.IdRef="GetValue_4">
       <ui:GetValue.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eea60b07-796c-4ace-ac40-beec88b0a922" InformativeScreenshot="c61100cb3fc064cfd65c9ef8be488465" Selector="&lt;html app='msedge.exe' title='공고 상세보기' /&gt;&lt;webctrl parentid='container_sub' tag='LI' idx='9' /&gt;">
           <ui:Target.TimeoutMS>
@@ -172,7 +173,7 @@
         <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(str_경력,"\n","")]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="1383,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <Assign sap:VirtualizedContainerService.HintSize="1809,70" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[str_경력]</OutArgument>
       </Assign.To>
@@ -180,7 +181,7 @@
         <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(str_경력,"\t","")]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="1383,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign sap:VirtualizedContainerService.HintSize="1809,70" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[str_경력]</OutArgument>
       </Assign.To>
@@ -188,8 +189,8 @@
         <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(str_경력,"경력 경력","경력 : ")]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1383,93" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[str_경력]" />
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'LI'" sap:VirtualizedContainerService.HintSize="1383,106" sap2010:WorkflowViewState.IdRef="GetValue_7">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1809,103" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[str_경력]" />
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'LI'" sap:VirtualizedContainerService.HintSize="1809,116" sap2010:WorkflowViewState.IdRef="GetValue_7">
       <ui:GetValue.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="152d9dbd-771d-4ab5-a522-f01d5612ddfb" InformativeScreenshot="354aa9b15590c1bb17533171920b51ee" Selector="&lt;html app='msedge.exe' title='공고 상세보기' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li' idx='9' parentid='container_sub' tag='LI' /&gt;">
           <ui:Target.TimeoutMS>
@@ -204,7 +205,7 @@
         <OutArgument x:TypeArguments="x:String">[str_접수시작]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <Assign sap:VirtualizedContainerService.HintSize="1383,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+    <Assign sap:VirtualizedContainerService.HintSize="1809,70" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[str_접수시작]</OutArgument>
       </Assign.To>
@@ -213,7 +214,7 @@
       </Assign.Value>
     </Assign>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1383,93" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[str_접수시작]" />
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'LI'" sap:VirtualizedContainerService.HintSize="1383,106" sap2010:WorkflowViewState.IdRef="GetValue_8">
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'LI'" sap:VirtualizedContainerService.HintSize="1809,116" sap2010:WorkflowViewState.IdRef="GetValue_8">
       <ui:GetValue.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="232b2ef1-edda-4fbd-81c7-1f339cec29d9" InformativeScreenshot="3e7aa8f2269bde63a3c7c14a2c7afbc6" Selector="&lt;html app='msedge.exe' title='공고 상세보기' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li' idx='10' parentid='container_sub' tag='LI' /&gt;">
           <ui:Target.TimeoutMS>
@@ -228,7 +229,7 @@
         <OutArgument x:TypeArguments="x:String">[str_마감일]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <Assign sap:VirtualizedContainerService.HintSize="1383,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+    <Assign sap:VirtualizedContainerService.HintSize="1809,70" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[str_마감일]</OutArgument>
       </Assign.To>
@@ -236,8 +237,8 @@
         <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(str_마감일,"마감일","마감일 : ")]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1383,93" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[str_마감일]" />
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD'" sap:VirtualizedContainerService.HintSize="1383,106" sap2010:WorkflowViewState.IdRef="GetValue_5">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1809,103" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[str_마감일]" />
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD'" sap:VirtualizedContainerService.HintSize="1809,116" sap2010:WorkflowViewState.IdRef="GetValue_5">
       <ui:GetValue.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ce8aadad-66b5-4dbf-a41a-f95bb3eadb71" InformativeScreenshot="5f5ca061106a91766f902a886487bc12" Selector="&lt;html app='msedge.exe' title='공고 상세보기' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='TD' /&gt;">
           <ui:Target.TimeoutMS>
@@ -252,8 +253,8 @@
         <OutArgument x:TypeArguments="x:String">[str_주요업무]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1383,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[str_주요업무]" />
-    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD'" sap:VirtualizedContainerService.HintSize="1383,106" sap2010:WorkflowViewState.IdRef="GetValue_6">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1809,103" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[str_주요업무]" />
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD'" sap:VirtualizedContainerService.HintSize="1809,116" sap2010:WorkflowViewState.IdRef="GetValue_6">
       <ui:GetValue.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="753d62ae-5729-4d45-852d-d78944640224" InformativeScreenshot="d14980309d8191cc39c59a1779518cdd" Selector="&lt;html app='msedge.exe' title='공고 상세보기' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='TD' /&gt;">
           <ui:Target.TimeoutMS>
@@ -268,7 +269,7 @@
         <OutArgument x:TypeArguments="x:String">[str_그외자격요건]</OutArgument>
       </ui:GetValue.Value>
     </ui:GetValue>
-    <Sequence sap:VirtualizedContainerService.HintSize="1383,9300" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence sap:VirtualizedContainerService.HintSize="1809,9635" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="str_월드잡" />
         <Variable x:TypeArguments="x:String" Name="str_카카오계정" />
@@ -280,19 +281,19 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="str_블로그URL" DisplayName="Get Asset" sap:VirtualizedContainerService.HintSize="1341,139" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="str_블로그URL" DisplayName="Get Asset" sap:VirtualizedContainerService.HintSize="1747,149" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
         <ui:GetRobotAsset.Value>
           <OutArgument x:TypeArguments="x:String">[str_블로그]</OutArgument>
         </ui:GetRobotAsset.Value>
       </ui:GetRobotAsset>
-      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="str_카카오계정" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1341,183" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[str_카카오계정비번]" Username="[str_카카오계정]" />
-      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1341,8806" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[str_블로그]">
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="str_카카오계정" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1747,193" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[str_카카오계정비번]" Username="[str_카카오계정]" />
+      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1747,9091" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[str_블로그]">
         <ui:OpenBrowser.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="1307,8704" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence sap:VirtualizedContainerService.HintSize="1713,8979" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="ele_카카오" />
               </Sequence.Variables>
@@ -301,8 +302,8 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1265,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-              <ui:UiElementExists DisplayName="Element Exists 'SPAN'" Exists="[ele_카카오]" sap:VirtualizedContainerService.HintSize="1265,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1671,32" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+              <ui:UiElementExists DisplayName="Element Exists 'SPAN'" Exists="[ele_카카오]" sap:VirtualizedContainerService.HintSize="1671,116" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                 <ui:UiElementExists.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="85a19d35-534e-4724-9293-19b3b0c66e9c" InformativeScreenshot="b8697aa7e76952f9664edfcb79007cc7" Selector="&lt;webctrl aaname='카카오계정 로그인' parentid='cMain' tag='SPAN' /&gt;" TimeoutMS="3000">
                     <ui:Target.WaitForReady>
@@ -311,9 +312,9 @@
                   </ui:Target>
                 </ui:UiElementExists.Target>
               </ui:UiElementExists>
-              <If Condition="[ele_카카오 = true]" sap:VirtualizedContainerService.HintSize="1265,8404" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[ele_카카오 = true]" sap:VirtualizedContainerService.HintSize="1671,8661" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="526,1261" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence sap:VirtualizedContainerService.HintSize="852,8492" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Boolean" Name="ele_카카오로그인" />
                     </Sequence.Variables>
@@ -322,7 +323,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="810,116" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -344,9 +345,9 @@
                         </ui:Target>
                       </ui:Click.Target>
                     </ui:Click>
-                    <ui:UiElementExists DisplayName="Element Exists 'BUTTON'" Exists="[ele_카카오로그인]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                    <ui:UiElementExists DisplayName="Element Exists 'BUTTON'" Exists="[ele_카카오로그인]" sap:VirtualizedContainerService.HintSize="810,116" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
                       <ui:UiElementExists.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="16772280-0815-4944-b25d-415cbddc7a3b" InformativeScreenshot="4d604b953a3b4a5d1e6098cc29b75038" Selector="&lt;webctrl aaname='로그인' parentid='login-form' tag='BUTTON' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="16772280-0815-4944-b25d-415cbddc7a3b" InformativeScreenshot="4d604b953a3b4a5d1e6098cc29b75038" Selector="&lt;webctrl aaname='로그인' parentid='*' tag='BUTTON' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -356,17 +357,17 @@
                         </ui:Target>
                       </ui:UiElementExists.Target>
                     </ui:UiElementExists>
-                    <If Condition="[ele_카카오로그인 = true]" sap:VirtualizedContainerService.HintSize="484,877" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If Condition="[ele_카카오로그인 = true]" sap:VirtualizedContainerService.HintSize="810,8090" sap2010:WorkflowViewState.IdRef="If_3">
                       <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="376,688" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <Sequence sap:VirtualizedContainerService.HintSize="774,7891" sap2010:WorkflowViewState.IdRef="Sequence_12">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'msedge.exe 카카오계정'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="[str_카카오계정]">
+                          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'msedge.exe 카카오계정'" sap:VirtualizedContainerService.HintSize="732,144" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="[str_카카오계정]">
                             <ui:TypeInto.Target>
-                              <ui:Target Element="{x:Null}" Id="09f1d593-d21b-4a02-8d3c-4c23d0c3f26a" InformativeScreenshot="68752a4cd28647eb9360af77fc612c25" Selector="&lt;html app='msedge.exe' title='카카오계정' /&gt;&lt;webctrl id='id_email_2_label' tag='LABEL' /&gt;">
+                              <ui:Target Element="{x:Null}" Id="09f1d593-d21b-4a02-8d3c-4c23d0c3f26a" InformativeScreenshot="68752a4cd28647eb9360af77fc612c25" Selector="&lt;html app='msedge.exe' title='카카오계정' /&gt;&lt;webctrl tag='INPUT' aaname='*' idx='1' /&gt;">
                                 <ui:Target.ClippingRegion>
                                   <ui:Region Rectangle="990, 394, 0, 6" />
                                 </ui:Target.ClippingRegion>
@@ -379,7 +380,7 @@
                               </ui:Target>
                             </ui:TypeInto.Target>
                           </ui:TypeInto>
-                          <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Secure Text 'INPUT  id_password_3'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TypeSecureText_2" SecureText="[str_카카오계정비번]">
+                          <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Secure Text 'INPUT  id_password_3'" EmptyField="True" sap:VirtualizedContainerService.HintSize="732,116" sap2010:WorkflowViewState.IdRef="TypeSecureText_2" SecureText="[str_카카오계정비번]">
                             <ui:TypeSecureText.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5f5ed7d8-1afe-4fec-acf3-a9a551a6e80c" InformativeScreenshot="23364106af1d42eaa1263533221bec00" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;">
                                 <ui:Target.TimeoutMS>
@@ -391,7 +392,7 @@
                               </ui:Target>
                             </ui:TypeSecureText.Target>
                           </ui:TypeSecureText>
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="732,116" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -403,7 +404,7 @@
                               </ui:CursorPosition>
                             </ui:Click.CursorPosition>
                             <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a03b0097-ca22-497e-aed3-4b972ed0e885" InformativeScreenshot="4d604b953a3b4a5d1e6098cc29b75038" Selector="&lt;webctrl aaname='로그인' parentid='login-form' tag='BUTTON' /&gt;">
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a03b0097-ca22-497e-aed3-4b972ed0e885" InformativeScreenshot="4d604b953a3b4a5d1e6098cc29b75038" Selector="&lt;webctrl aaname='로그인' parentid='*' tag='BUTTON' /&gt;">
                                 <ui:Target.TimeoutMS>
                                   <InArgument x:TypeArguments="x:Int32" />
                                 </ui:Target.TimeoutMS>
@@ -413,55 +414,72 @@
                               </ui:Target>
                             </ui:Click.Target>
                           </ui:Click>
-                          <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
-                          <Sequence sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                          <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="732,32" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                          <Sequence sap:VirtualizedContainerService.HintSize="732,7233" sap2010:WorkflowViewState.IdRef="Sequence_56">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="418,106" sap2010:WorkflowViewState.IdRef="Click_52" KeyModifiers="None" MouseButton="BTN_LEFT">
-                              <ui:Click.CursorPosition>
-                                <ui:CursorPosition Position="Center">
-                                  <ui:CursorPosition.OffsetX>
-                                    <InArgument x:TypeArguments="x:Int32" />
-                                  </ui:CursorPosition.OffsetX>
-                                  <ui:CursorPosition.OffsetY>
-                                    <InArgument x:TypeArguments="x:Int32" />
-                                  </ui:CursorPosition.OffsetY>
-                                </ui:CursorPosition>
-                              </ui:Click.CursorPosition>
-                              <ui:Click.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="80c0cbca-a4a2-4927-a5c3-1bdeb3c89952" InformativeScreenshot="b8697aa7e76952f9664edfcb79007cc7" Selector="&lt;webctrl aaname='카카오계정 로그인' parentid='cMain' tag='SPAN' /&gt;" TimeoutMS="3000">
-                                  <ui:Target.WaitForReady>
-                                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                                  </ui:Target.WaitForReady>
-                                </ui:Target>
-                              </ui:Click.Target>
-                            </ui:Click>
-                            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="418,6168" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="670,62" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="400,206" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="Click_52" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                    <ui:Click.CursorPosition>
+                                      <ui:CursorPosition Position="Center">
+                                        <ui:CursorPosition.OffsetX>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:CursorPosition.OffsetX>
+                                        <ui:CursorPosition.OffsetY>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:CursorPosition.OffsetY>
+                                      </ui:CursorPosition>
+                                    </ui:Click.CursorPosition>
+                                    <ui:Click.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="80c0cbca-a4a2-4927-a5c3-1bdeb3c89952" InformativeScreenshot="b8697aa7e76952f9664edfcb79007cc7" Selector="&lt;webctrl aaname='카카오계정 로그인' parentid='cMain' tag='SPAN' /&gt;" TimeoutMS="3000">
+                                        <ui:Target.WaitForReady>
+                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                        </ui:Target.WaitForReady>
+                                      </ui:Target>
+                                    </ui:Click.Target>
+                                  </ui:Click>
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CommentOut>
+                            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="670,6863" sap2010:WorkflowViewState.IdRef="Sequence_55">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence sap:VirtualizedContainerService.HintSize="376,6076" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                              <Sequence sap:VirtualizedContainerService.HintSize="608,6741" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Sequence sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                <Sequence sap:VirtualizedContainerService.HintSize="546,683" sap2010:WorkflowViewState.IdRef="Sequence_53">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:UiElementExists DisplayName="Element Exists 'push button  취소'" Exists="[ele_이어쓰기]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_10">
+                                  <ui:UiElementExists DisplayName="Element Exists 'push button  취소'" Exists="[ele_이어쓰기]" sap:VirtualizedContainerService.HintSize="484,116" sap2010:WorkflowViewState.IdRef="UiElementExists_10">
                                     <ui:UiElementExists.Target>
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb01d558-0538-40f5-b075-fe7bb0f8587b" InformativeScreenshot="b58bf50dc800c774799bdc91874010d1" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='글쓰기 - 개인 - Microsoft​ Edge' /&gt;&lt;ctrl name='duridan-program.tistory.com의 메시지' role='dialog' /&gt;&lt;ctrl name='취소' role='push button' /&gt;" TimeoutMS="3000">
                                         <ui:Target.WaitForReady>
@@ -470,15 +488,15 @@
                                       </ui:Target>
                                     </ui:UiElementExists.Target>
                                   </ui:UiElementExists>
-                                  <If Condition="[ele_이어쓰기 = true]" sap:VirtualizedContainerService.HintSize="484,384" sap2010:WorkflowViewState.IdRef="If_10">
+                                  <If Condition="[ele_이어쓰기 = true]" sap:VirtualizedContainerService.HintSize="484,405" sap2010:WorkflowViewState.IdRef="If_10">
                                     <If.Then>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="400,206" sap2010:WorkflowViewState.IdRef="Sequence_51">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  취소'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_53" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  취소'" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="Click_53" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -513,7 +531,7 @@
                                     </If.Else>
                                   </If>
                                 </Sequence>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  category-btn'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_54" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  category-btn'" sap:VirtualizedContainerService.HintSize="546,116" sap2010:WorkflowViewState.IdRef="Click_54" KeyModifiers="None" MouseButton="BTN_LEFT">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
@@ -535,7 +553,7 @@
                                     </ui:Target>
                                   </ui:Click.Target>
                                 </ui:Click>
-                                <ui:Hover DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" DisplayName="Hover 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Hover_7">
+                                <ui:Hover DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" DisplayName="Hover 'SPAN'" sap:VirtualizedContainerService.HintSize="546,116" sap2010:WorkflowViewState.IdRef="Hover_7">
                                   <ui:Hover.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
@@ -1010,20 +1028,20 @@
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence sap:VirtualizedContainerService.HintSize="694,8245" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                  <Sequence sap:VirtualizedContainerService.HintSize="774,8295" sap2010:WorkflowViewState.IdRef="Sequence_27">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence sap:VirtualizedContainerService.HintSize="652,8153" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <Sequence sap:VirtualizedContainerService.HintSize="732,8205" sap2010:WorkflowViewState.IdRef="Sequence_20">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="610,106" sap2010:WorkflowViewState.IdRef="Click_29" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="670,116" sap2010:WorkflowViewState.IdRef="Click_29" KeyModifiers="None" MouseButton="BTN_LEFT">
                         <ui:Click.CursorPosition>
                           <ui:CursorPosition Position="Center">
                             <ui:CursorPosition.OffsetX>
@@ -1042,28 +1060,28 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="610,7769" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                      <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="670,7781" sap2010:WorkflowViewState.IdRef="Sequence_19">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence sap:VirtualizedContainerService.HintSize="568,7677" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <Sequence sap:VirtualizedContainerService.HintSize="608,7659" sap2010:WorkflowViewState.IdRef="Sequence_4">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence sap:VirtualizedContainerService.HintSize="526,625" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <Sequence sap:VirtualizedContainerService.HintSize="546,683" sap2010:WorkflowViewState.IdRef="Sequence_15">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:UiElementExists DisplayName="Element Exists 'push button  취소'" Exists="[ele_이어쓰기]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                            <ui:UiElementExists DisplayName="Element Exists 'push button  취소'" Exists="[ele_이어쓰기]" sap:VirtualizedContainerService.HintSize="484,116" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
                               <ui:UiElementExists.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb01d558-0538-40f5-b075-fe7bb0f8587b" InformativeScreenshot="b58bf50dc800c774799bdc91874010d1" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='글쓰기 - 개인 - Microsoft​ Edge' /&gt;&lt;ctrl name='duridan-program.tistory.com의 메시지' role='dialog' /&gt;&lt;ctrl name='취소' role='push button' /&gt;" TimeoutMS="3000">
                                   <ui:Target.WaitForReady>
@@ -1072,15 +1090,15 @@
                                 </ui:Target>
                               </ui:UiElementExists.Target>
                             </ui:UiElementExists>
-                            <If Condition="[ele_이어쓰기 = true]" sap:VirtualizedContainerService.HintSize="484,387" sap2010:WorkflowViewState.IdRef="If_4">
+                            <If Condition="[ele_이어쓰기 = true]" sap:VirtualizedContainerService.HintSize="484,405" sap2010:WorkflowViewState.IdRef="If_4">
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                <Sequence sap:VirtualizedContainerService.HintSize="400,206" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  취소'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  취소'" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -1115,7 +1133,7 @@
                               </If.Else>
                             </If>
                           </Sequence>
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  category-btn'" sap:VirtualizedContainerService.HintSize="526,106" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  category-btn'" sap:VirtualizedContainerService.HintSize="546,116" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -1137,7 +1155,7 @@
                               </ui:Target>
                             </ui:Click.Target>
                           </ui:Click>
-                          <ui:Hover DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" DisplayName="Hover 'SPAN'" sap:VirtualizedContainerService.HintSize="526,106" sap2010:WorkflowViewState.IdRef="Hover_1">
+                          <ui:Hover DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" DisplayName="Hover 'SPAN'" sap:VirtualizedContainerService.HintSize="546,116" sap2010:WorkflowViewState.IdRef="Hover_1">
                             <ui:Hover.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -1159,7 +1177,7 @@
                               </ui:Target>
                             </ui:Hover.Target>
                           </ui:Hover>
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="526,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="546,116" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -1181,7 +1199,7 @@
                               </ui:Target>
                             </ui:Click.Target>
                           </ui:Click>
-                          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'TEXTAREA  post-title-inp'" sap:VirtualizedContainerService.HintSize="526,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[str_ComName+ &quot;[k(enter)]&quot;]">
+                          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'TEXTAREA  post-title-inp'" sap:VirtualizedContainerService.HintSize="546,144" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[str_ComName+ &quot;[k(enter)]&quot;]">
                             <ui:TypeInto.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4a103726-a24e-4109-ad79-92140320affe" InformativeScreenshot="b43a3085c67e5d2ca6c88083bea8a1d7" Selector="&lt;html app='msedge.exe' title='글쓰기' /&gt;&lt;webctrl tag='TEXTAREA' /&gt;">
                                 <ui:Target.TimeoutMS>
@@ -1193,8 +1211,8 @@
                               </ui:Target>
                             </ui:TypeInto.Target>
                           </ui:TypeInto>
-                          <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+                          <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="546,32" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="546,164" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="pgdn" KeyModifiers="None" SpecialKey="True">
                             <ui:SendHotkey.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="050b03f7-1ba9-4d29-a35e-f7a6eae56f4c" InformativeScreenshot="bc2764d60310209e2fd426a7d1081f76" Selector="&lt;html app='msedge.exe' title='글쓰기' /&gt;&lt;webctrl id='editor-tistory_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='BODY' /&gt;">
                                 <ui:Target.TimeoutMS>
@@ -1206,7 +1224,7 @@
                               </ui:Target>
                             </ui:SendHotkey.Target>
                           </ui:SendHotkey>
-                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="enter" KeyModifiers="None" SpecialKey="True">
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="546,164" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="enter" KeyModifiers="None" SpecialKey="True">
                             <ui:SendHotkey.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="050b03f7-1ba9-4d29-a35e-f7a6eae56f4c" InformativeScreenshot="bc2764d60310209e2fd426a7d1081f76" Selector="&lt;html app='msedge.exe' title='글쓰기' /&gt;&lt;webctrl id='editor-tistory_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='BODY' /&gt;">
                                 <ui:Target.TimeoutMS>
@@ -1218,7 +1236,7 @@
                               </ui:Target>
                             </ui:SendHotkey.Target>
                           </ui:SendHotkey>
-                          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="526,134" sap2010:WorkflowViewState.IdRef="TypeInto_38" Text="이 글인 RPA로 작성 되었습니다.[k(enter)]">
+                          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="546,144" sap2010:WorkflowViewState.IdRef="TypeInto_38" Text="이 글인 RPA로 작성 되었습니다.[k(enter)]">
                             <ui:TypeInto.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="df27bfd5-a7c5-470c-91ba-ac0281e82730" InformativeScreenshot="bc2764d60310209e2fd426a7d1081f76" Selector="&lt;html app='msedge.exe' title='글쓰기' /&gt;&lt;webctrl id='editor-tistory_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='P' /&gt;">
                                 <ui:Target.TimeoutMS>
@@ -1230,7 +1248,7 @@
                               </ui:Target>
                             </ui:TypeInto.Target>
                           </ui:TypeInto>
-                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="526,154" sap2010:WorkflowViewState.IdRef="SendHotkey_45" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="546,164" sap2010:WorkflowViewState.IdRef="SendHotkey_45" Key="pgdn" KeyModifiers="None" SpecialKey="True">
                             <ui:SendHotkey.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="050b03f7-1ba9-4d29-a35e-f7a6eae56f4c" InformativeScreenshot="bc2764d60310209e2fd426a7d1081f76" Selector="&lt;html app='msedge.exe' title='글쓰기' /&gt;&lt;webctrl id='editor-tistory_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='BODY' /&gt;">
                                 <ui:Target.TimeoutMS>
@@ -1242,7 +1260,7 @@
                               </ui:Target>
                             </ui:SendHotkey.Target>
                           </ui:SendHotkey>
-                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="526,154" sap2010:WorkflowViewState.IdRef="SendHotkey_88" Key="enter" KeyModifiers="None" SpecialKey="True">
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="546,164" sap2010:WorkflowViewState.IdRef="SendHotkey_88" Key="enter" KeyModifiers="None" SpecialKey="True">
                             <ui:SendHotkey.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="050b03f7-1ba9-4d29-a35e-f7a6eae56f4c" InformativeScreenshot="bc2764d60310209e2fd426a7d1081f76" Selector="&lt;html app='msedge.exe' title='글쓰기' /&gt;&lt;webctrl id='editor-tistory_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='BODY' /&gt;">
                                 <ui:Target.TimeoutMS>
@@ -1254,15 +1272,15 @@
                               </ui:Target>
                             </ui:SendHotkey.Target>
                           </ui:SendHotkey>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="526,304" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546,322" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                             <ui:CommentOut.Body>
-                              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="376,226" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="400,234" sap2010:WorkflowViewState.IdRef="Sequence_57">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_18" Text="공고명[k(enter)]">
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="358,144" sap2010:WorkflowViewState.IdRef="TypeInto_18" Text="공고명[k(enter)]">
                                   <ui:TypeInto.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="df27bfd5-a7c5-470c-91ba-ac0281e82730" InformativeScreenshot="bc2764d60310209e2fd426a7d1081f76" Selector="&lt;html app='msedge.exe' title='글쓰기' /&gt;&lt;webctrl id='editor-tistory_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='P' /&gt;">
                                       <ui:Target.TimeoutMS>
@@ -1277,15 +1295,15 @@
                               </Sequence>
                             </ui:CommentOut.Body>
                           </ui:CommentOut>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="526,304" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546,62" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                             <ui:CommentOut.Body>
-                              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="376,226" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="400,234" sap2010:WorkflowViewState.IdRef="Sequence_58">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[str_공고명]">
+                                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="358,144" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[str_공고명]">
                                   <ui:TypeInto.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="df27bfd5-a7c5-470c-91ba-ac0281e82730" InformativeScreenshot="bc2764d60310209e2fd426a7d1081f76" Selector="&lt;html app='msedge.exe' title='글쓰기' /&gt;&lt;webctrl id='editor-tistory_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='P' /&gt;">
                                       <ui:Target.TimeoutMS>
@@ -1299,16 +1317,22 @@
                                 </ui:TypeInto>
                               </Sequence>
                             </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="526,324" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546,342" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                             <ui:CommentOut.Body>
-                              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                              <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="400,254" sap2010:WorkflowViewState.IdRef="Sequence_59">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'BODY  tinymce'" sap:VirtualizedContainerService.HintSize="358,164" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="enter" KeyModifiers="None" SpecialKey="True">
                                   <ui:SendHotkey.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="050b03f7-1ba9-4d29-a35e-f7a6eae56f4c" InformativeScreenshot="bc2764d60310209e2fd426a7d1081f76" Selector="&lt;html app='msedge.exe' title='글쓰기' /&gt;&lt;webctrl id='editor-tistory_ifr' tag='IFRAME' /&gt;&lt;webctrl tag='BODY' /&gt;">
                                       <ui:Target.TimeoutMS>
